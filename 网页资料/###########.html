@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="ua-mac ua-webkit">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+
+    <title>
+    「iOS Dev」从WebView获取HTML源代码
+</title>
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+    
+    <script >var _head_start = new Date();</script>
+    <script src="http://img3.douban.com/f/shire/72ced6df41d4d158420cebdd254f9562942464e3/js/jquery.min.js"></script>
+    <script src="http://img3.douban.com/f/shire/96d19012435dc973e65f5da4b9cfca074ee2105d/js/douban.new_rating.js"></script>
+    <link href="http://img3.douban.com/f/shire/85e48d36f1b46965b4fb9beaae6a601c6108203f/css/douban.new_rating.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    
+        
+    .ui-tooltip { width: 270px }
+    .note img { max-width:590px; }
+    .tabs{font-size:0;letter-spacing:-0.31em;*letter-spacing:normal;word-spacing:-0.43em}.tabs a{display:inline-block;*display:inline;zoom:1;padding:1px 8px;margin-right:5px}.tabs a:link,.tabs a:visited,.tabs a:hover,.tabs a:active{font-size:12px;line-height:1.2;letter-spacing:normal;word-spacing:normal}.tabs a:hover,.tabs a:active{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.tabs a.on:link,.tabs a.on:visited,.tabs a.on:hover,.tabs a.on:active{color:#fff;background:#83bf73;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.tabs{margin:40px 0 10px;padding-bottom:8px;border-bottom:1px solid #e6e6e6}.list,.list .content{overflow:hidden;zoom:1}.list .pic{float:left;margin-right:12px}.list p{margin:8px 0 0 0;background:#f9f9f9;padding:8px}.list .pubtime{position:absolute;top:10px;right:0;color:#999}.list .pic img{width:24px;height:24px}.list ul{margin-top:-15px}.list li{position:relative;padding-top:10px;margin-top:10px;border-top:1px dashed #e6e6e6;overflow:hidden;color:#666}.topic-fav-list .content{margin-top:4px;width:70%}.topic-fav-list .pubtime{top:14px}.topic-rec-list .pubtime a:link,.topic-rec-list .pubtime a:visited{color:#666}.topic-rec-list .pubtime a:hover,.topic-rec-list .pubtime a:active{color:#fff}.topic-rec-list p{padding:0}.topic-rec-list p a{display:block;background:#f9f9f9;padding:8px}.topic-rec-list p a:link,.topic-rec-list p a:visited{color:#666}.topic-rec-list p a:hover,.topic-rec-list p a:active{background-color:#f6f6f6;color:#666}
+    p.presto-like {
+      margin-top: 5px;
+      background: #fff;
+      padding: 2px 0 15px 0;
+      text-align: right;
+    }
+    p.presto-rec {
+      margin-top: 5px;
+      padding: 2px 0 15px 0;
+      text-align: right;
+      background:initial;
+    }
+    p.presto-rec a{
+	  display:initial;
+	  padding:initial;
+	  margin:initial;
+	  background-color:white;
+    }
+    p.presto-rec a:link{
+	  color:#37a;
+    }
+    p.presto-rec a:visited{
+      color:#666699;
+    }
+    p.presto-rec a:hover{
+	  background-color:#37a;
+      color:white;
+    };
+
+
+    </style>
+    
+    <meta name="mobile-agent" content="format=xhtml; url=http://m.douban.com/note/152949683">
+    <meta property="og:title" content="「iOS Dev」从WebView获取HTML源代码" />
+    <meta property="og:site_name" content="豆瓣"/>
+    <meta property="og:url" content="http://www.douban.com/note/152949683/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="1）设置UIWebView delegate 2）在 - (void)webViewDidFinishLoad:(UIWebView *)webView { }中 执行如下代码 ： NSString *jsToGetHTMLSource = @&#34;document.getElementsByTagName(&#39;html&#39;)[0].innerHTML&#34;; NSString..." />
+    
+    <link type="text/css" href="http://img3.douban.com/f/shire/d1faa0a30ffb71000e12b67d560940566eb51bac/css/lib/jquery.ui.tooltip.css" rel="stylesheet"/>
+    <link type="text/css" href="http://img3.douban.com/f/shire/240320e5c41ed2023270f6b78621c0e9409e6b5b/css/doulist/tooltip.css" rel="stylesheet"/>
+    <link type="text/css" href="http://img3.douban.com/f/sns/d217844be1a2a6be9163d677deafa991e5ea8d17/css/sns/tag.css" rel="stylesheet"/>
+    <script type="text/javascript" src="http://img3.douban.com/f/shire/29449d396dacb28fd9949c709ccf02a46b910156/js/do.js" data-cfg-autoload="false"></script>
+    <script type="text/javascript" src="http://img3.douban.com/f/shire/e254005edae24d9a1808ede9c3d7fcc5b6d94e1b/js/lib/jquery.ui.min.js"></script>
+    <script type="text/javascript" src="http://img3.douban.com/f/shire/b25c20b18198fe069cd80d64f4ca614e20b419cb/js/lib/jquery.ui.tooltip.js"></script>
+
+    <link rel="stylesheet" href="http://img3.douban.com/misc/mixed_static/651420b35d521eb8.css">
+    <script></script>
+
+    <link rel="shortcut icon" href="http://img3.douban.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+    <script type="text/javascript">var _body_start = new Date();</script>
+    
+   
+
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="http://www.douban.com/accounts/login?source=main" class="nav-login" rel="nofollow">登录</a>
+      <a href="http://www.douban.com/accounts/register?source=main" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="http://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣<span>3.0</span></p>
+            <p class="slogan">和有趣的人做有趣的事</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="http://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="http://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip">
+            <a href="http://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 3.0 全新发布</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="on">
+            <a href="http://www.douban.com/" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-main&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://book.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-book&#34;,&#34;uid&#34;:&#34;0&#34;}">读书</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://movie.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-movie&#34;,&#34;uid&#34;:&#34;0&#34;}">电影</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://music.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-music&#34;,&#34;uid&#34;:&#34;0&#34;}">音乐</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://www.douban.com/location/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-location&#34;,&#34;uid&#34;:&#34;0&#34;}">同城</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://www.douban.com/group/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-group&#34;,&#34;uid&#34;:&#34;0&#34;}">小组</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-read&#34;,&#34;uid&#34;:&#34;0&#34;}">阅读</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://douban.fm/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-fm&#34;,&#34;uid&#34;:&#34;0&#34;}">FM</a>
+            </li>
+          
+            
+            <li class="">
+            <a href="http://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-commodity&#34;,&#34;uid&#34;:&#34;0&#34;}">东西</a>
+            </li>
+          
+            
+            <li class=" market-tip">
+            <a href="http://market.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-market&#34;,&#34;uid&#34;:&#34;0&#34;}">市集</a>
+            </li>
+          
+            <li>
+              <a href="#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr><td><a href="http://moment.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-moment&#34;,&#34;uid&#34;:&#34;0&#34;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="http://ypy.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-ypy&#34;,&#34;uid&#34;:&#34;0&#34;}">一拍一</a></td></tr>
+                </table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+<div id="db-nav-sns" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-search">
+        <form action="http://www.douban.com/search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query">搜索你感兴趣的内容和人...</label>
+            <div class="inp">
+              <input type="hidden" name="source" value="suggest">
+              <input id="inp-query" name="q" size="22" title="搜索搜索你感兴趣的内容和人..." maxlength="60" autocomplete="off"  value="">
+            </div>
+            <div class="inp-btn"><input type="submit" value="搜索"></div>
+          </fieldset>
+        </form>
+      </div>
+  
+      <div class="nav-logo">
+        <a href="http://www.douban.com">豆瓣社区</a>
+      </div>
+  
+      <div class="nav-items">
+        <ul>
+          <li><a href="http://www.douban.com/">首页</a></li>
+          <li><a href="http://www.douban.com/explore/">浏览发现</a></li>
+          <li>
+              <a href="http://www.douban.com/app/">移动应用</a>
+              <img src="http://img3.douban.com/f/shire/e49eca1517424a941871a2667a8957fd6c72d632/pics/new_menu.gif" alt="new" />
+              
+          </li>
+          <li>
+            <a href="http://www.douban.com/game/explore?dcs=sns-nav&amp;dcm=douban">游戏</a>
+          </li>
+          <li><a href="http://www.douban.com/online/">线上活动</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <div id="wrapper">
+        
+
+        
+<div id="content">
+    
+
+    <div class="grid-16-8 clearfix">
+        
+        
+        <div class="article">
+               
+    
+    
+    
+    <div id="reg-up">
+        <a href="http://www.douban.com/accounts/register" data-source=note data-key="regpop" data-cookie="1" data-expired="3600000" data-width="478" data-height="480" class="btn-reg lnk-show-reg">快速注册</a>
+    </div>
+    
+    
+    
+    <div id="note-152949683">
+
+    
+    
+    
+        <div class="note-header note-header-container">
+        <h1>「iOS Dev」从WebView获取HTML源代码</h1>
+
+    
+    <div>
+        <a href="http://www.douban.com/people/luhe/"><img class="note_author_avatar" width="24" height="24" src="http://img3.doubanio.com/icon/u1825026-9.jpg" alt="小鲁"></a>
+        <a href="http://www.douban.com/people/luhe/" class="note-author">小鲁</a>
+        <span class="pl">2011-05-27 10:53:47</span>
+    </div>
+    </div>
+
+
+    <div class="note" id="note_152949683_short" style="display:none;"></div><div id="note_152949683_full" ><div class="note" id="link-report">1）设置UIWebView delegate<br><br>2）在 <br>- (void)webViewDidFinishLoad:(UIWebView *)webView {<br>}中<br><br>执行如下代码 ： <br><br>NSString *jsToGetHTMLSource = @&quot;document.getElementsByTagName('html')[0].innerHTML&quot;;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NSString *HTMLSource = [self.webView stringByEvaluatingJavaScriptFromString:jsToGetHTMLSource];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NSLog(@&quot;%@&quot;,HTMLSource);<br><br>这个办法是通过js获取的。<br>看看JS还是非常有用的。</div></div>
+
+    <br>
+
+            
+    
+
+    <div id="sep"></div>
+    <div id="note_152949683_footer" class="note-ft" >
+        <div class="note_upper_footer">
+            <div class="footer-sharing">
+              
+        
+
+        <div class="sharing">
+            <span class="sharing-button">分享到微信</span>
+            <div class="sharing-layer is-hidden">
+                <div class="sharing-wechat">
+                    <span class="sharing-icon__wechat">微信扫码</span>
+                    <div class="sharing-wechat-qrcode"></div>
+                </div>
+                <ul class="sharing-list">
+                    <li class="sharing-icon__weibo" data-share="weibo">新浪微博</li>
+                    <li class="sharing-icon__qq" data-share="qq">QQ好友</li>
+                    <li class="sharing-icon__qzone" data-share="qzone">QQ空间</li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+            </div>
+            
+
+          
+
+
+
+
+
+
+
+
+
+          <span class="gtleft">
+              &nbsp;&nbsp;
+          </span>
+
+        </div>
+
+
+        
+        <div class="sns-bar">
+
+            
+
+
+
+            <div class="sns-bar-rec">
+                    
+                    
+                    
+
+
+
+
+
+
+
+
+    <div class="rec-sec">
+
+    <span class="rec">
+
+<a data-user_id="0" href="https://www.douban.com/accounts/register?reason=collect" share-id="152949683" data-mode="plain" data-name="「iOS Dev」从WebView获取HTML源代码" data-type="com.douban.people" data-desc="1）设置UIWebView delegate 2）在 - (void)webViewDidFinishLoad:(UIWebView *)webView { }中 执行如下代码 ： NSString *jsToGetHTMLSource = @&#34;document.getElementsByTagName(&#39;html&#39;)[0]...." data-href="http://www.douban.com/note/152949683/" data-image="" data-properties="{&#34;href&#34;:&#34;http:\/\/www.douban.com\/people\/luhe\/&#34;,&#34;name&#34;:&#34;小鲁&#34;,&#34;uid&#34;:&#34;1825026&#34;}" data-redir="http://www.douban.com/static/dshare_proxy.html" data-text="" data-apikey="" data-curl="" data-count="10" data-object_kind="1015" data-object_id="152949683" data-target_type="rec" data-target_action="0" data-action_props="{&#34;note_url&#34;:&#34;http:\/\/www.douban.com\/note\/152949683\/&#34;,&#34;note_title&#34;:&#34;「iOS Dev」从WebView获取HTML源代码&#34;,&#34;author_name&#34;:&#34;小鲁&#34;}" data-btn_text="推荐" data-heading="推荐到豆瓣" data-sanity_key="_1a166" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+            </div>
+
+            <div class="sns-bar-fav ">
+                
+
+
+
+
+
+
+
+    <a class="fav-add btn-fav j a_show_login" title="标为喜欢？" href="http://www.douban.com/accounts/register?reason=like" data-tid="152949683" data-tkind="1015">喜欢</a>
+
+
+
+
+
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <div class="clear" ></div>
+
+    <div class="tabs" id='reviews'>
+      <a href="http://www.douban.com/note/152949683/#sep" class=on>回应</a>
+      <a href="http://www.douban.com/note/152949683/?type=rec#sep" >推荐</a>
+      <a href="http://www.douban.com/note/152949683/?type=like#sep" >喜欢</a>
+    </div>
+
+    <div class="">
+          
+
+
+
+
+
+
+
+
+
+
+<div id="comments" class="">
+
+
+
+
+
+    
+
+<div class="comment-item" id=27013196 data-cid="27013196" data-target_id="152949683" data-target_kind="1015">
+    
+    <div class="pic">
+        <a href="http://www.douban.com/people/momo1219djq/"><img width="48" height="48" class="" src="http://img4.douban.com/icon/u46846821-7.jpg" alt="momosmile"/></a>
+    </div>
+    <div class="content report-comment">
+        <div class="author">
+            <span class="">2012-04-10 05:26:55</span>
+            <a href="http://www.douban.com/people/momo1219djq/" class="  ">momosmile</a>  (多么希望能在人潮中遇见你。)
+        </div>
+
+
+        
+        <p class="">请问可不可以用webview，显示某个网页的一部分内容？跟html有没有关系？</p>
+
+        <div class="op-lnks">
+        
+        </div>
+
+        <div class="group_banned">
+            <span class="gact hidden p_u46846821 p_admin p_intern fright">&gt;
+                <a rel="nofollow" href="http://www.douban.com/note/152949683/remove_comment?cid=27013196" class="j a_confirm_link" title="删除momosmile的发言?">删除</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+<div class="comment-item" id=27022479 data-cid="27022479" data-target_id="152949683" data-target_kind="1015">
+    
+    <div class="pic">
+        <a href="http://www.douban.com/people/luhe/"><img width="48" height="48" class="" src="http://img3.doubanio.com/icon/u1825026-9.jpg" alt="小鲁"/></a>
+    </div>
+    <div class="content report-comment">
+        <div class="author">
+            <span class="">2012-04-10 16:42:54</span>
+            <a href="http://www.douban.com/people/luhe/" class="  ">小鲁</a> 
+        </div>
+
+
+        
+        <p class="">@momosmile  我们的情况是不一样的；我们不是要显示HTML代码，是通过获取源码，根据源码的结构做一些app内的跳转。<br/><br/>比如：如果HTML代码里，有文字A，跳到一个地方；否则，正常在webview里显示。<br/><br/>所以需要获取源码内容，然后根据内容判断。<br/>使用情况不一样。<br/><br/></p>
+
+        <div class="op-lnks">
+        
+        </div>
+
+        <div class="group_banned">
+            <span class="gact hidden p_u1825026 p_admin p_intern fright">&gt;
+                <a rel="nofollow" href="http://www.douban.com/note/152949683/remove_comment?cid=27022479" class="j a_confirm_link" title="删除小鲁的发言?">删除</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="last"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <br/><span class="pl2" align="right"><a class="j a_show_login" href="https://www.douban.com/accounts/register?reason=comment">&gt; 我来回应</a></span>
+
+
+ 
+
+ 
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+Do(function(){
+  $('#comments').find('.comment-item').hover(function(){$(this).addClass('over');}, function(){$(this).removeClass('over');});
+  $('.reply-quote .toggle-reply').click(function(e) {
+    e.preventDefault();
+    var el = $(this);
+    el.prevAll('span').toggle();
+    el.find('span').toggle();
+  });
+});
+</script>
+
+
+
+
+    </div>
+
+
+
+	
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+        </div>
+        <div class="aside">
+                
+    
+
+
+
+
+
+
+<div class="mod mod-usercard"> 
+  <div class="pic">
+      <a href="http://www.douban.com/people/luhe/"><img src="http://img3.doubanio.com/icon/u1825026-9.jpg" alt="小鲁" width="48" height="48"/></a>
+  </div>
+  <div class="content">
+    <a href="http://www.douban.com/people/luhe/">小鲁</a>
+        <span class="usercard-loc">(辽宁大连)</span>
+    <p>blog地址：imluhe.ycool.com 微博: http://weibo.com/imharrylu</p>
+    <div class="ft">
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    
+    
+    
+        <div class="mod">
+            
+    <h2>
+        小鲁的最新日记
+            &nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://www.douban.com/people/luhe/notes" target="_self">全部</a>
+                ) </span>
+    </h2>
+
+            <ul class="note-list">
+                  <li>
+                    <a title="Links of 2014" href="http://www.douban.com/note/324617933/">Links of 2014</a>
+                    
+                      <span>&nbsp;(1人喜欢)</span>
+                  </li>
+                  <li>
+                    <a title="android: simulating device boot" href="http://www.douban.com/note/304226223/">android: simulating device boot</a>
+                    
+                  </li>
+                  <li>
+                    <a title="Definition of Execution" href="http://www.douban.com/note/276412748/">Definition of Execution</a>
+                    
+                  </li>
+                  <li>
+                    <a title="Entrepreneur’s Credo of the American" href="http://www.douban.com/note/275225790/">Entrepreneur’s Credo of the American</a>
+                    
+                  </li>
+                  <li>
+                    <a title="安装ruby rehash以后 ruby --version还是旧版本" href="http://www.douban.com/note/244539814/">安装ruby rehash以后 ruby --version还是旧版本</a>
+                    
+                  </li>
+            </ul>
+        </div>
+
+    
+    
+    <script>
+        $(document).ready(function(){
+            var tag_box = $('.author-tags'),
+                a_more_tag = tag_box.parent().find('h2 .pl'),
+                show_more_tags = $('<a class="more-tags" href="javascript: void 0;">...</a>')
+                people_tags = $('.people_tags'),
+                last_shown_tag = $(),
+                people_tags_more = $('.people_tags_more')
+
+            function showTags() {
+                people_tags_more.show();
+                a_more_tag.hide();
+                show_more_tags.hide();
+            };
+
+            a_more_tag.hide();
+
+            $('span', '.people_tags_more').each(function(i, tag) {
+                tag = $(tag)
+                tag.appendTo(people_tags)
+                if (people_tags.height() > 68) {
+                    people_tags_more.prepend(tag)
+                    people_tags_more.prepend(last_shown_tag)
+                    show_more_tags.appendTo(people_tags)
+                    a_more_tag.show()
+                    return false
+                }
+                last_shown_tag = tag
+            })
+            tag_box.addClass('visible')
+            a_more_tag.click(function() {
+                showTags();
+                return false;
+            });
+            show_more_tags.click(function() {
+                showTags();
+                return false;
+            });
+            $('#note_tooltip').tooltip();
+        })
+    </script>
+
+    
+
+
+
+
+    <!-- douban ad begin -->
+    <div id="dale_personal_note_middle_right" style="margin-bottom: 20px;"></div>
+    <!-- douban ad end -->
+
+<div class="mod">
+    
+    <div class="hd">
+        
+    <h2>
+        推荐这篇日记的豆列
+            &nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://www.douban.com/note/152949683/doulists" target="_self">全部</a>
+                ) </span>
+    </h2>
+
+    </div>
+    <div class="indent">
+        <ul class="bs">
+            <li><a href="http://www.douban.com/doulist/22718069/">小鲁的日记</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+    <!-- douban app begin -->
+    
+
+<style>
+    .qrcode-app {
+        margin: 20px 0;
+    }
+</style>
+<div class="qrcode-app">
+    <a class="download" href="http://www.douban.com/doubanapp/app?channel=Db_Homepage_Bar&amp;direct_dl=1" target="_blank">
+        <img class="img-qrcode2x" src="http://img3.douban.com/f/shire/071a7a497c68c2287af7602ba600d73a97945c40/pics/qrcode_app3.png" height="81" width="303" alt="扫码下载豆瓣 App" />
+    </a>
+</div>
+
+    <!-- douban app end -->
+
+        </div>
+        <div class="extra">
+            
+    
+<!-- douban ad begin -->
+<div id="dale_personal_note_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 1000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_personal_note_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+        </div>
+    </div>
+</div>
+
+        
+<div id="footer">
+    
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2015 douban.com, all rights reserved
+</span>
+
+<a href="http://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="http://www.douban.com/about">关于豆瓣</a>
+    · <a href="http://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="http://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="http://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="http://help.douban.com/?app=main" target="_blank">帮助中心</a>
+    · <a href="http://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="http://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+</div>
+
+    </div>
+    <script type="text/javascript" src="http://img3.douban.com/misc/mixed_static/a1a6811705f19.js"></script>
+    
+    
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = '8yMa8UhTqO8',
+            criteria = '3:/note/152949683/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_personal_note_middle_right'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'http://img3.douban.com/f/shire/0a3e8bdd48446950d821b65613a24e86be2b067a/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript';
+    g.defer=true;
+    g.async=true;
+    g.src=p+'://img3.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_setCampNameKey', 'dcn']);
+_gaq.push(['_setCampSourceKey', 'dcs']);
+_gaq.push(['_setCampMediumKey', 'dcm']);
+_gaq.push(['_setCampTermKey', 'dct']);
+_gaq.push(['_setCampContentKey', 'dcc']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]);
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+
+
+
+
+    <!-- sindar7a-docker-->
+
+  <script>_SPLITTEST=''</script>
+
+<script>var _check_hijack = function () {
+    var _sig = "8yMa8UhT", _login = false, bid = get_cookie('bid');
+    if (location.protocol != "file:" && (
+            typeof(bid) != "string" && _login ||
+            typeof(bid) == "string" && bid.substring(0,8) != _sig)) {
+        location.href += (/\?/.test(location.href)?"&":"?") + (
+                "_r=" + Math.random().toString(16).substring(2));
+    }};
+if (typeof(Do) != 'undefined') Do(_check_hijack);
+else if (typeof(get_cookie) != 'undefined') _check_hijack();
+</script></body>
+
+</html>
+

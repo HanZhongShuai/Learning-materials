@@ -1,0 +1,1512 @@
+bplist00Ò_WebSubresources_WebMainResource¤Ô	
+_WebResourceData_WebResourceMIMEType^WebResourceURL_WebResourceResponseOPç*
+		{
+		margin:0;
+		padding:0;
+		border:0;
+		}
+
+body
+		{
+		font-family:Verdana, Arial, 'ËÎÌå';
+		font-size:12px;
+		}
+
+strong
+{
+		font-family:'Î¢ÈíÑÅºÚ';
+		font-size:14px;
+		color:#000;
+		font-weight:800;
+}
+
+body#homefirst div#maincontent, div#maincontent h1, div#maincontent h2, div#sidebar div#ad h2
+		{
+		font-family:'Î¢ÈíÑÅºÚ';
+		}
+
+pre, pre code, div#maincontent input, div#maincontent select, div#maincontent textarea
+		{
+		font-family:Consolas, "Courier New", Courier, monospace;
+		}
+
+h2, h3, h4, h5, h6, em
+		{
+		font-weight: bold;
+		}
+
+p.note span, p.important span, p.tip span, p.inherited, p.inherited span, p.gototop, .html5_new_note span
+		{
+		font-weight: bold;
+		}
+
+body#homesecond div#navsecond li
+		{
+		font-weight:bold;
+		}
+
+.tiy
+		{
+		font-weight:normal;
+		}
+
+div#maincontent h1
+		{
+		font-size: 26px;
+		font-weight:400;
+		}
+
+div#maincontent h2, div#sidebar div#ad h2, body#homefirst div#maincontent h3
+		{
+		font-size: 14px;
+		}
+
+div#navsecond h2, div#sidebar h2, div#maincontent h3,  div#maincontent h4
+		{
+		font-size: 12px;
+		}
+
+div#maincontent button, div#maincontent input, div#maincontent select, div#maincontent textarea
+		{
+		font-size:12px;
+		}
+
+body#homefirst div#maincontent div#w3 h2
+		{
+		font-size:20px;
+		}
+
+em
+		{
+		font-style:normal;
+		}
+
+pre code
+		{
+		color:#0000dd;
+		}
+
+.html5_new_note
+		{
+		background: #ffffff url(/i/html5_new_note.png) top left no-repeat;
+		padding-left:20px;
+		}
+
+.html5_new_note span
+		{
+		color:blue;
+		}
+
+p.gototop
+		{
+		text-align:right;
+		}
+
+div#maincontent button
+		{
+		margin-top:15px;
+		}
+
+
+
+
+	/* ----------------------------------- layout ----------------------------------- */
+html 	{ 
+		min-width: 966px;
+		background: #f9f9f9;
+		overflow:scroll;
+		overflow-x:hidden;
+		}
+
+body
+		{
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background: #f9f9f9 url(/ui/holder.gif) top center repeat-y;
+		}
+
+div#wrapper
+		{
+		margin: 0 auto;
+		padding: 0;
+		border: 0;
+		width: 1129px;
+		text-align: left;
+		background: transparent url(/ui/wrapper.gif) top left repeat-y;
+		}
+
+div#navsecond
+		{
+		float: left;
+		margin: 0 0 0 6px;
+		padding: 0;
+		border: 0;
+		width: 180px;
+		background : transparent;
+		}
+
+html>body div#navsecond
+		{
+		margin-left: 12px;
+		}
+
+div#maincontent
+		{
+		float: left;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		width: 740px;
+		background: transparent;
+		}
+
+div#sidebar
+		{
+		float: left;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		width: 180px;
+		background: transparent;
+		}
+
+div#footer
+		{
+		clear: both;
+		margin: 0;
+		padding: 0;
+		margin-left: 12px;
+		width: 1100px;
+		height: 46px;
+		background: #b6b6b6;
+		border-top: 10px solid #fff;
+		border-bottom: 10px solid #fff;
+		}
+
+div#footer p
+		{
+		margin: 5px 10px 0 10px;
+		}
+
+
+
+
+	/* ----------------------------------- header ----------------------------------- */
+div#header, div#header_index
+		{
+		margin: 0 0 0 12px;
+		padding: 0;
+		border: 0;
+		width: 1100px;
+		height: 90px;
+		background-color:#efefef;
+		}
+
+div#header  a, div#header_index  a, div#header_index  h1
+		{
+		text-indent: -9999px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		overflow:hidden;
+		}
+
+div#header  a:link, div#header  a:visited
+		{
+		display: block;	
+		width: 372px;
+		height: 90px;
+		background : transparent url(/ui/bg.gif) 0 -120px no-repeat;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		}
+
+div#header  a:hover
+		{
+		background: transparent url(/ui/bg.gif) 0 -210px no-repeat;
+		}
+
+div#header	div#ad_head
+		{
+		float:right;
+		width:728px;
+		height:90px;
+		background-color:#efefef;
+		}
+
+div#header_index  a:link, div#header_index  a:visited
+		{
+		display: block;	
+		width: 1100px;
+		height: 90px;
+		background : transparent url(/ui/head_index.gif) top left no-repeat;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		}
+
+div#header_index  a:hover
+		{
+		background : transparent url(/ui/head_index.gif) 0 -90px no-repeat;
+		}
+
+
+
+
+	/* ----------------------------------- index -----------------------------------*/
+
+
+body#homefirst div#maincontent div
+		{
+		padding-top:0;
+		}
+
+body#homefirst div#maincontent div#w3
+		{
+		text-align:center;
+		}
+
+body#homefirst div#maincontent div#partner
+		{
+		width: 307px;
+		float: left;
+		}
+
+body#homefirst div#maincontent div#update
+		{
+		width: 300px;
+		float: left;
+		margin:0;
+		}
+
+body#homefirst div#maincontent div#w3 h2
+		{
+		margin-top:20px;
+		}
+
+body#homefirst div#maincontent h3
+		{
+		margin-top:15px;
+		}
+
+body#homefirst div#maincontent div.idea
+		{
+		padding: 0;
+		min-height: 118px;
+		}
+
+body#homefirst div#maincontent div.idea img
+		{
+		margin:0;
+		float:left;
+		}
+
+
+
+
+	/* ----------------------------------- navfirst -----------------------------------*/
+div#navfirst
+		{
+		height: 55px;
+		width: 1100px;
+		margin: 0 0 0 12px;
+		padding: 0;
+		border: 0;
+		background: #fff;
+		}
+
+div#navfirst ul#menu
+		{
+		height: 55px;
+		width: 1100px;
+		background: transparent url(/ui/bg.gif) top left no-repeat;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		}
+
+div#navfirst ul#menu li
+		{
+		margin:0;
+		padding:0;
+		list-style:none;
+		position:absolute;
+		top:0;
+		}
+
+ul#menu li,ul#menu a
+		{
+		display: block;
+		height: 55px;
+		}
+
+div#navfirst ul#menu li a
+		{
+		text-indent: -9999px;
+		overflow:hidden;
+		text-decoration: none;
+		}
+
+#h	{left:0;width:155px;}
+#b	{left:155px;width:157px;}
+#s	{left:312px;width:167px;}
+#d 	{left:479px;width:158px;}
+#x	{left:637px;width:101px;}
+#m	{left:738px;width:185px;}
+#w	{left:923px;width:177px;}
+
+#h a:hover	{background: transparent url(/ui/bg.gif) 0 -55px no-repeat;}
+#b a:hover	{background: transparent url(/ui/bg.gif) -155px -55px no-repeat;}
+#s a:hover	{background: transparent url(/ui/bg.gif) -312px -55px no-repeat;}
+#d a:hover	{background: transparent url(/ui/bg.gif) -479px -55px no-repeat;}
+#x a:hover	{background: transparent url(/ui/bg.gif) -637px -55px no-repeat;}
+#m a:hover	{background: transparent url(/ui/bg.gif) -738px -55px no-repeat;}
+#w a:hover	{background: transparent url(/ui/bg.gif) -923px -55px no-repeat;}
+
+body.html #h {background: transparent url(/ui/bg.gif) 0 -55px no-repeat;}
+body.browserscripting #b {background: transparent url(/ui/bg.gif) -155px -55px no-repeat;}
+body.serverscripting #s {background: transparent url(/ui/bg.gif) -312px -55px no-repeat;}
+body.dotnet #d {background: transparent url(/ui/bg.gif) -479px -55px no-repeat;}
+body.xml #x {background: transparent url(/ui/bg.gif) -637px -55px no-repeat;}
+body.multimedia #m {background: transparent url(/ui/bg.gif) -738px -55px no-repeat;}
+body.webbuilding #w {background: transparent url(/ui/bg.gif) -923px -55px no-repeat;}
+
+#ws	{left:738px;width:185px;}
+#ws a:hover	{background: transparent url(/ui/bg.gif) -738px -55px no-repeat;}
+body.webservices #ws {background: transparent url(/ui/bg.gif) -738px -55px no-repeat;}
+
+
+
+
+	/* Default links */
+a:link, a:visited {
+	text-decoration : underline;
+	color : #900b09;
+	background : transparent; 
+	}
+
+a:hover {
+	text-decoration : underline;
+	color: #ff0000;
+	background : transparent; 
+	}
+
+a:active {
+	text-decoration : underline;
+	color : #ff0000;
+	background : transparent;  
+	}
+
+div#navsecond li.currentLink a:link, div#navsecond li.currentLink a:visited	{
+	text-decoration : none;
+	color:#ff0000;
+	background : transparent;
+	}
+
+div#navsecond li.currentLink a:hover	{
+	text-decoration : underline;
+	color : #ff0000;
+	background : transparent;
+	}
+
+div#navsecond a:link, div#navsecond a:visited	{
+	text-decoration : none;
+	color:#000;
+	background : transparent;
+	} 
+
+div#navsecond a:hover	{
+	text-decoration : underline;
+	color : #000;
+	background : transparent;
+	}
+
+div#navsecond a:active	{
+	text-decoration : underline;
+	color : #000;
+	background : transparent;
+	}
+
+div#navsecond a#link_help {
+	color:#0479A7;
+	}
+
+div#navsecond a#link_about {
+	color:#0479A7;
+	}
+
+div#maincontent .partner a {
+	color:#0479A7;
+	}
+
+div#footer a:link, div#footer a:visited	{
+	text-decoration : none;
+	color:#000;
+	background : transparent;
+	} 
+
+div#footer a:hover	{
+	text-decoration : underline;
+	color : #000;
+	background : transparent;
+	}
+
+div#footer a:active	{
+	text-decoration : underline;
+	color : #000;
+	background : transparent;
+	}
+
+
+	/* ----------------------------------- Typography ----------------------------------- */
+
+div#maincontent p
+	{
+	margin: 12px 0 0 0;
+	line-height: 150%;
+	}
+
+div#maincontent h1	{
+	margin:15px 0 0 15px;
+	}
+
+div#maincontent h3,  div#maincontent h4{
+	margin:20px 0 0 0;
+	}
+
+div#navsecond h2, div#sidebar h2	{
+	margin:10px 0 0 12px;
+	}
+
+body#homesecond div#navsecond li {
+	margin:5px 0 0 0;
+	}
+
+div.backtoreference p{
+	margin:0;
+	}
+
+div#w3school p {
+	margin-left:15px;
+	}
+
+div#maincontent div p:first-child {
+	margin: 0;
+	}
+
+p.important span {
+	color:#dd0000;
+	}
+	
+p.tip span {
+	color:#ff9955;
+	}
+
+p.inherited {
+	color:#ff0000;
+	}
+
+p.inherited span {
+	color:#999;
+	}
+
+p.chinese span {
+	color:#0000ff;
+	}
+
+pre	{
+	width:685px;
+	margin: 10px 0 0 0;
+	padding: 10px;
+	border: 0;
+	border: 1px dotted #785;
+	background: #f5f5f5;
+	}
+
+pre code {
+	color:#0000dd;
+	}
+
+pre span {
+	color:#999;
+	}
+
+pre span.code_comment {
+	color:#999;
+	}
+
+blockquote
+	{
+		margin:15px;
+	}
+
+div#maincontent ul, div#maincontent ol {
+	margin-top:10px;
+	margin-left:35px;
+	margin-bottom:0;
+	}
+
+div#maincontent li {
+	margin-top:3px;
+	}
+
+div#navsecond ul, div#navsecond li, div#sidebar ul, div#sidebar li	{
+	margin: 0;
+	padding: 0;
+	}
+
+div#navsecond ul, div#sidebar ul	{
+	margin-left: 12px;
+	}
+
+div#navsecond li, div#sidebar li	{
+	list-style: none;
+	}
+
+div#navsecond li.list_apart {
+	margin-top:10px;
+	}
+
+img {
+	border:0;
+	}
+
+div#maincontent img {
+	margin:25px 0 0 25px;
+	}
+
+div#maincontent	div{
+	width: 710px;
+	margin: 0 0 0 15px;
+	padding: 20px 0 20px 0;
+	border:0;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	}
+
+body#homesecond dl	{
+	margin:0;
+	padding:0;
+	}
+
+body#homesecond dt
+		{
+		font-weight: bold;
+		font-size: 14px;
+		margin:0;
+		padding:0;
+		}
+
+body#homesecond dd {
+	color:#000088;
+	margin:10px 0 0 0;
+	padding:0;
+	}
+
+body#homesecond dd p {
+	margin:0;
+	padding:0;
+	}
+
+
+div#maincontent div#toc div	{
+	margin:0;
+	margin-top:15px;
+	margin-bottom:35px;
+	padding:0;
+	border:0;
+	}
+
+div#toc img	{
+	float:left;
+	margin:0;
+	margin-right:10px;
+	}
+
+div#toc div dt, div#toc div dl	{
+	margin-top:0;
+	}
+
+div#example dl, div.example dl, div#moreexamples dl, div#toc dl, div#referencelist dl	{
+	margin: 10px 0 0 0;
+	}
+
+div#example dt, div.example dt, div#moreexamples dt, div#toc dt, div#referencelist dt	{
+	margin:15px 0 5px 0;
+	}
+
+div#example dd, div.example dd, div#moreexamples dd, div#toc dd, div#referencelist dd	{
+	margin:0;
+	}
+
+dl.define
+		{
+		margin: 10px 0 0 0;
+		}
+
+dl.define dt
+		{
+		margin:15px 0 3px 0;
+		font-weight:bold;
+		color:#0479A7;
+		}
+
+dl.define dd
+		{
+		margin:10px 0 0 10px;
+		line-height: 150%;
+		}
+
+span.deprecated {
+	color:#e80000;
+	}
+
+.marked {
+	color:#dd0000;
+	}
+
+p.gototop {
+	text-align:right;
+	}
+
+div#maincontent canvas.canvas_example {
+	border:1px solid #d3d3d3;
+	background:#ffffff;
+	width:300px;
+	height:150px;
+	margin-top:15px;
+	}
+
+div#maincontent div.panel,p.flip {
+	width:400px;
+	margin:0;
+	padding:5px;
+	text-align:center;
+	background:#e5eecc;
+	border:solid 1px #c3c3c3;
+}
+
+div#maincontent p.flip {
+	margin-top:15px;
+}
+
+div.panel {
+	display:none;
+}
+
+div#maincontent input[type=text]
+{
+	border:1px #bebebe solid;
+	height:30px;
+	padding-left:10px;
+	margin:15px 0 0 0;
+}
+
+div#maincontent input[type=submit], button
+{
+	border:1px #bebebe solid;
+	height:30px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+div#maincontent input[type=submit]:hover, button:hover
+{
+	border:1px #999 solid;
+}
+
+div#maincontent select
+{
+	border:1px #bebebe solid;
+	height:25px;
+	margin:15px 0 0 0;
+}
+
+
+/* ----------------------------------- ±í¸ñ ----------------------------------- */
+
+table.dataintable {
+	margin-top:10px;
+	border-collapse:collapse;
+	border:1px solid #aaa;
+	width:100%;
+	}
+
+table.dataintable th {
+	vertical-align:baseline;
+	padding:5px 15px 5px 6px;
+	background-color:#d5d5d5;
+	border:1px solid #aaa;
+	text-align:left;
+	}
+
+table.dataintable td {
+	vertical-align:text-top;
+	padding:6px 15px 6px 6px;
+	background-color:#efefef;
+	border:1px solid #aaa;
+	}
+
+table.dataintable pre {
+	width:auto;
+	margin:0;
+	padding:0;
+	border:0;
+	background-color:transparent;
+	}
+
+table.dataintable p {margin:0 0 2px 0;}
+
+div#maincontent table.dataintable ul, div#maincontent table.dataintable li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+
+table.dataintable td em
+		{
+		color:#0000ff;
+		font-weight:normal;
+		}
+	
+table.dataintable .table_value {color:#0F93D2;}
+
+.no_wrap {white-space:nowrap;}
+
+div#maincontent table.dataintable ul.listintable {
+	margin:20px;
+	padding:0;
+	}
+
+div#maincontent table.dataintable ul.listintable  li{
+	list-style-type:disc;
+	}
+
+
+table.dataintable td.html5_new {
+	background: #EFEFEF url(/i/table_bg_html5.gif) top right no-repeat;
+	}
+
+tr.notsupported {
+	color:#999999;
+	}
+
+
+
+	/* ----------------------------------- browsersupport ----------------------------------- */
+#jsref table.browsersupport td, #tags table.browsersupport td, #cssref table.browsersupport td
+	{
+		width:20%;
+	}
+
+#jsref table.browsersupport th, #tags table.browsersupport th, #cssref table.browsersupport th
+	{
+		color:#333333;
+		font-weight:400;
+	}
+
+#jsref table.browsersupport, #tags table.browsersupport, #cssref table.browsersupport
+	{
+		width:50%;
+	}
+
+table.browsersupport .bsIE {
+	background-image: url('/i/compatible_ie.gif');
+}
+
+table.browsersupport .bsFirefox {
+	background-image: url('/i/compatible_firefox.gif');
+}
+
+table.browsersupport .bsChrome {
+	background-image: url('/i/compatible_chrome.gif');
+}
+
+table.browsersupport .bsSafari {
+	background-image: url('/i/compatible_safari.gif');
+}
+
+table.browsersupport .bsOpera {
+	background-image: url('/i/compatible_opera.gif');
+}
+
+table.browsersupport .bsNoIE {
+	background-image: url('/i/incompatible_ie.gif');
+}
+
+table.browsersupport .bsNoFirefox {
+	background-image: url('/i/incompatible_firefox.gif');
+}
+
+table.browsersupport .bsNoChrome {
+	background-image: url('/i/incompatible_chrome.gif');
+}
+
+table.browsersupport .bsNoSafari {
+	background-image: url('/i/incompatible_safari.gif');
+}
+
+table.browsersupport .bsNoOpera {
+	background-image: url('/i/incompatible_opera.gif');
+}
+
+table.browsersupport .bsPreIE {
+	background-image: url('/i/precompatible_ie.gif');
+}
+
+table.browsersupport .bsPreFirefox {
+	background-image: url('/i/precompatible_firefox.gif');
+}
+
+table.browsersupport .bsPreChrome {
+	background-image: url('/i/precompatible_chrome.gif');
+}
+
+table.browsersupport .bsPreSafari {
+	background-image: url('/i/precompatible_safari.gif');
+}
+
+table.browsersupport .bsPreOpera {
+	background-image: url('/i/precompatible_opera.gif');
+}
+
+table.browsersupport {
+	margin-top:15px;
+	border-collapse:collapse;
+	width:70%;
+}
+
+table.browsersupport td {
+	padding: 3px;
+	height: 32px;
+	vertical-align: middle;
+	background:#fff no-repeat center;
+	border:1px solid #dadada;
+}
+
+table.browsersupport td.bsProperty
+		{
+		font-family: courier new;
+		white-space: nowrap;
+		width:20%;
+		}
+
+table.browsersupport th {
+	padding: 3px;
+	height: 15px;
+	vertical-align: middle;
+	text-align: center;
+	background-color:#efefef;
+	border:1px solid #c3c3c3;
+}
+
+
+
+	/* ----------------------------------- prenextnav ----------------------------------- */
+
+div#tpn, div#bpn	{
+	height:29px;
+	width:230px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #fff;
+	}
+
+div#tpn ul.prenext, div#bpn ul.prenext	{
+	height:29px;
+	width:230px;
+	background: transparent url(/ui/bg.gif) 0 -570px no-repeat;
+	margin:0;
+	padding:0;
+	border:0;
+	position:relative;
+	}
+
+div#tpn ul.prenext li, div#bpn ul.prenext li	{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:absolute;
+	top:0px;
+	overflow:hidden;
+	}
+
+ul.prenext li, ul.prenext a	{
+	display:block;
+	height:29px;
+	}
+
+div#tpn ul.prenext a, div#bpn ul.prenext a	{
+	text-indent: -9999px;
+	text-decoration: none;
+	}
+
+.pre	{left:0; width:105px;}
+.next	{left:125px; width:105px;}
+
+.pre a:hover	{background: transparent url(/ui/bg.gif) 0px -619px no-repeat;}
+.next a:hover	{background: transparent url(/ui/bg.gif) -125px -619px no-repeat;}
+
+
+
+
+
+	/* ----------------------------------- navsecond ----------------------------------- */
+div#course {
+	background:transparent url(/ui/bg.gif) 0 -690px no-repeat;
+	padding:45px 0 10px 0;
+	}
+
+div#afterschool {
+	background:transparent url(/ui/bg.gif) -362px -690px no-repeat;
+	padding:45px 0 10px 0;
+	}
+
+div#selected {
+	background:transparent url(/ui/bg.gif) -362px -690px no-repeat;
+	padding:45px 0 10px 0;
+	}
+
+
+
+
+	/* ----------------------------------- sidebar ----------------------------------- */
+div#tools {
+	background:transparent url(/ui/bg.gif) -181px -690px no-repeat;
+	padding:66px 0 10px 34px;
+	margin:0;
+	}
+
+body#homesecond div#tools {
+	background:transparent url(/ui/bg.gif) -181px -690px no-repeat;
+	padding:45px 0 10px 0;
+	margin:0;
+	}
+
+div#books {
+	background:transparent url(/ui/bg.gif) -450px -326px no-repeat;
+	padding:45px 0 0 15px;
+	margin:0;
+	}
+
+div#ad {
+	background:transparent url(/ui/bg.gif) -543px -690px no-repeat;
+	padding:66px 0 10px 10px;
+	margin:0;
+	}
+
+div#sidebar div#ad h2 {
+	color:#000000;
+	margin:0 0 25px 25px;
+	}
+
+div#ad span {
+	margin:0 0 15px 0;
+	}
+
+
+	/* ----------------------------------- sidebar banner ----------------------------------- */
+
+div#tools h5	{
+	margin: 0 0 12px 0;
+	padding: 0;
+	overflow:hidden;
+	}
+
+div#tools h5#tools_reference, div#tools h5#tools_example, div#tools h5#tools_quiz, div#tools h5#tools_search	{
+	text-indent: -9999px;
+	width: 112px;
+	height: 68px;
+	}
+
+div#tools h5#tools_reference a, div#tools h5#tools_example a, div#tools h5#tools_quiz a, div#tools h5#tools_search a	{
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	}
+
+div#tools h5#tools_reference a	{
+	background: transparent url(/ui/bg.gif) 0 -320px no-repeat;
+	}
+
+div#tools h5#tools_reference a:hover	{
+	background: transparent url(/ui/bg.gif) -113px -320px no-repeat;
+	}
+
+div#tools h5#tools_example a	{
+	background: transparent url(/ui/bg.gif) -0px -389px no-repeat;
+	}
+
+div#tools h5#tools_example a:hover	{
+	background: transparent url(/ui/bg.gif) -113px -389px no-repeat;
+	}
+
+div#tools h5#tools_quiz a	{
+	background: transparent url(/ui/bg.gif) -0px -458px no-repeat;
+	}
+
+div#tools h5#tools_quiz a:hover	{
+	background: transparent url(/ui/bg.gif) -113px -458px no-repeat;
+	}
+
+
+
+
+/* ----------------------------------- search form ----------------------------------- */
+div#searchui
+		{
+		margin:15px 0 15px 5px;
+		padding:0;
+		}
+
+div#searchui p
+		{
+		margin:0 0 5px 0;
+		padding:0;
+		}
+
+#searchui label
+		{
+		margin:0 0 0 2px;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		font-size:11px;
+		}
+
+#searchui input.button
+		{
+		padding:0;
+		margin:0;
+		background:#AE4141;
+		font:12px Verdana, Arial, Helvetica, sans-serif;
+		color:#FFFFFF;
+		width:25px;
+		height:20px;
+		}
+
+#searchui input.box
+		{
+		margin:0 0 0 2px;
+		width:135px;
+		height:20px;
+		background:#fdfdfd;
+		font:12px Verdana, Arial, Helvetica, sans-serif;
+		}
+
+
+div#maincontent p.tiy{
+	border:none;
+	display:inline-block;
+	outline:0;
+	padding:6px 16px;
+	margin-bottom:10px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:#fff;
+	background-color:#F88E8B;
+	text-align:center;
+	transition:.2s ease-out;
+	cursor:pointer;
+	white-space:nowrap;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+}
+
+div#maincontent p.tiy:last-child{
+	margin-bottom:0px;
+}
+
+div#maincontent p.tiy a:link, div#maincontent p.tiy a:visited {
+	color:#fff;
+	text-decoration:none;
+	}
+
+div#maincontent p.tiy:hover{
+	background-color:#F45551;
+	color:#fff;
+	text-decoration:none;
+	}
+
+div#maincontent p.tiy a:active {
+	color:#fff;
+	text-decoration:none;
+	}
+Xtext/css_!http://www.w3school.com.cn/c5.cssOÒbplist00ÔabX$versionX$objectsY$archiverT$top † ¯#)*0123IJKLMNOPQRSTUVWXY\U$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_!http://www.w3school.com.cn/c5.cssÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¼a×Šÿ  ÈÓ456?HWNS.keysZNS.objects¨789:;<=>€	€
+€€€€€€¨@BCDEFG€€€€€€€€€VServer\Content-Type\X-Powered-By]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/6.0Xtext/cssWASP.NET_Mon, 14 Dec 2015 09:26:15 GMTUbytes_Wed, 03 Feb 2016 06:34:33 GMTU20711_"86d22e7b5136d11:2bb1"Ò+,Z[\NSDictionary¢Z/Ò+,]^_NSHTTPURLResponse£_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑcd_WebResourceResponse€    # - 2 7 U [ v y } € ƒ † Š  ” — š    £ ¥ § © « ­ ® ° ² ´ ¶ ¸ º ¼ Ã Ë × Ù Û İ #,579@HS\^`bdfhjluwy{}ƒ…‡›¨¶ÄÉØİñú"(HNgly|•™­»ÍĞæ             e              èÔO;ÿØÿà JFIF  H H  ÿÛ C ÿÛ CÿÀ  v v ÿÄ            	
+ÿÄ A     !1"2AQaBq	#3‘¡$%CR±Ñ4b¢Áğrs’“ÿÄ                 ÿÄ                 ÿÚ   ? ÷ñ Z Z…-)ïßéır~ƒIàhUî²ôÖÜ’¨U+¾'%[LrB`WÍ*j'˜¤ş$©A@ğFàFƒ›Ö{®­°eT\Ï ª™! ç±Xç	ë7)ä!ÄÌe)sàó•änÿ õÀÿ «@ğ•¥@~!‘÷cØ¸Ğ}èhhhh#7%ÏJ¶©SëY¬À¦ÓYSÓf:}-¤Øÿ çÓiÜµ¬„ø±ñÿ x^7—ôŠj¨ë˜É¶í‡Ô¹)*Âdİ•æ7{Fÿ uÄ9BHKÿ çĞúgĞOWºŸpİ4nšÀ•‡=ßIG›SkqÎ^š°ä§]Æ
+”©¨dØ…Çµ¼*u.˜Ûo+¯#ò J÷o˜Îç$“çÿ OğÇ	eÅJñ)fÒTİ6áb÷‹$û5T7=çĞŸVVâ’ÄÆ×ÇK»¹ùhÖošÿ N.¦m»ú•:„µ>–·î\÷\ß^î
+»à9NšHıœy_°qD7½gá{éÇS-~¦Û.Ë^¢™Ô©ã
+)Lªl°2í: È9fKGëéuu²¤,@´@´@´@ËW¨¨m„)>Ñ)a¦Áú¨Œ«“´dñòÆƒH]kÆ·Bè'O¦)5ê˜mú¬–_»Ñ+Ò¹.'8ö„2Ja“Š.<˜ØĞE|5ô‹dÓcŠe0J¬IÛ"©Xy¯:t¹zŞqÉKdïR•¸«'<ğ4%@´$´ÛEÄ!¬wŞ¯V Çdç¿ œä3  ±Ie”ao+ ~¤Èî'¿$}ƒò‘E…%'
+R”;3#'ë·ı¾İ´·Ä·@,¦[“iE!·œy§J£„T`9ƒ±ö_¥Í¾…óÀàè(ß¾­^ºç#Ã÷R*nÍ¶î„[n· «ËªCÜ¤ÓÓ ¬œÔiéÂwqZØÜË‡jAĞzn¶"¼ìIS"ÆCICŒ¸ò’Ÿ1…'âÂH#â]|j’fG2!NjXCÌemºÖôŸİŸ/#?lç‘ í£ÔÚªÄ[#!kiÔ‘ÖÔRâOä F8Æ;®hh³.OêL: XPL¨TRßüÑ¼”çìé9àöÇÃ-©q:‘â¬½P»9TëÂ¥@§!i8išl§#8×TÚĞœzvŒã%JĞjõ…"šŠshˆÊXò”)NySÿ |s÷ĞK'ÖŸ+ÉCÊm¿-²>aY*É/åñ¢pIŞHàîÏçÜÿ ®ƒ¶oÛmJs(Píóã |³ÇñÛá¶æSÊÕÉo)WĞ°y'ƒÜè1¯Æ•¢å5š?Phÿ °¬Y•xµ%5èq,6òT¬¹C`Œ¬“ğz´{p_Üİ?èQò±úåjAö‡°ìªty	JÁ$zTÛÄÆ
+şÀË¤µP™Ó a#7-”äãÌ}{G ©HPş	Ğí7=‚à¹(Ç!¥¾Š¤4œpÔÁ¹!Œ¼%?.ÿ L@´AùºpÛ‡è…Ÿä“ ¢)¼£Ò<J[g¬¤\LÕm¨ëR€H™"?¶¶NqÊ“Ä'œ•)#æyÙ¶|¾Ÿõ³¬ô»Ijk}H¸ê¹N@rjc•Zs©*Js¾$¦T½¤£ÌŞ”¨tŠÂ¬'ÚT@q¾ùõ4ø$ŸËçÆ‚mqL-’wŠË%YÎHõı023ıÌ[¬ à%Dü·ı{q„i“y¢Ã.-'p
+ÀÁœã¶;ãòĞN'º&Æu‡	ı«e*QÇ
+ÇÄ>¸<ÛùãAF|PYQ'X75
+”T5"œû|€¥+~B8àî'ùäp4ËêÖ¬Y¾|/YèmrêÔ-êdÏ c*nŞyks^†‰)H
+'np4¦6uÃÚ5n cÃi¸ê*oÎK¼d¤6’@åYW¨vÈÎ€§RRi—U»U"p~‘$öüu/äOBçœƒÀ4@´¶±ß(Pş`è1ûÅà­Z÷=.í£İRÙ¯Sëğ\Áåê| úA Œ¥iÊÉJš%‚tËşØ‹Ö:]£â§‰nDŠ¥52ô§\eQ3—\@HÛ2—%r#Jô…=m¾ æ´èïÓe32\¶7¥
+òã¶æãêNNF@úqÜsÛ@O}ÈïF_µ¤)„§zÁ€9%=¹ü»Œ}tOÖú<ø:_™‚=n¤'°ÇÏwÏ·úrRzPÁKHb:GÃÇ?ÓhÇåŒ|ôº%Ëïªx’ê‡šÚËN!Ó”>€ôãè o¦s:µÕĞjaÏÔûj¥à¹$,+Èy¨‹iÔt(ú©rJŸAÜ‘£j‰Ğwx ¿•R­Xt:£*³*cÏ„”C§2!!`m!¶vJÃXî†¶ç	ä'tŠ•QÈv£9o6ÛkA\—IIHINìÃŒr3œ¨HUrÉ‰Vhù’#±
+ªŒ|ß€¡í<÷ÀJ^Ï9ã@X¤ÌDúl)h9KñÚX?šGş~z-Ğ|©IH%Dã’H
+/âÈMÍI’ôƒ¤6­ïmÂ <ñóYïÛĞrsÎ‚‘xzê¥[£úSŠ÷ÅŸ>G‘_¡‡áÿ Áíğ›ÊÔ¤£)y“è”Ø(W!'Al®¾”3u4›û£•‘Rˆú„ÉVÒä©/0ñR\u¸;•˜îãpU>F‘†VRtĞcJK"j,ˆ;1)µ!Ä¸Pç…óøJG×@*¹
+Ÿ–q¢¶÷¤‘ßŸş¤àqóÁĞ	äU²ç–ÒË®)[R–ÁqKR	J	Q<m	ÚÑÛì©±2}z+öå´¤	>ğªÅuM å†(-§‡ÃhN9eßÖ«a¤¹ÓşšJet˜¾gë5ÔÊ¿g'ËâSq$dIf‚RtÇ§’nœÄûß©oÜrq4¨±âÁ·ÛX#m2>pæUøŸÎ}Xù«#AlâA™!¶Ø…T­©Ú<†w°å	 }ó€4W§*lZ¾ÃYŠ¸¾c²ƒ,¹Ã¢„9våœù	‡Nä+İRŞVdQ¦É‚¾ÿ N)PÏá)}±öĞt5ìÓ!¿6B¶²Â
+Ô/ûçíÏa ‡Të)f›"¯9eQ#EöÂÓ>¤ù[‡ÿ *{ü8ü?P«×ÕéP¼a¿Na±N§8…!,¶s!äğûøã)?a(”UßA™=^¶ªı5œ»Ò…Úc4½õ8*ıÔÈ‰V\Ü?¡ÚçÄ‚;wKÑ›Á©)§TmÚ«ĞdK‰I…ç–Và}´8‘å©^\¶Æí¹³Øã@e­xŒŸn•Çº-höQ–K¨D•´î
++iæÖOe!R{|ô:ï‹ŸÏhz»Òó²I*X„Å)öÜpüDùÕ6§wĞgç·>d¿?JoM:xÔ£ÒŸQ}àãd{Òå—c8ÒICÎÄ€Ìçf%µùi—jIåÄã:
+ŸKñ—â_ÆXèµN¾í&³6Óıw¶zdÒbØ¨À”¹*›[¨Ó)êœf‹nû‰2T–Ÿó›
+JVÏé5]Êô;Ecİ•œDzí5ÂQ)3Y#ÚiÎĞË‰Â›îçÌ§Z–U
+Ê¡ÂrU$çÚÚÓæš%µíÊ°¢		ä$¸ã)#	#—lÖ‘¶#à#@!DÇü¿ÓæsEµqÍ“SöiÒÈ’•ù`¤e.§Œmg<mãø€“Ğ]÷uéQ‹»V¡³= ğ†¿`ğO9ÈmJÏâYÏË SĞFîÚZë6õNÚŠW"3¨}J?ï ©İ¼¦È~êèÍîç™pZª}ú3²y]nÏ”ám+Ïœı%õû+Üd0¸Ë;âŠè¡;mVäÓVT¦2^„ò¿ÅŠáÊ;~&‰òÕôÇ=ôÛ‡¦sz‹mÕ¡3&2â¼˜úKQQ”ó—6ú×ôJ2r@8e‹Ğ¶ëİ.¤/©sèŸmÊ~*”Ã©v“)ØèX[E.4ád6êV•g
+ã@-¸c×h‰~‘55›‰¨Ê,¥ùãÚWµnÔJ^×”·qI?‹'¾€pY´úê—íTz“û¥ 'åH9ùÿ ã:çüÚµj[µ…RjÕ…¦“cG}ß%—	A^Åû:ZqÂ‚¸8ç'A
+¢ÒSÑ›Zãºú}H£Ğzİh\ÔKšÈ•V›ì§‚ÙmH¬Ô×ı£Üµ*kR(µ‰ó§œ„Rœº4vëñCo¢é¦õÜ³r]Z™Cªİôh¥˜Hfçi†WXLÕçû\`ú\a¹*CnHK…	Î43Ò/–?ˆîš9wYÑTùk…V¢ÔBªPêpÒ“"$¶P¥%I[n!È¯$–ßeiP	< |[„ù?_öĞ~Ô÷×|Y	*ÜÜ†•€y «j’‘å$õ:qÁ}½[H)'¦+ÄÑª)ØSşo<6>xÁÉô$(-)Xì¤…ÈŒè?¿m"ñgÕmJÕ¬Ölbªå¡,K•½ØªRW”U)mR%D.$“µ'j’u6]ÔËbƒw·Šµ2|êt÷ï1Ÿ1ŞŠ²ÚĞ|èÏ%l<ÊòŸ5³é9ÉõR°ìØSã¡0 y+e¸Ñ€@ìÆÕmÆSÆq
+€OáÂPƒWê¥šêR¶à\®(­/’¬G1ò‰ÿ .@R•Æw¼sŒãA×pĞ`
+µJ4˜Œ+l§½;0•«Ì¾`,Ìh"æĞ·Ô­Ê€ÆIï±?ìsşºÕ‹@¡?o!¤Âm*gÚ!8Kh %i^ÏÃ¡µã ß}™Òy_­Xe±­aêm¹1™
+[LË¨Ç˜Ôu¹Ãny0ü©·“ûÍØ?Œ^q®
+?¹å¸•ùlJT~© Œ|ü<Â~c@oğïÕ7ü6uİyH[]:ê;±èWCjWöHR]p¢ZPø[öw]öy.ÿ ê²´^ê—‡‹–ífúêå—AˆÓfCşğ¹éÁq™	+z4G—³aQdn>”äñ ®¨ı#~%J~KÑvõZ\W67.Ğµ§{BĞO1ëµoflú¸åªàĞN,Î¹u¯µÊe:Lª=³˜©1P™&µ1¹µºŠc¹º<uˆÈ"²µÅùkRÖFÎ3 ÑØÉR#°…wK-‚~á F–¿G‹]¥K§Jm.7!•£
+HWÄ’>‚ôŠ|õ6·ÑšËªEµuÊ™^°]xá˜•‚µzDúP™¨lfÁåÔ<„€nZa¦Nó‹0©Äp‡2|Æ¾˜=ùì Ğlç•nx†T•"çmÏ¤îW¥¯xEZ*ó„©å6ËÍ6œîW˜R‘¸ãAa®Uj¨©Ğ^iŸ=(4âŞ_O¤­;
+Ş¨œ ˆÖ¡töÊŒô»ã¨vı˜À™ñ¬Ré«gÎö$HT•ƒœ7‘· ®xòğ›Óö§Q¯·¯))^Æ£Tî1-ãsRi”ÂJ°Ÿ‰×ØwĞc¯éë,/¶´[¡W¢eÒg1X¡]—#°i³ió¢VôXÓ5o±.9\w#ºû;Ğæåí§heÏAºƒ.-¦%—bÏ#ØçF{r!‡<§[y
+ÂÒ¶Ö‚…88ï ÑûŠŸÿ ³Ä„9!1‰V0Uœœc‘…ai?"·Â_ƒê‰ËÂ·E½ëåÆ,÷âÕ‡Vó ºI=Ô“æOu*h¸úœKKNÌ!8Ğz*éƒntš•Ş–ØŞ#42R?öÿ Óåö7K¶¨”d¥4ê|xÁ=¼¶Òœcò@û Z ªş&:dıÓn·pĞT¨—=·!ªÍ{ ‡£T`,HêJyÆæğ }*J”…dÇJïªwVl:]nlvEQ’ªeËKZ}TËŠœÊ“èmÕ*9Ï©‡Z<¨¡]|D[µş©öóò-©tIaÚTúbÌZœIÑì¥³%[JJTœäcp=´r¯Òß÷Â½Ùux†ê4š*rÈ‡©îÔºßÂTóÔöcH[¥ eĞêr>ã$=/ğeV‘íŒ¹÷jH~Mv¡&«.C+ì¿6sï:}Gc¹_'ŸÌ,eÁ‡OíÉij›B§*7ÄÛÅ–‚[HüoQ“Ï|p}Xÿ Ó·BmÅ5x»û†\uûª×§Fn£rÕ\))Ctê;>¶ĞWéö¹¥˜ÈÎğãAå7Å£rÚ=^ŸÖÈ=“`ôöı«7Aóñ‰UR6·6¢âPˆñß¬6¥6ÀKIy{›– ±êSb!âãrBÎA
+á3HåYïÀĞYkf¥{xtêå³Öšª(,Èn×–SR¶jHØmE
+uQ&F;H²œ‘¹YM–İJ½­Š=ÇG–ÔÚuZŸ¡
+K*Ü‡âJe/0âNt,;¤å*ä×@´@´ò£7-‡cº›u
+Bä¡ƒ‘óĞgüç‡î·û[û™éçT$±L¬DZMÂ¥Ò*üúCªW±Ì_}6yÆ€ÕÔ:/³¸ŠÜte§Tš¤î#ÌãÉ##c£ÒOÃ¸;èbÊ©<#Áä—•ÎÖFàù­_
+Ô¬Œhj~ÙéeçÜô«vœÌe!Éå%ˆéÈÜ¦I>uBbğ<–!¶ãŠ<%?‚¢Ü¾(z¯Ö©ÚŞ­©ÖÕåª<§Üp?¼å2r…»mÑ^
+fkIÜÔÚ†÷ÇÄ–d+£~
+é4‰¦îêÙ·mÙ5AùõŠü‡j	çrŠŸ¥¬ +;[FÖÒ0”%) h:|exT³zÅÑ«Åz•¸õ*KÌÆ}¦Rƒ=¦Ë'ÇÚKğå!¤’U…ãAå“ÂÕŸzÑ:ø:\¨Á³ï5Å*‹Qº+QÓ&5½J€´“\¦ÃK©UÙ[( ­ğ¨Í<ú_RU€zP‘áOÂŸêS‘.‹%wíiøÅU‹Êı¸«zåA[2ôµËX‹LObMf+,§j ÚAÿ ôq·*ƒf_v\
+¤ÚÇNí~¥\´Ş•Ë©É3§¢ËÌóP-DªLH7§Æ§¾áS†:R•§A¦: Z Z Ç[úq¨Ö]R–ûI/Îù.cC¡9iÄ(z’¶ÖBÁôF‚»ô‹¬öã–ãİ=ê­ÅJ¢^vzMznYŒÁnâ¤FôS«dJR”µÇKmNBTnKdìØ´‹ÛÅÅ©/‡Y®¢İb¢¿r%—X²(ÏşíN95	KÕ÷›W>DE¢9)Âä§ ÅdxP¿z³_ø‚¹ª7eP¨=™(–h4fÔ|Á“FIá´€6…ËÊøZ–¥¨†ŒYı;¶l¸LÃ£Ó£°–
+@ì ã·Û¶‚u o©Án¡øÎ¤).6¤àüò9Îƒ|Nø$uŞ±7Ö›B‹N¨J©QWjßT.= ×hFKs!Té5XM.E.æ¢Êi·aK-¸Ü¦A†ùm¾R¨¸®î^ıe—CZPÁ·j/D‰7ØÇ“ReEõ0N7—rsÀk‡N–Cé…¡N¢BˆˆQâ0n;i #>³•VJÔT¥T¢wsœ‘Ğ-Ğ-Ğ|­!i)=”0#ßAW:©áW§}Rœ™õºl7^ß¼©Æ†x$RÙí‘ü¿˜M:qĞ;§bH†ÚÛ	ÂĞÊF1ƒÁÚ
+ş1 7!m!HJSÙ `Şhƒ‚]6ä”Ia$÷ÈĞ5³jP˜Xq¨-!cœ„¤s÷Âyş:öÛCIm!)! ı4AÿÙZimage/jpeg_.http://www.w3school.com.cn/i/site_photoref.jpgOàbplist00ÔabX$versionX$objectsY$archiverT$top † ¯#)*0123IJKLMNOPQRSTUVWXY\U$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_.http://www.w3school.com.cn/i/site_photoref.jpgÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¼a×‹ d ÈÓ456?HWNS.keysZNS.objects¨789:;<=>€	€
+€€€€€€¨@BCDEFG€€€€€€€€€VServer\Content-Type\X-Powered-By]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/6.0Zimage/jpegWASP.NET_Mon, 29 Jul 2013 17:16:00 GMTUbytes_Wed, 03 Feb 2016 06:34:33 GMTT6203_"ccbce04b7f8cce1:2bb1"Ò+,Z[\NSDictionary¢Z/Ò+,]^_NSHTTPURLResponse£_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑcd_WebResourceResponse€    # - 2 7 U [ v y } € ƒ † Š  ” — š    £ ¥ § © « ­ ® ° ² ´ ¶ ¸ º ¼ Ã Ë × Ù Û İ'-09BDFMU`ikmoqsuwy‚„†ˆŠŒ’”›¨µÃÑÖåêş	17W\uz‡Š£§»ÉÛŞô             e              öÔOÿØÿà JFIF  H H  ÿÛ C ÿÛ CÿÀ  v v ÿÄ              	
+ÿÄ Q       !1A"Q2aq‘Ñ	#BRS“3CTUV’±ğ6bdu‚¡²á$%&Wrs”•¢ÁÒÿÄ                 ÿÄ                 ÿÚ   ? ïâ@(  1“)¼ºR­1t›T€.'PÙJçKÖ•˜›#9ä½cŞÙJà‚7ô^f"‰ªP2g)Ê!pˆ[Õ÷  €P
+@(  €8ÍÃÚ‚½Â‰šÛ©ƒYŒ´ÉÍø¹âìÕYVw?ƒ¨tÄP·!Š7ok€@C54`E'²Z–¨‘?jª©,ŠGWnı#åp“†êˆ”ršú=PqYŠXfá³zĞæ«©r	
+´É€³Fh‡dÊ¹l] XCèŒ²áÖ$Óx• g>§Ÿ·vİÒ$P9JÂ`¸€`€n!LåúEö„Ì_¤Ğ€¬`€¶và®éO!©½-à!ï¾Ê®Wˆú/)5ghÓ.Öq9UÑ2nì½£¶LN%/”: yà4ª["«6ŞOQf(L;i‡0;˜Äï¥n+¸®A3*|8¤Ôlìİ5êH~q“ó[Îğl”¸R“™3O&oU+æ©Ë,-‘ä€QæœÀ`)L@qÇğJ³ÀêÁzªq2ZyHUîˆi‚¾›rIfjR9²rÔØãßa€Ì´–&é"èS¤¡C_(Qş=põ–!pİR7­h‰‚¿ª?©¥ÂÇ˜q¹1ü‘äœ¾NkQ€<°¢¶Å®#éÖµ´¢¨='"q—·hİ7NN‘G(ªàëiÚÜ-±GXgîGŒ¿ïjqÿ m—À|	ñ…,ÍÄC`s: >°ëkª_ÑÃºñÚsT¦	iDà¥ä™^PåQ)íŸ¯gAF@(j±0’—‰nâ×6è9 9‡œÍ¤ç¶)2¨kÇl®¼îRî@®2›}Í¨@=iX+udº|Š µ!0;vSöY.FG0äNhBôÙOÚ %Ò[\Qõ‹6Ì–nõ¨(S–böÉ˜áXõƒ.5qyv‰¤’kÒÔà  
+9f® %$lD£¦Tìáº.zÍDÃ8 å0“Aõ-İÔNyU=ÂÙË’+6§UejP2¯¤ªJÙKw“È5º‡ó‚}Äª“êIz¨ß)z˜ÊT@JC“Î°‡pëº|•†ü=Ê¤oM™í:ıì™Àì<ÖÙ@w,•xÿ Ì¶
+OûĞ6úA ÕsB¼â@–ºkÌp? €ĞØ=€PÅgü–ÿ W9ÿ )•â7ÅÇÂ±ò·O^Kì_2)¬Æ õÀ‘¡2d³G(‘T¢dÔLàS•Bå6hg±2q„ÓÕ0Ú¡t±åÊ«šN`àG*­/Û—æü¢7·x“(ÀbpZ»bÇŠŒI›¼|’LHÄÊ(¡JPLV0ö‡Ì05WÄÕEX¸=%ƒòñ›»Õ“óË'—öDÂ¾Ê>‰/çL=ÁT¤ó§5•JíJŠ¶š§•ôİ{‡-?7ÀÚ“b¤ (u÷€|j–Ë©	ó×% I	z§0í¥·×¬ ¥ğwTi«BUÛ*&k1¯j—­#¡›¸œ¬ªBó@IÆúßüÆÍZ†ÉœyŸ4~pŒ ®Êmã$hÄ€Ù¹I¾?œÅÀJÈl€€¬€ÁÔ­ŒòA7jQ°®ÅtÀ{®H<ø™b~#Èç…Q„Í¥Z†@©“1“xŠjƒ–®0oÚƒ¤…`Uu#ÅzªäSp„Í‚FP`2Ş¤^Sæ‹w3æ(…¯°ã’¾¤] Ìş<gş›#šüÉtİæj·~CaRõ(Œ Ñ€bTê¢{_ãmAà*LPAˆÒTû•LÙËV˜È­1˜vL )¿, „L0ÅGĞrziƒyl–ZÙƒTJ)H¤¾].lºÿ ŸŞ–H²¿Ï~è7\Tm†ØXî˜“ªEk
+®Ò#$”'8óy¢bÙ°X~j$1—W ½âùÃv%ıíôÊTZÉÛ%~xÜÈ9+‘æ•R(k}@ué Tıú4_é$ı¿åàç
+8Q8dao¯«H¿„‰”Ë1ÅJÙ?#màíœ­ ºv¢€c%ÈùİGh	¸€P
+R¹3IİÉ|¤X88z‰Îıƒ’® ñãç5±Šø‰TnåÌà©˜7)D§Îºù÷¶ á>eÃ»÷U^f˜ÓUsúQ1sŠ^ÔÂVRèU¬²ÚÊ k­ <=«)ŠÉ¹JÕâ	¾-“u-t ‹„-%VÂĞ}W€!%r¶O`¶ïÖÃc%Iª`³“¢İyK89L¡n†>üz ¼bâWpŠL°§0Na79M¢LÃÂ\¬âÙJ“díª{õÑ2na€ƒ¼p­¥¥*©qC&.XÖÒUœ£BR%pu•qÎÙâI¦7;¥»"u ;6È(@<×|>b}?$¤*ùZ.1!	Kg‰ÔÌÈœÑãÓ$²G^üÂû%Ê#”-¦°¶N0PÅ)‹EÉ  >† =|˜…xtÁcÁñ.I·æHó =Ëi¹cİ.Új”­HWM_1jM²¦n@P2iŸæßèÀH¼`±Yÿ %g¿ÕÎ?Á¼?Ô~$ÄìH'û[4ùÛ‡6 õ[Ğ]3$º¤P‡¦(ö€CÛ :×8yFÔ®ÕJ\/NÏr˜ä˜ÊVK‰÷ùAJÀ`óà9?q1Bã#*‘ÖRyÄ`ÁÓ´^Î-áíüäŠ1U"ˆXÚæ(›À>*Æ¢XWõ~%x±¡tYJ@–bŠwCÒ¥´€gœÉuIRÈé$×¯Ö_:„åÒ”•®på®ÑG*	„ÅÒä)<†Á°7ƒê¶v´ò¡1æ“¥õUË©†¦ĞOb/`ï€×’mEÏ¥5­&¡ØT4Û¢<jtDÄç¦™®»E²îECÛHƒx`â>U{*›¦ä…™¤Ü¦,ÌpÚ½@¼·*QêS úBĞÁç¡ÃÌ„w€¦ÓP˜ñA6nY¦'½ïº X  +  5ªÄ¢z^xRê>.q`½ 9’Ue§ñCÑQ^R‰Õó@1Ll¹;`6´Ó÷UOó ûRû >OŠ‰‰L€‡ãÔ ÉµJ›î&éÇâ¨OÍG8ˆk˜ˆeÍüzà:Î­w2 &ÉkÎ[¥*šF!ìb‰‘@}pËNS“ŠA$9IÉ¨¨İñL¼(ƒò‡8¢"=zÀlØ“B¹V’(˜»u (ªäBŠŠ\¡nÙG»_<»‚ø«3áû›ÍŠ²Ä£jI7¶ùN|‰L€½7Ê§šÃÓPi>%Içò6ófSUAÓb,Sà:(\ÁÚ½ š:v•AÄÕ0“uqjİÒ‡nX@—	€‚°
+:‹)˜™oÅ¢Âø@šÀr{¸c?Å~$q<}0’6Jn¢Ã&Ü®w8(|²­S¡k†ö€ö'ÜHœ¥7Ç	¸\ !ş¨Dw×é@y¹à‡ˆôQa«æÂ(šŞ(K§ö 'tdê„­ßSUZói"¹l	Ò³Ó+dÛ \ª··5ü Ğ¬iKpÓÄäúZƒÔjW ‚©”ÀP–”KcP¸šÍÃªøv©‚{V•ìÖ–™ª’sEHÌSğ‰¬2Fåè~íú@Hcâ°¬$	Ì‹vå8¢¾bï¤ Kˆô‰Q’¶Q0èçÀue<“¤]4]"™5
+bå0_M­Á:¿ZOÜá•?6dí™SçHÂf»‚¸+=…©D7åhÖÖÒOx"‘Ï©Ìo˜—’*¹ƒx±ÂfPÌÊÀŠö›¦
+|üÚ˜u¿H	Í€P
+Y¬DB—Ÿ[ôk·Æğ%Ãù„¿qTÎ“Hç
+Îd7S]@Áó‡øõÀJhb,¨?"‡ì‡ºÁÖ!ÊTl¹,d }DãÔÁ„ÇŒÊaR.Qe¯M” 2—JuğÖ®”²¤¥hòVéÄ¥ÖÄ€ÌU³*n­’=“¿hÍTİ"t¬b”m˜¢}0 9Sk‰†Í8QGTÚªrø1„s2Ìo #Ùù6€İ±•EûS¹D…1NQÓ …Çh 2¸¦Î‚«AĞÃ­­ûàù±&ôôŞ[USêYì…Úo£”È`¬¹N(úoİ%|-ã,YÆ*
+f—ÈL’d³y‹a”EÚ`Y%=€ÀØ=X®ŠÙ!0¬ŞĞŞ)âs	=9=MG%(‹ 0j9G¾œ|'ÄB´ÅŒKzEÀuWL)€ãÚ8u3î¼oÎMí|š¸¼nZ—rkd7_æú`#°ªBoÅm>ï8˜S“LM|Á¸* >¿T·RøÉ“4KÂ^Zd-€öØ½`6º_ô¥>Ò bâB®¡WKç4âé?n­Ç1ù&ÌtÎ%Ü[”Bû@Ø%‰òÌX ¥sP¤rå‚Y˜3¢¡Ò†ô·¤oŠ´ÚùêX¶ÔoÖ ®fl¥ë¨Ù™ÓÅÍÉnÑ¹9«ª¡û B&MFã âğl”ÛqÎE>¨ÒñHÎUpªLk
+IC.~ãj6€é†š®ÙÎˆC"¹M˜¥¶Sû ä
+xF³PéKU17M×Ó¼ST³ä›Í[4Qo•ArvDÖ¸€‡HyÑ¯çøwYT	LÚ=HÎ&.$¿%S¤á5O{ó 7œ„ƒ÷Ê¯ı3ìÕ€óS‰G™À</RˆjšÖóŞ “âÍî/KëE˜?SVØ¹vfëdngBC¦¥„5–ÃkÛÔ0¼¿åIµH8h[·pBíÔ¢0ß|«ôÓ?ú”ığŞ&cdºwJÍeÈÌRr«†¦H‰78.©Îp)JšwÎø„F–ÈÖp¡åFE¢,§R×‚dL'Hœ²8 šÀ7 ½Ã ÷À?x…Å$¯åËdóF	rÙWjºGÜ¦ĞN:ê=ÀĞê±ÁªDUœÍ'RéÅB©@Ê=táîLB‡p®¾y‰Î+Ìa¾¥H¨±’(¢ª»@¢|­ˆDHbèm5Òá´äğİPM_¶h.Œ ß%óßh	-”ˆ™’BmÄş›mm;cáÍŒ¯Ø€qC[U
+,'m›6aÛ{ÀSŞ©yÃ“,öFŠÂ"#s¤½à0?ƒŞ‡ı\möE÷@/ÁïCş®6û"û 2(ğJ ‘‘JDÜ©˜-nI»Hq¾zÂ&m­Çqä—İOÁíC~­µûû =ÛüÔ[UTiÖ¤P67$·ıĞx¤&g2çĞ~QBÀk(üT3ÅSÈûî€õƒæ‰~/7¿ü ÷@otŸydÌÆP›p)‹l‰ôõ@øa…(Òé¢TÑåä·Nîñ€)¥É@„î÷Zä@A óÀ[(Í<¢o½À÷À[¥ùEö<PËê‹ìâ†_T_`@/2ú¢ûx¡—ÕØÅ¾¨¾À€^(eõEöñC/ª/° Š}Q} ¼PËê‹ì¢Ê™—d‹û%ÿ ÜÒm‘OÉ {ŞÈˆÿÙ_.http://www.w3school.com.cn/i/site_photoexa.jpgOàbplist00ÔabX$versionX$objectsY$archiverT$top † ¯#)*0123IJKLMNOPQRSTUVWXY\U$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_.http://www.w3school.com.cn/i/site_photoexa.jpgÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¼a×‹.ñ ÈÓ456?HWNS.keysZNS.objects¨789:;<=>€	€
+€€€€€€¨@BCDEFG€€€€€€€€€VServer\Content-Type\X-Powered-By]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/6.0Zimage/jpegWASP.NET_Mon, 29 Jul 2013 17:15:59 GMTUbytes_Mon, 18 Jan 2016 03:38:01 GMTT4639_"dcf99d4b7f8cce1:2b9c"Ò+,Z[\NSDictionary¢Z/Ò+,]^_NSHTTPURLResponse£_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑcd_WebResourceResponse€    # - 2 7 U [ v y } € ƒ † Š  ” — š    £ ¥ § © « ­ ® ° ² ´ ¶ ¸ º ¼ Ã Ë × Ù Û İ'-09BDFMU`ikmoqsuwy‚„†ˆŠŒ’”›¨µÃÑÖåêş	17W\uz‡Š£§»ÉÛŞô             e              öÔOJÿØÿà JFIF  H H  ÿÛ C ÿÛ CÿÀ  v v ÿÄ            	
+ÿÄ @  	    !1"AR	#2Qaq¡Ñ3B‘¢±$báñ6CSrsğÿÄ                 ÿÄ                 ÿÚ   ? ûøĞ4@Ğ4@Ğ4@Ğ4@Ğ4@Ğc5}eIĞü…U[TPô­9‰—šœ~Ş:=ªeüã‡'!ÆÆ™w* úS!€Ğh³>K]¹<ov.è_£‰Ì’ucxÃQ¶ïyL%æ…OP&‹mÓ «F¦!ËÔ¦Mk‘ò‘?7Šad8}§Ûg–Ï\9—R OüYŠœÓpzqí éŸ‹>*-¾¼ü%>—‚LDÔV©kV(Ô¡ôÖ}è!"²D/¬yGİŒ†3 ØÛÅíˆâÃ˜Š¯+zÂ<¹• *–)ŠŞ4@:•*×H‚83†`åÇS†ƒf´@Ğ4@Ğ4½ú¾´WVîJàÖk.²i(Œm?OÆ“ÄOUÕ+órb)¨EÊä¤œ‰R ¢TI½upBB¹æ¨„jXq+ò‚ÈxÅWT-7Œ*î‘¤\/ŞZí¥p¡3½YédÅo›zD4c›¡ÄÇj“zdÜ>[Ò¤	DÆ4nê«R?nÔÁ¢TØÄSÚ$@&'@Æƒÿ Ÿ:ùÙ‹Åu¤^÷3”ª±L êÜ9xÏğv Ğv§.Í.oCŞ)yW¯É«tK ÍÎÜüØ½Oc„·öİ×¯ÖĞC·Œ¼Rlc®Õ0æÕ^ˆ£øŠ2ëÑî<ªeè›swPµ# D^¢*”‡^"DUMd²™Š9Ëp©ÅdÎºmÃN™å™ª®-}Ïh‘Z@^(&‡/DcëfH€F4¢3Ô»rç `³@Ğ4@Ğ~vê:
+¡ˆ¿\CÜŞ$n‰¯bxEZR‘´ÑL
+ELÜvÄÕ…tt‡æ]81IcÅº›˜ó Œ¡¦ånÍVæù\x§Ò&X–êŸv"£Bšæ»I¢™OÍdS ]W'0…0 h%;:†È›yŒ>¯WÒéïøõû;h1É›—KSe7Tqq†ÇTÖx‘–ÿ àC
+™¾ßÛA-Äİ°EC&œ»ÇâÚQfÉU æè$è‡#‚€g?Ü:•5çµUK §§‚C/KÍlšìÎI£ã(H&rî;E }DÀ#ØÁ×AÜñºKš}¼ÑÉZÑ/Q©­hßr1µ@ƒ˜wé*U'<S#)·mY#œ)€t!Á_fâFÁÒÕ¼™mZFs©jş8=&eWÀ›ÁJSîšoTOÆ"ĞJ¯Nš´Ğ4@Ğ4w‚ÄX§sêVÑ©ÊB`ìp©2ón™ªÖ›P0€¬íÌ‚ÈSPã‘ ÀªçZ/Bp5Ãu² ¤İ©ë!ıÚîÍ:±êY‘p?MA\ë¦Sò&Hä1 ğêk“OQ:aâl#Ù¦F¬Û§zà‚`D›4@0cp Ríâ! ÒÚÛ‰JŞ¯Yf4Ò†¥ „ÇLšºOãYÇ^N@~:—=û€k/RI¶fİ	Ù‰@ˆ¥ó¯® ˆzcîå:‰Ö0•2—"#€’ıäeô)j|Ì*Ûš ’rßkªn„Ş´ùåÊ23i€€ Â‹s‡Ö]KNB°ÃÇ
+ÈHº?5ë÷Şªê›©‡#Ø 9è (¡ÓA&4Ç‘7©ä¼£àáôrCÿ ¸ ãîĞOÿ &UbzoˆÎ"-YUCÔÍ ®<cLüÚ]'àäÔ*yÁEÂ¤hPëœãAz: âQdQØ
+ªšB¡¶&
+¤æ{›„7ı%Èè9tJ¬’	(ºê&Š¦uUUSi¤’e¨ª‡8H™c˜Ø)JañR/øê£oõ|¡]=SµKdĞD»w’v¿¬„@v½¥©3Í"q¹7/g(ˆK‰ê½&Ö„‚ e¡ã)ˆÎg(£±gÓ­ĞD„é´2©Çq ªê¢«œ®æÔ–—\çÉÌXö[ÇÃ2@Dv•2ã~ßŞ)æ7İ~=ˆ†Â}ÙtéŸçüúçï··R±µôeCSôÃÙªÉY9›¨óÇEl2oÅ®¶bõ3ˆtŒEœ€q Ç©óÓ±­ÌF¶Áİ,ùcŠî×‡–<«'n•Ê¬>0ÈÇ67˜Û‡=‡A*ÀŠNÄ 	¬AáX‚Aÿ PvÇÛõ`>ğËæR#Hë§ {z·d?üí ıù?Ü¬óê½ËqK[WÉÑ“ë•T~c”Šcê£Í@Ğ|îqúNøqK˜\º¸kNÚ	H:BŞ@R5,8ÆTdT"V&.æİ8ùÎrûˆ˜z
+Mºv€¿_Ù E*6áÄñF¶!JJ"ëŸÊë6í’È´UhĞÄ©´6&IŸ#9ÇA“^”1•úcHpĞæ>©áfbæ>òë¿\Ü4|1C!›Š¤ªæ‡×“UHf.9È°6AePJ&ĞHüGqkíe¼§øWáÆ"áÔSôqèê&†§ß7}O@Ó™øG•½o(ÈÊ¢ÑSPïDêŸÄÈ:0˜ Llè+‚¦µI5´PV’6úÓ×"6šlÛ“FÕĞ‰2pÔÆPŒ©i¶ÿ æ› ˆœ[$g;ù‰€¦ƒP^MÍ[÷äŠ¼Lıºz*"K®İYJAá³´§o8ĞA4Ì=J.6}ÙĞM”ø2”l‹Ø§Œåª:]7m´Œ`¨İ´”SmF>¼öÿ ÃA"E²Úë™ìß§¾{} â˜`CÑ£×®ÿ _·ÃÛA‰]ÖÑÑèE
+¥!°gï‡~&è”M¸ã¸0 	¾ì}yĞKÿ $=î©«îÍòrÁI9å0+(Lsa À[$²B?öÕP`Ó} ê:ÿ Ğ4Íårã—Å9£s#C#ÀÀJPéìÿ ú0œ@C°ú‡ã,‹Ö“ÑÊÂÔÑq•,2áµXé¦¨¾DJ!Ç8†›Ü¦.¯~º2‘† ­»9ÖÚŠˆ¤U™Ë?i½YDö@.eWI©÷mˆr¢@ìMÇ"mÃ‘çxg?~?mixÉHÉV¬¦¢×(‘xéd|ÕBA(¦¹ÈtÈh5òs‡nñâÓŞ^rÍTŠ¨+ôêÂ½2íÀúƒÆÀ81ÙŠg6w<¾øm:w×¾ØU®h¶·6—Dßõ…´Ê$Ø1‡4Êß:'(záDÛ‡;@tå²¬éyŠ>Y94Z­áäZ(’%"‡vrÑË\²X?¼ Ãôzh3ÉÊ²6–fœ#©!(‚-9€ãĞ¶Ñô†ìzs‘À× ®ë³VÏİJ¨¶^‰”P•^pB¦¨'â[Ñ°«˜¥8«·ÒgkÛ
+Ûp'Ÿ³Aqœ=×7Ë;Gq­$×³4ÛU‘ºVitÉSS0…‚²5eìŞ!Éîæ½q¡€9ö3 ¹Š>­€¯)j~³¥¤”§jx–3pÒıQòÃu1ü&Øp=S8ƒÔ£ É4ÌíËuËâŒS ãuÍf@µ§ ˆl˜C=³šWÌñòı407ÄoËôĞ<Àß¿/Ó@ó|Fü¿MÌñòı40ˆßÈ?Mi¬ëÆG¶r²Bü&~!ï Ô;§^ÅZİL×`ü)ÆW&V¸ô—^4¼ø×Ê4j_œ‘#Í*{ÌQâ!Ø1+Ë©zŸš
+ĞÓ’±ÎÎd]WUs‘×‡7 ÊE²7R¨bˆ‰P J=@4'Ã´å™Wà2•CññR’¯Ì>tğşµV]e=cƒd@¢;Jº h2‹×s«Š¢J"ÀYÃ:‘¸wxÎ)Èö‡9šÇC</"£ª§'¥(HvTDÊ†ÅUÚBˆˆè/vÈ[V^ÑÛËWäÏ[P´´U>k3nPrçhõ)Wr*¨BRûh%MAòå{eQˆâç‹È'Jr$•¯"æHØİN1Òf®ƒÜY3”w{vÏM	æƒñ—óĞ<Ô~2ÿ Væ£ñ—ú´5Œ¿Õ y¨üeş­ÍGã/õhj?«Aº„†®8Œ²•dÆoªºÅ*…Qc”Çhôû}Ã¨Yd-;M¦DG5jRt(¦™J Ğ>‰pÌCêĞa—vîÆ[ÊVJUû‘)PC&"C½ÊÊ* ›Vúj>\ÄnÙ"€˜Â|ãëéù9¸Y™  äx‹¼ş4İ¦H,Â9É7+nmòÀÃRwòºDÉ½š:{NuNT#°ÅĞZ6 h)×?“ âææ%m/'ìûx†*i½£«¶1¥F¥(T¾y›Ä“GŠ!L0cz´‡t#8™áeâQÜMÙ¹Šz5U”E¥À¢‡öš‹’å—Ÿ½·1fE?C‰)½¾Íf–ºÔ`Ø`gI¦`ëá\V û‚­Œ`Y!Ø1s ÍK.C}çñ ÀıB=ô×šÅù—õĞ<Ğ>/Ì¿®æñ~eıt4‹ó/ë Ã©—Ûø˜³J@$j³¯|² öşú˜ª‰fáÚç(ll(˜“^½p z=€A£'yÄ%ËÂ@ÊÕÛIği©VUÃCä$ºà‰ƒP0Üp)Ásí ²ZKˆËÙO9A(Š²NHÇ9Eƒ  §b•ÓÆvãÒPìRztÆ‚ßlMsjº?Í®lCx‰‘£ÓH‚’«51T(á <¼ àqí œôpg*z–““¥á?4‚&qäo>? ÿ ¾‚/,íà­dŞ«sbfªÆP<™ëU‡EôòÊÜä:]½D;{õĞWÂE ¬İ«/Íõ¶ª}bIÚ)cFüù³ƒº(ƒu€ê8 GÛêĞkÌí°ârÔWfœuî¥Û‰w/pŒ«ĞnQÈ
+­M´”€oÛôú€}ãS—æ˜“zhis»¥ª)/U4Rñ(àÄMEÊT ìL}^İs ˜‘šl¹@ÉªLèâ˜¦ù)Ë’ˆvÿ }?˜“ã'¿¸{tÿ ï˜ãOù†ƒ¥_8Šµ.T0&š-ªsïÎ0OĞG?wçá ’.µQ;tëvn‹x«eåS3ººi”½ U0éC(^‰ÉKE³TÇˆ©öè7VÏÙyYÔ ­ı³§•ò¸†È°C–™³TI€QÓÅñ´WXÛ–Xâ"sœG¾‚â,_	”²M¬Õ@Dª
+¬ ª
+Ëª4d~ûPHÅÀ˜ƒØã× Ÿmß       ` :  v `î h<ÇğÑ2©™)(Ö/“8`åtÕ·^ûÈ#î>úFªáŠÍÕ€¡Òm8PL"â7ü©ÀM¸/§ß!õ}Úgª¸ ƒXU^ªŞÇ)ÔRnøœÔÀp8a}Xö•^“b «ªŞ©¡)«€Ô€"“Ö¥M	¤qŞ‹¤€
+  úrsz½Z
+¸¯şO»Ík–rîÖÎTq	¢c˜(êõ«‰s½A’¥ªˆ`0C ÆG#‘g•¯ë‹hğbï=¼¤3‚_´L›+)K­ü<ß‰Lvé›o_Bî]“VÓõ+TŞÂJ±“n g˜ÉÂk~Ã”£Ì ç¦^ı=´Õ_U9¥.e½‘dæZeé&"iø†…1Ö’—|Ÿ!š Bäàˆ(p;ƒ”=)—®‚ğx"ù?êÅ`?h+îlsúµÙ'ky¥Š`(ñPŞ”Tw09‰GG¤%AnúÎ íÍ%máÑ†¥b›°A2TX¤/‰r` Ê‹­Ç¸Î?¾ƒ:Ğ4@Ğ4@Ğt^ÆGI&(È1hõ#w#¦é.Qü)´¥iÃ=”¯š¹gQPp›»)ˆº@Ñ.R€¥¹édõ`^Û‡:Ñúõ««*Û#S*§8R¢Eâ”SvDˆYr61Gë)CÁ ‘8Uù$m­…¸H]{“p'/ÅoÓÁÒG©¢˜ÆBÒÅ?ïİ1hu¼‚İ¼ZÛN@í ¶ô‘IÈŠ	¦ŠI—ji¦@!Pö)K€ û 4º h h h h ÿÙ_-http://www.w3school.com.cn/i/site_photoqe.jpgOßbplist00ÔabX$versionX$objectsY$archiverT$top † ¯#)*0123IJKLMNOPQRSTUVWXY\U$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_-http://www.w3school.com.cn/i/site_photoqe.jpgÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¼a×‹< ÈÓ456?HWNS.keysZNS.objects¨789:;<=>€	€
+€€€€€€¨@BCDEFG€€€€€€€€€VServer\Content-Type\X-Powered-By]Last-Modified]Accept-RangesTDate^Content-LengthTEtag_Microsoft-IIS/6.0Zimage/jpegWASP.NET_Mon, 29 Jul 2013 17:15:59 GMTUbytes_Mon, 18 Jan 2016 03:38:01 GMTT4938_"606fb34b7f8cce1:2b9c"Ò+,Z[\NSDictionary¢Z/Ò+,]^_NSHTTPURLResponse£_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑcd_WebResourceResponse€    # - 2 7 U [ v y } € ƒ † Š  ” — š    £ ¥ § © « ­ ® ° ² ´ ¶ ¸ º ¼ Ã Ë × Ù Û İ&,/8ACELT_hjlnprtvxƒ…‡‰‹‘“š§´ÂĞÕäéı06V[ty†‰¢¦ºÈÚİó             e              õÕ !_WebResourceTextEncodingName_WebResourceFrameNameO4b<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>w3school åœ¨çº¿æ•™ç¨‹</title>
+<meta name="description" content="å…¨çƒæœ€å¤§çš„ä¸­æ–‡ Web æŠ€æœ¯æ•™ç¨‹ã€‚">
+<link rel="stylesheet" type="text/css" href="/c5.css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="robots" content="all">
+<meta name="author" content="w3school.com.cn">
+<meta name="Copyright" content="Copyright W3school.com.cn All Rights Reserved.">
+<meta name="MSSmartTagsPreventParsing" content="true">
+<meta http-equiv="imagetoolbar" content="false">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="homefirst">
+<div id="wrapper">
+
+<div id="header_index"><h1><a href="/index.html" title="w3school åœ¨çº¿æ•™ç¨‹">w3school åœ¨çº¿æ•™ç¨‹</a></h1></div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="/h.asp" title="HTML ç³»åˆ—æ•™ç¨‹">HTML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="b"><a href="/b.asp" title="æµè§ˆå™¨è„šæœ¬æ•™ç¨‹">æµè§ˆå™¨è„šæœ¬</a></li>
+<li id="s"><a href="/s.asp" title="æœåŠ¡å™¨è„šæœ¬æ•™ç¨‹">æœåŠ¡å™¨è„šæœ¬</a></li>
+<li id="d"><a href="/d.asp" title="ASP.NET æ•™ç¨‹">ASP.NET æ•™ç¨‹</a></li>
+<li id="x"><a href="/x.asp" title="XML ç³»åˆ—æ•™ç¨‹">XML ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="m"><a href="/ws.asp" title="Web Services ç³»åˆ—æ•™ç¨‹">Web Services ç³»åˆ—æ•™ç¨‹</a></li>
+<li id="w"><a href="/w.asp" title="å»ºç«™æ‰‹å†Œ">å»ºç«™æ‰‹å†Œ</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+<h2>HTMLæ•™ç¨‹</h2>
+<ul>
+<li><a href="/html/index.asp" title="HTML æ•™ç¨‹">HTML</a></li>
+<li><a href="/html5/index.asp" title="HTML5 æ•™ç¨‹">HTML5</a></li>
+<li><a href="/xhtml/index.asp" title="XHTML æ•™ç¨‹">XHTML</a></li>
+<li><a href="/css/index.asp" title="CSS æ•™ç¨‹">CSS</a></li>
+<li><a href="/css3/index.asp" title="CSS3 æ•™ç¨‹">CSS3</a></li>
+<li><a href="/tcpip/index.asp" title="TCP/IP æ•™ç¨‹">TCP/IP</a></li>
+</ul>
+
+<h2>æµè§ˆå™¨è„šæœ¬</h2>
+<ul>
+<li><a href="/js/index.asp" title="JavaScript æ•™ç¨‹">JavaScript</a></li>
+<li><a href="/htmldom/index.asp" title="HTML DOM æ•™ç¨‹">HTML DOM</a></li>
+<li><a href="/jquery/index.asp" title="jQuery æ•™ç¨‹">jQuery</a></li>
+<li><a href="/jquerymobile/index.asp" title="jQuery Mobile æ•™ç¨‹">jQuery Mobile</a></li>
+<li><a href="/ajax/index.asp" title="AJAX æ•™ç¨‹">AJAX</a></li>
+<li><a href="/json/index.asp" title="JSON æ•™ç¨‹">JSON</a></li>
+<li><a href="/dhtml/index.asp" title="DHTML æ•™ç¨‹">DHTML</a></li>
+<li><a href="/e4x/index.asp" title="E4X æ•™ç¨‹">E4X</a></li>
+<li><a href="/wmlscript/index.asp" title="WMLScript æ•™ç¨‹">WMLScript</a></li>
+</ul>
+
+<h2>æœåŠ¡å™¨è„šæœ¬</h2>
+<ul>
+<li><a href="/php/index.asp" title="PHP æ•™ç¨‹">PHP</a></li>
+<li><a href="/sql/index.asp" title="SQL æ•™ç¨‹">SQL</a></li>
+<li><a href="/asp/index.asp" title="ASP æ•™ç¨‹">ASP</a></li>
+<li><a href="/ado/index.asp" title="ADO æ•™ç¨‹">ADO</a></li>
+<li><a href="/vbscript/index.asp" title="VBScript æ•™ç¨‹">VBScript</a></li>
+</ul>
+
+<h2>XMLæ•™ç¨‹</h2>
+<ul>
+<li><a href="/xml/index.asp" title="XML æ•™ç¨‹">XML</a></li>
+<li><a href="/dtd/index.asp" title="DTDæ•™ç¨‹">DTD</a></li>
+<li><a href="/xmldom/index.asp" title="XML DOM æ•™ç¨‹">XML DOM</a></li>
+<li><a href="/xsl/xsl_languages.asp" title="XSL è¯­è¨€">XSL</a></li>
+<li><a href="/xsl/index.asp" title="XSLT æ•™ç¨‹">XSLT</a></li>
+<li><a href="/xslfo/index.asp" title="XSL-FO æ•™ç¨‹">XSL-FO</a></li>
+<li><a href="/xpath/index.asp" title="XPath æ•™ç¨‹">XPath</a></li>
+<li><a href="/xquery/index.asp" title="XQuery æ•™ç¨‹">XQuery</a></li>
+<li><a href="/xlink/index.asp" title="XLink æ•™ç¨‹">XLink</a></li>
+<li><a href="/xlink/index.asp" title="XPointer æ•™ç¨‹">XPointer</a></li>
+<li><a href="/schema/index.asp" title="Schema æ•™ç¨‹">Schema</a></li>
+<li><a href="/xforms/index.asp" title="XForms æ•™ç¨‹">XForms</a></li>
+<li><a href="/wap/index.asp" title="WAP æ•™ç¨‹">WAP</a></li>
+<li><a href="/svg/index.asp" title="SVG æ•™ç¨‹">SVG</a></li>
+</ul>
+
+<h2>Web Services</h2>
+<ul>
+<li><a href="/webservices/index.asp" title="Web Services æ•™ç¨‹">Web Services</a></li>
+<li><a href="/wsdl/index.asp" title="WSDL æ•™ç¨‹">WSDL</a></li>
+<li><a href="/soap/index.asp" title="SOAP æ•™ç¨‹">SOAP</a></li>
+<li><a href="/rss/index.asp" title="RSS æ•™ç¨‹">RSS</a></li>
+<li><a href="/rdf/index.asp" title="RDF æ•™ç¨‹">RDF</a></li>
+</ul>
+
+<h2>.NET</h2>
+<ul>
+<li><a href="/aspnet/index.asp" title="ASP.NET æ•™ç¨‹">ASP.NET</a></li>
+<li><a href="/aspnet/webpages_intro.asp" title="ASP.NET Web Pages - æ•™ç¨‹">Web Pages</a></li>
+<li><a href="/aspnet/razor_intro.asp" title="ASP.NET Razor - æ ‡è®°">Razor</a></li>
+<li><a href="/aspnet/mvc_intro.asp" title="ASP.NET MVC - æ•™ç¨‹">MVC</a></li>
+<li><a href="/aspnet/aspnet_intro.asp" title="ASP.NET Web Forms - æ•™ç¨‹">Web Forms</a></li>
+</ul>
+
+<h2>å»ºç«™æ‰‹å†Œ</h2>
+<ul>
+<li><a href="/site/index.asp" title="ç½‘ç«™æ„å»º">ç½‘ç«™æ„å»º</a></li>
+<li><a href="/w3c/index.asp" title="ä¸‡ç»´ç½‘è”ç›Ÿ (W3C)">ä¸‡ç»´ç½‘è”ç›Ÿ (W3C)</a></li>
+<li><a href="/browsers/index.asp" title="æµè§ˆå™¨ä¿¡æ¯">æµè§ˆå™¨ä¿¡æ¯</a></li>
+<li><a href="/quality/index.asp" title="ç½‘ç«™å“è´¨">ç½‘ç«™å“è´¨</a></li>
+<li><a href="/semweb/index.asp" title="è¯­ä¹‰ç½‘">è¯­ä¹‰ç½‘</a></li>
+<li><a href="/careers/index.asp" title="èŒä¸šè§„åˆ’">èŒä¸šè§„åˆ’</a></li>
+<li><a href="/hosting/index.asp" title="ç½‘ç«™ä¸»æœºæ•™ç¨‹">ç½‘ç«™ä¸»æœº</a></li>
+<li><a href="/media/index.asp" title="ç½‘ç»œåª’ä½“æ•™ç¨‹">ç½‘ç»œåª’ä½“</a></li>
+</ul>
+
+<h2><a href="/about/index.asp" title="å…³äº W3School" id="link_about">å…³äº W3School</a></h2>
+<h2><a href="/about/about_helping.asp" title="å¸®åŠ© W3School" id="link_help">å¸®åŠ© W3School</a></h2>
+</div>
+
+<div id="maincontent">
+
+<div id="w3">
+<h2>é¢†å…ˆçš„ Web æŠ€æœ¯æ•™ç¨‹ - å…¨éƒ¨å…è´¹</h2>
+<p>åœ¨ w3schoolï¼Œä½ å¯ä»¥æ‰¾åˆ°ä½ æ‰€éœ€è¦çš„æ‰€æœ‰çš„ç½‘ç«™å»ºè®¾æ•™ç¨‹ã€‚</p>
+<p>ä»åŸºç¡€çš„ HTML åˆ° CSSï¼Œä¹ƒè‡³è¿›é˜¶çš„XMLã€SQLã€JSã€PHP å’Œ ASP.NETã€‚</p>
+<p><strong>ä»å·¦ä¾§çš„èœå•é€‰æ‹©ä½ éœ€è¦çš„æ•™ç¨‹ï¼</strong></p>
+</div>
+
+<div class="idea">
+<img src="/i/site_photoref.jpg" alt="å®Œæ•´çš„ç½‘ç«™æŠ€æœ¯å‚è€ƒæ‰‹å†Œ">
+<h3>å®Œæ•´çš„ç½‘ç«™æŠ€æœ¯å‚è€ƒæ‰‹å†Œ</h3>
+<p>æˆ‘ä»¬çš„å‚è€ƒæ‰‹å†Œæ¶µç›–äº†ç½‘ç«™æŠ€æœ¯çš„æ–¹æ–¹é¢é¢ã€‚</p>
+<p>å…¶ä¸­åŒ…æ‹¬W3Cçš„æ ‡å‡†æŠ€æœ¯ï¼šHTMLã€CSSã€XML ã€‚ä»¥åŠå…¶ä»–çš„æŠ€æœ¯ï¼Œè¯¸å¦‚JavaScriptã€PHPã€SQLç­‰ç­‰ã€‚</p>
+</div>
+
+<div class="idea">
+<img src="/i/site_photoexa.jpg" alt="åœ¨çº¿å®ä¾‹æµ‹è¯•å·¥å…·">
+<h3>åœ¨çº¿å®ä¾‹æµ‹è¯•å·¥å…·</h3>
+<p>åœ¨w3schoolï¼Œæˆ‘ä»¬æä¾›ä¸Šåƒä¸ªå®ä¾‹ã€‚</p>
+<p>é€šè¿‡ä½¿ç”¨æˆ‘ä»¬çš„åœ¨çº¿ç¼–è¾‘å™¨ï¼Œä½ å¯ä»¥ç¼–è¾‘è¿™äº›ä¾‹å­ï¼Œå¹¶å¯¹ä»£ç è¿›è¡Œå®éªŒã€‚</p>
+</div>
+
+<div class="idea">
+<img src="i/site_photoqe.jpg" alt="å¿«æ·æ˜“æ‡‚çš„å­¦ä¹ æ–¹å¼">
+<h3>å¿«æ·æ˜“æ‡‚çš„å­¦ä¹ æ–¹å¼</h3>
+<p>ä¸€å¯¸å…‰é˜´ä¸€å¯¸é‡‘ï¼Œå› æ­¤ï¼Œæˆ‘ä»¬ä¸ºæ‚¨æä¾›å¿«æ·æ˜“æ‡‚çš„å­¦ä¹ å†…å®¹ã€‚</p>
+<p>åœ¨è¿™é‡Œï¼Œæ‚¨å¯ä»¥é€šè¿‡ä¸€ç§æ˜“æ‡‚çš„ä¾¿åˆ©çš„æ¨¡å¼è·å¾—æ‚¨éœ€è¦çš„ä»»ä½•çŸ¥è¯†ã€‚</p>
+</div>
+
+
+<div>
+<h3>ä»ä½•å…¥æ‰‹ï¼Ÿ</h3>
+<p>ä»€ä¹ˆæ˜¯ä¸€ä¸ªWebå»ºè®¾è€…éœ€è¦å­¦ä¹ çš„çŸ¥è¯†å‘¢ï¼Ÿ</p>
+<p>W3Schoolå°†ä¸ºæ‚¨å›ç­”è¿™ä¸ªé—®é¢˜ï¼Œåœ¨æ‚¨æˆä¸ºä¸“ä¸šWebå¼€å‘è€…çš„è·¯ä¸ŠåŠ©ä¸€è‡‚ä¹‹åŠ›ï¼Œä»è€Œæ›´å¥½åœ°åº”å¯¹æœªæ¥çš„æŒ‘æˆ˜ã€‚</p>
+<p>å¦‚æœæ‚¨æ˜¯åˆå­¦è€…ï¼Œè¯·æ‚¨é˜…è¯»ã€Š<a href="/web/index.asp" title="ç½‘ç«™æ„å»ºåˆçº§æ•™ç¨‹">ç½‘ç«™æ„å»ºåˆçº§æ•™ç¨‹</a>ã€‹ã€‚</p>
+<p>å¦‚æœæ‚¨æ˜¯å¼€å‘è€…ï¼Œè¯·æ‚¨é˜…è¯»ã€Š<a href="/site/index.asp" title="ç½‘ç«™æ„å»º">ç½‘ç«™æ„å»ºé«˜çº§æ•™ç¨‹</a>ã€‹ã€‚</p>
+</div>
+
+
+<div>
+<h3>W3School æ–°é—»</h3>
+
+<p>
+<a href="/cssref/index.asp" title="CSS å‚è€ƒæ‰‹å†Œ">CSS3 å‚è€ƒæ‰‹å†Œ</a> å·²ä¸Šçº¿ï¼Œæ•¬è¯·æ‰¹è¯„æŒ‡æ­£ã€‚
+</p>
+</div>
+
+
+<div>
+<h3>W3School æ›´æ–°ä¿¡æ¯</h3>
+
+<p>
+<a href="/php/php_ref_string.asp" title="PHP 5 String å‡½æ•°">å‚è€ƒæ‰‹å†Œï¼šPHP String å‡½æ•°</a>
+&nbsp;&nbsp;&nbsp;
+<a href="/php/php_ref_array.asp" title="PHP 5 Array å‡½æ•°">å‚è€ƒæ‰‹å†Œï¼šPHP Array å‡½æ•°</a>
+</p>
+
+</div>
+
+
+<div>
+<h3>W3School å‹æƒ…é“¾æ¥</h3>
+<p class="partner">
+<a href="http://mozilla.com.cn/">Firefox ä¸­æ–‡ç¤¾åŒº</a> &nbsp;&nbsp;&nbsp; 
+<a href="http://www.chinaw3c.org/">W3C ä¸­å›½æ€»éƒ¨</a> &nbsp;&nbsp;&nbsp; 
+</p>
+</div>
+
+</div>
+
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.google.com.hk/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="sitesearch" value="w3school.com.cn"></p>
+<p>
+<input type="text" name="as_q" class="box" id="searched_content" title="åœ¨æ­¤è¾“å…¥æœç´¢å†…å®¹ã€‚">
+<input type="submit" value="Go" class="button" title="æœç´¢ï¼">
+</p>
+</form>
+</div>
+
+<h2>å‚è€ƒæ‰‹å†Œ</h2>
+<ul>
+<li><a href="/tags/index.asp" title="HTML å‚è€ƒæ‰‹å†Œ">HTML/HTML5 æ ‡ç­¾</a></li>
+<li><a href="/tags/html_ref_colornames.asp" title="HTML é¢œè‰²å">HTML é¢œè‰²</a></li>
+<li><a href="/cssref/index.asp" title="CSS å‚è€ƒæ‰‹å†Œ">CSS 1,2,3</a></li>
+<li><a href="/jsref/index.asp" title="JavaScript å‚è€ƒæ‰‹å†Œ">JavaScript</a></li>
+<li><a href="/jsref/index.asp" title="HTML DOM å‚è€ƒæ‰‹å†Œ">HTML DOM</a></li>
+<li><a href="/jquery/jquery_reference.asp" title="jQuery å‚è€ƒæ‰‹å†Œ">jQuery</a></li>
+<li><a href="/jquerymobile/jquerymobile_ref_data.asp" title="jQuery Mobile å‚è€ƒæ‰‹å†Œ">jQuery Mobile</a></li>
+<li><a href="/vbscript/vbscript_ref_functions.asp" title="VBScript å‡½æ•°">VBScript</a></li>
+<li><a href="/asp/asp_ref.asp" title="ASP å‚è€ƒæ‰‹å†Œ">ASP</a></li>
+<li><a href="/ado/ado_reference.asp" title="ADO å‚è€ƒæ‰‹å†Œ">ADO</a></li>
+<li><a href="/aspnet/aspnet_reference.asp" title="ASP.NET å‚è€ƒæ‰‹å†Œ">ASP.NET</a></li>
+<li><a href="/php/php_ref.asp" title="PHP å‚è€ƒæ‰‹å†Œ">PHP 5.1</a></li>
+<li><a href="/xmldom/xmldom_reference.asp" title="XML DOM å‚è€ƒæ‰‹å†Œ">XML DOM</a></li>
+<li><a href="/xsl/xsl_w3celementref.asp" title="XSLT å…ƒç´ å‚è€ƒæ‰‹å†Œ">XSLT 1.0</a></li>
+<li><a href="/xpath/xpath_functions.asp" title="XPathã€XQuery ä»¥åŠ XSLT å‡½æ•°">XPath 2.0</a></li>
+<li><a href="/xslfo/xslfo_reference.asp" title="XSL-FO å‚è€ƒæ‰‹å†Œ">XSL-FO</a></li>
+<li><a href="/wap/wml_reference.asp" title="WML å‚è€ƒæ‰‹å†Œ">WML 1.1</a></li>
+<li><a href="/glossary/index.asp" title="W3C æœ¯è¯­è¡¨å’Œè¯å…¸">W3C æœ¯è¯­è¡¨</a></li>
+</ul>
+
+<h2>å­—ç¬¦é›†</h2>
+<ul>
+<li><a href="/tags/html_ref_charactersets.asp" title="HTML å­—ç¬¦é›†">HTML å­—ç¬¦é›†</a></li>
+<li><a href="/tags/html_ref_ascii.asp" title="HTML ASCII å‚è€ƒæ‰‹å†Œ">HTML ASCII</a></li>
+<li><a href="/tags/html_ref_entities.html" title="HTML ISO-8859-1 å‚è€ƒæ‰‹å†Œ">HTML ISO-8859-1</a></li>
+<li><a href="/tags/html_ref_symbols.html" title="HTML 4.01 ç¬¦å·å®ä½“">HTML ç¬¦å·</a></li>
+</ul>
+
+<h2>å®ä¾‹/æ¡ˆä¾‹</h2>
+<ul>
+<li><a href="/example/html_examples.asp">HTML å®ä¾‹</a></li>
+<li><a href="/example/csse_examples.asp">CSS å®ä¾‹</a></li>
+<li><a href="/example/xmle_examples.asp">XML å®ä¾‹</a></li>
+<li><a href="/example/jseg_examples.asp">JavaScript å®ä¾‹</a></li>
+<li><a href="/example/jsrf_examples.asp">JavaScript å¯¹è±¡å®ä¾‹</a></li>
+<li><a href="/example/hdom_examples.asp">HTML DOM å®ä¾‹</a></li>
+<li><a href="/jquery/jquery_examples.asp">jQuery å®ä¾‹</a></li>
+<li><a href="/jquerymobile/jquerymobile_examples.asp">jQuery Mobile å®ä¾‹</a></li>
+<li><a href="/example/xdom_examples.asp">XML DOM å®ä¾‹</a></li>
+<li><a href="/example/dhtm_examples.asp">DHTML å®ä¾‹</a></li>
+<li><a href="/example/ajax_examples.asp">AJAX å®ä¾‹</a></li>
+<li><a href="/example/vbst_examples.asp">VBScript å®ä¾‹</a></li>
+<li><a href="/example/aspe_examples.asp">ASP å®ä¾‹</a></li>
+<li><a href="/example/adoe_examples.asp">ADO å®ä¾‹</a></li>
+<li><a href="/svg/svg_examples.asp">SVG å®ä¾‹</a></li>
+<li><a href="/wap/wap_demo.asp" title="WAP æ¼”ç¤º">WAP å®ä¾‹</a></li>
+</ul>
+
+<h2>æµ‹éªŒ/è€ƒè¯•</h2>
+<ul>
+<li><a href="/html/html_quiz.asp">HTML æµ‹éªŒ</a></li>
+<li><a href="/html5/html5_quiz.asp">HTML5 æµ‹éªŒ</a></li>
+<li><a href="/xhtml/xhtml_quiz.asp">XHTML æµ‹éªŒ</a></li>
+<li><a href="/css/css_quiz.asp">CSS æµ‹éªŒ</a></li>
+<li><a href="/xml/xml_quiz.asp">XML æµ‹éªŒ</a></li>
+<li><a href="/js/js_quiz.asp">JavaScript æµ‹éªŒ</a></li>
+<li><a href="/jquery/jquery_quiz.asp">jQuery æµ‹éªŒ</a></li>
+<li><a href="/sql/sql_quiz.asp">SQL æµ‹éªŒ</a></li>
+<li><a href="/asp/asp_quiz.asp">ASP æµ‹éªŒ</a></li>
+<li><a href="/php/php_quiz.asp">PHP æµ‹éªŒ</a></li>
+</ul>
+
+<h2>ä»£ç éªŒè¯</h2>
+<ul>
+<li><a href="/site/site_validate.asp" title="ç½‘é¡µéªŒè¯">éªŒè¯HTML</a></li>
+<li><a href="/site/site_validate.asp" title="ç½‘é¡µéªŒè¯">éªŒè¯CSS</a></li>
+<li><a href="/site/site_validate.asp" title="ç½‘é¡µéªŒè¯">éªŒè¯XHTML</a></li>
+<li><a href="/site/site_validate.asp" title="ç½‘é¡µéªŒè¯">éªŒè¯XML</a></li>
+<li><a href="/site/site_validate.asp" title="ç½‘é¡µéªŒè¯">éªŒè¯WML</a></li>
+</ul>
+
+</div>
+
+
+
+<div id="footer">
+<p>
+W3School æä¾›çš„å†…å®¹ä»…ç”¨äºåŸ¹è®­ã€‚æˆ‘ä»¬ä¸ä¿è¯å†…å®¹çš„æ­£ç¡®æ€§ã€‚é€šè¿‡ä½¿ç”¨æœ¬ç«™å†…å®¹éšä¹‹è€Œæ¥çš„é£é™©ä¸æœ¬ç«™æ— å…³ã€‚W3School ç®€ä½“ä¸­æ–‡ç‰ˆçš„æ‰€æœ‰å†…å®¹ä»…ä¾›æµ‹è¯•ï¼Œå¯¹ä»»ä½•æ³•å¾‹é—®é¢˜åŠé£é™©ä¸æ‰¿æ‹…ä»»ä½•è´£ä»»ã€‚
+</p>
+
+<p>
+å½“ä½¿ç”¨æœ¬ç«™æ—¶ï¼Œä»£è¡¨æ‚¨å·²æ¥å—äº†æœ¬ç«™çš„<a href="/about/about_use.asp" title="å…³äºä½¿ç”¨">ä½¿ç”¨æ¡æ¬¾</a>å’Œ<a href="/about/about_privacy.asp" title="å…³äºéšç§">éšç§æ¡æ¬¾</a>ã€‚ç‰ˆæƒæ‰€æœ‰ï¼Œä¿ç•™ä¸€åˆ‡æƒåˆ©ã€‚
+èµåŠ©å•†ï¼š<a href="http://www.yktz.net/" title="ä¸Šæµ·èµ¢ç§‘æŠ•èµ„æœ‰é™å…¬å¸">ä¸Šæµ·èµ¢ç§‘æŠ•èµ„æœ‰é™å…¬å¸</a>ã€‚
+<a href="http://www.miitbeian.gov.cn/">è’™ICPå¤‡06004630å·</a>
+</p>
+</div>
+
+</div>
+
+</body></html>Ytext/htmlUUTF-8P_http://www.w3school.com.cn/    1 6 ? Q g v ŒQwQ€Q¤UzUƒmÂmÍmşqâqë„„?ˆ#ˆ,›z›ªŸŸ˜Ÿ¶ŸÍÔ3Ô=ÔCÔD             "              Ôb

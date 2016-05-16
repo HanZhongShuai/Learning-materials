@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="zh-cn" class="no-js lt-ie9 lt-ie8 lt-ie7 logged-in "> <![endif]-->
+<!--[if IE 7]>         <html lang="zh-cn" class="no-js lt-ie9 lt-ie8 logged-in "> <![endif]-->
+<!--[if IE 8]>         <html lang="zh-cn" class="no-js lt-ie9 logged-in "> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zh-cn" class="no-js logged-in "> <!--<![endif]-->
+    <head>
+        
+    <script type="text/javascript">window._timings = {"domLoading": Date.now()}</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Authorization Request &mdash; Instagram</title>
+
+        <script type="text/javascript">
+  WebFontConfig = {
+    custom: {
+      families: ['proxima-nova:n3,n4,n6,n7'],
+    }
+  };
+</script>
+<script src="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/scripts/webfont.js" type="text/javascript" async></script>
+
+<style type="text/css">
+  /* @license
+   * MyFonts Webfont Build ID 2164953, 2012-03-23T23:06:30-0400
+   *
+   * The fonts listed in this notice are subject to the End User License
+   * Agreement(s) entered into by the website owner. All other parties are
+   * explicitly restricted from using the Licensed Webfonts(s).
+   *
+   * You may obtain a valid license at the URLs below.
+   *
+   *
+   * Webfont: Proxima Nova Light by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Regular by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Semibold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+   * Licensed pageviews: unlimited
+   *
+   *
+   * License: http://www.myfonts.com/viewlicense?type=web&buildid=2164953
+   * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+   *
+   * (c) 2012 Bitstream Inc
+   */
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-bold-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-bold-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-bold-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-bold-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-bold-webfont.svg#ProximaNovaBold') format("svg");
+    font-weight: bold;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-boldit-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-boldit-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-boldit-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-boldit-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-boldit-webfont.svg#ProximaNovaBoldItalic') format("svg");
+    font-weight: bold;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-reg-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-reg-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-reg-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-reg-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-reg-webfont.svg#ProximaNovaRegular') format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-regit-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-regit-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-regit-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-regit-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-regit-webfont.svg#ProximaNovaRegularItalic') format("svg");
+    font-weight: normal;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-sbold-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-sbold-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-sbold-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-sbold-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-sbold-webfont.svg#ProximaNovaSemibold') format("svg");
+    font-weight: 600;
+    font-style: normal; }
+</style>
+
+  <style type="text/css">
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-light-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-light-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-light-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-light-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/4da1e40/webfonts/proximanova-light-webfont.svg#ProximaNovaLight') format("svg");
+    font-weight: 300;
+    font-style: normal; }
+</style>
+
+
+        
+    
+        <meta name="robots" content="noimageindex">
+        
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+        
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+        <script type="text/javascript">
+        (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+        </script>
+
+        
+    
+    
+        <link rel="Shortcut Icon" type="image/x-icon" href="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/images/ico/favicon.ico"><link rel="mask-icon" href="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/images/ico/favicon.svg" color="#125688">
+    
+    
+        <link rel="apple-touch-icon-precomposed" href="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/images/ico/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/images/ico/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/images/ico/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/images/ico/apple-touch-icon-144x144-precomposed.png">
+    
+    
+    <link href="//instagramstatic-a.akamaihd.net/bluebar/4da1e40/styles/distillery/dialog-main.css" type="text/css" rel="stylesheet"></link>
+    <!--[if lt IE 9]>
+    <style>
+        .dialog-outer {
+            min-height: 0;
+        }
+    </style>
+    <![endif]-->
+
+    
+
+    </head>
+    <body class="p-dialog oauth-authorize">
+        
+    
+        <div class="root">
+        
+    <section class="dialog-outer">
+        <div class="dialog">
+            <header>
+                <h1 class="logo">Instagram</h1>
+            </header>
+            
+            <div class="dialog-main">
+                <p>Hi <b>han1314shuai,</b> <b><a href="http://www.facebook.com/rcplatform2014" target="_blank">Profile Tracker</a></b> is requesting to do the following:</p>
+
+                <ul>
+                    
+                    <li>
+                        <strong>Access your basic information</strong>
+                        <span>Includes photos, friend lists & profile info</span>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <form action="/oauth/authorize/?client_id=b43272ac8dbb4a7a8003cd9a95bca769&amp;redirect_uri=http://www.facebook.com/rcplatform2014&amp;response_type=code&amp;scope=likes+relationships" method="POST" accept-charset="utf-8" class="form-actions">
+                <input type="hidden" name="csrfmiddlewaretoken" value="4f31be67d7fab9dc15f1e5de9ff20525"/>
+                <p><a href="/accounts/logoutin?next=%2Foauth%2Fauthorize%2F%3Fclient_id%3Db43272ac8dbb4a7a8003cd9a95bca769%26redirect_uri%3Dhttp%3A%2F%2Fwww.facebook.com%2Frcplatform2014%26response_type%3Dcode%26scope%3Dlikes%2Brelationships">Not han1314shuai?</a></p>
+
+                <ul class="actions">
+                    <li><input type="submit" name="allow" value="Cancel" class="button destructive button-light" /></li>
+                    <li><input type="submit" name="allow" value="Authorize" class="button confirm button-green" /></li>
+                </ul>
+            </form>
+        </div>
+
+        <footer>
+            <p><small>You should only authorize third-party applications that you trust, and you should understand how and when they will use your data. You may revoke this app's access at any time by visiting your profile page and clicking "revoke" in the <a href="/accounts/manage_access">access section</a>.</small></p>
+        </footer>
+    </section>
+
+        <div id="reactModalMountPoint"></div>
+    </div> <!-- .root -->
+    
+    
+
+        
+    
+<script type="text/javascript">window._sharedData = {"country_code":"US","language_code":"zh-cn","gatekeepers":{"rhp":true,"addpp":true,"sfbf":true},"static_root":"\/\/instagramstatic-a.akamaihd.net\/bluebar\/4da1e40","platform":"web","hostname":"www.instagram.com","entry_data":{},"qe":{"su":{"p":{},"g":""}},"display_properties_server_guess":{"viewport_width":1240,"pixel_ratio":1.0},"config":{"dismiss_app_install_banner_until":null,"viewer":{"username":"han1314shuai","has_profile_pic":true,"profile_pic_url":"https:\/\/scontent-lhr3-1.cdninstagram.com\/hphotos-xpt1\/t51.2885-19\/s150x150\/12230962_856363461144499_1112433433_a.jpg","full_name":null,"id":"2157047934","biography":"\ud83e\udd13\ud83e\udd17\ud83e\udd11\ud83e\udd14\ud83d\ude0b\ud83d\ude16\ud83e\udd15\ud83e\udd10","external_url":null},"csrf_token":"4f31be67d7fab9dc15f1e5de9ff20525"},"environment_switcher_visible_server_guess":true};</script>
+
+        
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1425767024389221');
+fbq('track', 'PageView');
+
+
+</script>
+<noscript>
+
+
+</noscript>
+
+    
+    <script type="text/javascript">window._timings.domInteractive = Date.now()</script>
+
+    </body>
+</html>

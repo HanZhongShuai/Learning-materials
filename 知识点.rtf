@@ -1,0 +1,1683 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\fnil\fcharset0 Tahoma;
+\f3\fswiss\fcharset0 ArialMT;\f4\fnil\fcharset0 HelveticaNeue;\f5\froman\fcharset0 Times-Roman;
+\f6\fnil\fcharset134 STSongti-SC-Regular;\f7\fmodern\fcharset0 CourierNewPSMT;\f8\fnil\fcharset0 Consolas;
+\f9\fnil\fcharset0 Consolas-Bold;\f10\fnil\fcharset0 MicrosoftYaHei;}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;\red170\green13\blue145;\red63\green110\blue116;
+\red46\green13\blue110;\red52\green52\blue52;\red38\green38\blue38;\red240\green255\blue231;\red243\green246\blue252;
+\red0\green116\blue0;\red100\green56\blue32;\red28\green0\blue207;\red196\green26\blue22;\red38\green71\blue75;
+\red15\green112\blue1;\red242\green242\blue242;\red0\green0\blue255;\red38\green39\blue0;\red4\green40\blue0;
+\red74\green74\blue74;\red176\green14\blue139;\red48\green17\blue105;\red15\green115\blue27;\red96\green40\blue147;
+\red15\green114\blue1;\red10\green82\blue135;\red109\green109\blue109;\red1\green1\blue1;\red202\green22\blue28;
+\red36\green71\blue75;\red170\green12\blue145;\red49\green49\blue49;\red249\green249\blue249;\red57\green57\blue57;
+\red241\green233\blue220;\red14\green110\blue109;\red107\green0\blue1;\red107\green0\blue109;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25100\viewh12960\viewkind0
+\deftab770
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0\fs32 \cf0 \CocoaLigature0 self.\cf2 navigationBar\cf0 .\cf2 translucent\cf0  = \cf3 NO\cf0 ;
+\f1 \'b5\'bc\'ba\'bd\'cc\'f5\'c9\'e8\'d6\'c3\'ce\'aa\'b2\'bb\'cd\'b8\'c3\'f7\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0 \cf4 _tableView\cf0 .\cf2 separatorStyle\cf0  = \cf5 UITableViewCellSeparatorStyleNone\cf0 ; 
+\f1 \'c9\'e8\'d6\'c3\'b1\'ed\'b8\'f1\'ca\'bd\'cd\'bc\'d3\'d0\'ce\'de\'b7\'d6\'b8\'ee\'cf\'df\
+\pard\pardeftab720
+
+\f2 \cf6 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [[NSBundle mainBundle]\'a0infoDictionary] 
+\f1 \'b7\'b5\'bb\'d8\'b5\'c4\'ca\'c7\'d2\'bb\'b8\'f6\'ca\'fd\'be\'dd\'d7\'d6\'b5\'e4 \'b0\'fc\'ba\'ac\'c1\'cb\'b5\'b1\'c7\'b0\'d3\'a6\'d3\'c3\'b5\'c4\'bb\'f9\'b1\'be\'d0\'c5\'cf\'a2\'a3\'a8\'c3\'fb\'b3\'c6\'a1\'a2\'b0\'e6\'b1\'be\'ba\'c5\'b5\'c8\'b5\'c8\'a3\'a9\cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+
+\f2 \cf6 \expnd0\expndtw0\kerning0
+\CocoaLigature1 SLog(@"ios 
+\f1 \'d3\'a6\'d3\'c3\'b7\'a2\'b2\'bc\'ba\'f3
+\f2  .app 
+\f1 \'d3\'a6\'d3\'c3\'ce\'c4\'bc\'fe
+\f2  
+\f1 \'c2\'b7\'be\'b6
+\f2 ::%@",[NSBundle mainBundle] );\
+\'a0 \'a0 NSLog(@"ios 
+\f1 \'d3\'a6\'d3\'c3\'b7\'a2\'b2\'bc\'ba\'f3
+\f2  .app 
+\f1 \'d3\'a6\'d3\'c3\'b0\'fc
+\f2 (
+\f1 \'ce\'c4\'bc\'fe
+\f2 ) 
+\f1 \'b5\'c4\'cf\'ea\'cf\'b8\'d0\'c5\'cf\'a2
+\f2 \'a0::%@",[[NSBundle mainBundle] infoDictionary]);\
+\
+
+\f1 \'cd\'c6\'cb\'cd\'a3\'ba
+\f2 \
+\pard\pardeftab720
+
+\f1\fs28 \cf7 \cb8 \expnd0\expndtw0\kerning0
+\'c9\'e8\'b1\'b8\'bd\'d3\'b5\'bd
+\f3 apns
+\f1 \'b7\'a2\'c0\'b4\'b5\'c4\'cd\'a8\'d6\'aa\'a3\'ac\'d3\'a6\'d3\'c3\'b4\'a6\'c0\'ed\'cd\'a8\'d6\'aa\'d3\'d0\'d2\'d4\'cf\'c2\'bc\'b8\'d6\'d6\'c7\'e9\'bf\'f6\'a3\'ba
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\cb8 \expnd0\expndtw0\kerning0
+1. 
+\f1 \'d3\'a6\'d3\'c3\'bb\'b9\'c3\'bb\'d3\'d0\'bc\'d3\'d4\'d8
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+
+\f1 \cb8 \expnd0\expndtw0\kerning0
+\'d5\'e2\'ca\'b1\'c8\'e7\'b9\'fb\'b5\'e3\'bb\'f7\'cd\'a8\'d6\'aa\'b5\'c4\'cf\'d4\'ca\'be\'b0\'b4\'c5\'a5\'a3\'ac\'bb\'e1\'b5\'f7\'d3\'c3
+\f3 didFinishLaunchingWithOptions
+\f1 \'a3\'ac\'b2\'bb\'bb\'e1\'b5\'f7\'d3\'c3
+\f3 didReceiveRemoteNotification
+\f1 \'b7\'bd\'b7\'a8\'a1\'a3
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+
+\f1 \cb8 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb\'b5\'e3\'bb\'f7\'cd\'a8\'d6\'aa\'b5\'c4\'b9\'d8\'b1\'d5\'b0\'b4\'c5\'a5\'a3\'ac\'d4\'d9\'b5\'e3\'bb\'f7\'d3\'a6\'d3\'c3\'a3\'ac\'d6\'bb\'bb\'e1\'b5\'f7\'d3\'c3
+\f3 didFinishLaunchingWithOptions
+\f1 \'b7\'bd\'b7\'a8\'a1\'a3
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\cb8 \expnd0\expndtw0\kerning0
+2. 
+\f1 \'d3\'a6\'d3\'c3\'d4\'da\'c7\'b0\'cc\'a8\'a3\'a8
+\f3 foreground)\cb1 \expnd0\expndtw0\kerning0
+\
+\
+
+\f1 \cb8 \expnd0\expndtw0\kerning0
+\'d5\'e2\'ca\'b1\'c8\'e7\'b9\'fb\'ca\'d5\'b5\'bd\'cd\'a8\'d6\'aa\'a3\'ac\'bb\'e1\'b4\'a5\'b7\'a2
+\f3 didReceiveRemoteNotification
+\f1 \'b7\'bd\'b7\'a8\'a1\'a3
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\cb8 \expnd0\expndtw0\kerning0
+3.
+\f1 \'d3\'a6\'d3\'c3\'d4\'da\'ba\'f3\'cc\'a8
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+
+\f1 \cb8 \expnd0\expndtw0\kerning0
+\'a3\'a8
+\f3 1
+\f1 \'a3\'a9\'b4\'cb\'ca\'b1\'c8\'e7\'b9\'fb\'ca\'d5\'b5\'bd\'cd\'a8\'d6\'aa\'a3\'ac\'b5\'e3\'bb\'f7\'cf\'d4\'ca\'be\'b0\'b4\'c5\'a5\'a3\'ac\'bb\'e1\'b5\'f7\'d3\'c3
+\f3 didReceiveRemoteNotification
+\f1 \'b7\'bd\'b7\'a8\'a1\'a3
+\f3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+
+\f1 \cb8 \expnd0\expndtw0\kerning0
+\'a3\'a8
+\f3 2
+\f1 \'a3\'a9\'b5\'e3\'bb\'f7\'b9\'d8\'b1\'d5\'d4\'d9\'b5\'e3\'bb\'f7\'d3\'a6\'d3\'c3\'a3\'ac\'d4\'f2\'c9\'cf\'c3\'e6\'c1\'bd\'b8\'f6\'b7\'bd\'b7\'a8\'b6\'bc\'b2\'bb\'bb\'e1\'b1\'bb\'b5\'f7\'d3\'c3\'d5\'e2\'ca\'b1\'a3\'ac\'d6\'bb\'c4\'dc\'d4\'da
+\f3 applicationWillEnterForeground
+\f1 \'bb\'f2\'d5\'df
+\f3 applicationDidBecomeActive,
+\f1 \'b8\'f9\'be\'dd\'b7\'a2\'b9\'fd\'c0\'b4\'cd\'a8\'d6\'aa\'d6\'d0\'b5\'c4
+\f3 badge
+\f1 \'bd\'f8\'d0\'d0\'c5\'d0\'b6\'cf\'ca\'c7\'b7\'f1\'d3\'d0\'cd\'a8\'d6\'aa\'a3\'ac\'c8\'bb\'ba\'f3\'b7\'a2\'c7\'eb\'c7\'f3\'bb\'f1\'c8\'a1\'ca\'fd\'be\'dd\
+\pard\pardeftab720
+
+\b\fs32 \cf0 \cb9 \expnd0\expndtw0\kerning0
+\'d4\'da\'d3\'a6\'d3\'c3\'bd\'f8\'c8\'eb\'ba\'f3\'cc\'a8\'ca\'b1\'a3\'ac\'b1\'ea\'bc\'c7\'b5\'b1\'c7\'b0\'ca\'b1\'bc\'e4\'a3\'ac\'d3\'a6\'d3\'c3\'d4\'d9\'b4\'ce\'c6\'f4\'b6\'af\'ca\'b1\'a3\'ac\'cd\'a8\'b9\'fd\'ce\'d2\'c3\'c7\'b1\'ea\'bc\'c7\'b5\'c4\'ca\'b1\'bc\'e4\'a3\'ac\'b5\'bd\'c4\'bf\'c7\'b0\'ca\'b1\'bc\'e4\'b6\'ce\'a3\'ac\'d4\'da\'b7\'fe\'ce\'f1\'b6\'cb\'ba\'f3\'cc\'a8\'d7\'f6\'d2\'d1\'b7\'a2\'cf\'fb\'cf\'a2\'c4\'da\'c8\'dd\'ca\'fd\'be\'dd\'b5\'c4\'c7\'eb\'c7\'f3\'a1\'a3
+\f3 \cb1 \
+\pard\pardeftab720
+
+\f1\b0\fs28 \cf0 \cb9 \expnd0\expndtw0\kerning0
+\'d3\'a6\'d3\'c3\'bd\'f8\'c8\'eb\'ba\'f3\'cc\'a8\'b5\'f7\'d3\'c3\'a3\'ba
+\f3 applicationDidEnterBackground
+\f1 \'a3\'ac\'d4\'da\'b4\'cb\'b7\'bd\'b7\'a8\'d6\'d0\'d7\'f6\'ca\'b1\'bc\'e4\'b1\'ea\'bc\'c7
+\f3 \cb1 \
+
+\f1 \cb9 \'d3\'a6\'d3\'c3\'c6\'f4\'b6\'af\'bb\'e1\'b5\'f7\'d3\'c3\'a3\'ba
+\f3 applicationWillEnterForeground
+\f1 \'ba\'cd
+\f3 applicationDidBecomeActive
+\f1 \'a3\'ac\'d7\'f6\'ca\'fd\'be\'dd\'c7\'eb\'c7\'f3\
+\
+\pard\pardeftab720
+\cf7 \cb1 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb\'d6\'bb\'d0\'e8\'d2\'aa\'d2\'bb\'b8\'f6\'bf\'aa\'b9\'d8\'a3\'ac\'bf\'c9\'d2\'d4\'bf\'d8\'d6\'c6\'cd\'a8\'d6\'aa\'d6\'d0\'d0\'c4\'b5\'c4\'bf\'aa\'b9\'d8\'a3\'ac\'b9\'d8\'d3\'c3
+\f0 \expnd0\expndtw0\kerning0
+[[\cf2 \expnd0\expndtw0\kerning0
+UIApplication\cf7 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+sharedApplication\cf7 \expnd0\expndtw0\kerning0
+] \cf5 \expnd0\expndtw0\kerning0
+unregisterForRemoteNotifications\cf7 \expnd0\expndtw0\kerning0
+];
+\f1 \expnd0\expndtw0\kerning0
+\'a3\'ac\'bf\'aa\'d3\'c3
+\f0 \expnd0\expndtw0\kerning0
+[[\cf2 \expnd0\expndtw0\kerning0
+UIApplication\cf7 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+sharedApplication\cf7 \expnd0\expndtw0\kerning0
+] \cf5 \expnd0\expndtw0\kerning0
+registerForRemoteNotificationTypes\cf7 \expnd0\expndtw0\kerning0
+:(\cf5 \expnd0\expndtw0\kerning0
+UIRemoteNotificationTypeBadge\cf7 \expnd0\expndtw0\kerning0
+ | \cf5 \expnd0\expndtw0\kerning0
+UIRemoteNotificationTypeSound\cf7 \expnd0\expndtw0\kerning0
+ | \cf5 \expnd0\expndtw0\kerning0
+UIRemoteNotificationTypeAlert\cf7 \expnd0\expndtw0\kerning0
+)];\
+\
+\
+\pard\tx770\pardeftab770\pardirnatural
+
+\fs32 \cf10 \kerning1\expnd0\expndtw0 \CocoaLigature0 //
+\f1 \'d3\'c3\'bb\'a7\'b5\'b1\'c7\'b0\'b5\'c4\'d3\'ef\'d1\'d4\'bb\'b7\'be\'b3
+\f0\fs28 \cf7 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\tx770\pardeftab770\pardirnatural
+
+\fs32 \cf11 \kerning1\expnd0\expndtw0 \CocoaLigature0 #define CURR_LANG ([[NSLocale preferredLanguages] objectAtIndex:\cf12 0\cf11 ])\
+\
+\pard\tx770\pardeftab770\pardirnatural
+\cf2 NSString\cf0  *LocalizedString(\cf2 NSString\cf0  *translation_key, \cf3 id\cf0  none)\
+\{\
+\
+    \cf2 NSString\cf0  *language = \cf13 @"en"\cf0 ;\
+    \
+    \cf10 //
+\f1 \'d6\'bb\'ca\'ca\'c5\'e4\'d5\'e2\'c3\'b4\'d0\'a9\'d6\'d6\'d3\'ef\'d1\'d4\'a3\'ac\'c6\'e4\'d3\'e0\'d2\'bb\'c2\'c9\'d3\'c3
+\f0 en\cf0 \
+    \cf3 if\cf0 ([\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"zh-Hans"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"zh-Hant"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"de"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"es"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"fr"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"it"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"js"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"ko"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"ja"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"pt"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"pt-PT"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"id"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"th"\cf0 ] ||\
+       [\cf11 CURR_LANG\cf0  \cf5 isEqualToString\cf0 :\cf13 @"ru"\cf0 ] )\
+    \{\
+        language = \cf11 CURR_LANG\cf0 ;\
+    \}\
+    \cf2 NSString\cf0  * path = [[\cf2 NSBundle\cf0  \cf5 mainBundle\cf0 ] \cf5 pathForResource\cf0 :language \cf5 ofType\cf0 :\cf13 @"lproj"\cf0 ];\
+    \cf2 NSBundle\cf0  * languageBundle = [\cf2 NSBundle\cf0  \cf5 bundleWithPath\cf0 :path];\
+    \cf3 return\cf0  [languageBundle \cf5 localizedStringForKey\cf0 :translation_key \cf5 value\cf0 :\cf13 @""\cf0  \cf5 table\cf0 :\cf3 nil\cf0 ];\
+\}\
+\
+\
+label.\cf2 adjustsFontSizeToFitWidth\cf0  = \cf3 YES\cf0 ;
+\f1 //\'b5\'f7\'d5\'fb\'d7\'d6\'cc\'e5\'b4\'f3\'d0\'a1\'ca\'ca\'d3\'a6\'bf\'ed\'b6\'c8\
+\
+\'c9\'e8\'d6\'c3\'cd\'bc\'c6\'ac\'ca\'d3\'cd\'bc\'b1\'bb\'d1\'a1\'d6\'d0\'b5\'c4\'ca\'b1\'ba\'f2\'b5\'c4\'cd\'bc\'c6\'ac\
+
+\f0 iconImageView.\cf2 highlightedImage\cf0  = [\cf2 UIImage\cf0  \cf5 imageNamed\cf0 :model.\cf4 imageHLName\cf0 ];\
+
+\f1 \'c9\'e8\'d6\'c3
+\f0 label
+\f1 \'b1\'bb\'d1\'a1\'d6\'d0\'ca\'b1\'b5\'c4\'d7\'d6\'cc\'e5\'d1\'d5\'c9\'ab
+\f0 \
+label.\cf2 highlightedTextColor\cf0  = \cf14 colorWithHexString\cf0 (\cf13 @"#f85e5e"\cf0 ,\cf12 1.f\cf0 );\
+\
+
+\f1 \'ce\'aa\'b5\'a5\'d4\'aa\'b8\'f1\'cc\'ed\'bc\'d3\'c4\'da\'c8\'dd\'ca\'d3\'cd\'bc
+\f0 \
+[cell.\cf2 contentView\cf0  \cf5 addSubview\cf0 :iconImageView];\
+[cell.\cf2 contentView\cf0  \cf5 addSubview\cf0 :label];\
+\
+ \cf10 //
+\f1 \'d6\'b1\'bd\'d3\'b7\'a2\'d3\'ca\'bc\'fe
+\f0 \cf0 \
+            \cf2 MFMailComposeViewController\cf0  *picker = [[\cf2 MFMailComposeViewController\cf0  \cf5 alloc\cf0 ] \cf5 init\cf0 ];\
+            \cf3 if\cf0 (!picker) \cf3 break\cf0 ;\
+            picker.\cf2 mailComposeDelegate\cf0  =\cf3 self\cf0 ;\
+            \cf2 NSString\cf0  *subject = [\cf2 NSString\cf0  \cf5 stringWithFormat\cf0 :\cf13 @"Mirror Grid %@ (iOS)"\cf0 , \cf14 LocalizedString\cf0 (\cf13 @"Feedback"\cf0 , \cf3 nil\cf0 )];\
+            [picker \cf5 setSubject\cf0 :subject];\cf10 //
+\f1 \'d6\'f7\'cc\'e2
+\f0 \cf0             [picker \cf5 setToRecipients\cf0 :\cf12 @[\cf11 FEEDBACK_EMAIL\cf12 ]\cf0 ];\cf10 //
+\f1 \'b5\'d8\'d6\'b7
+\f0 \cf0             [picker \cf5 setMessageBody\cf0 :diveceInfo \cf5 isHTML\cf0 :\cf3 NO\cf0 ];\cf10 //
+\f1 \'c4\'da\'c8\'dd
+\f0 \cf0             picker.\cf2 delegate\cf0  = \cf3 self\cf0 ;\
+            [\cf14 currentWindowController\cf0 () \cf5 presentViewController\cf0 :picker \cf5 animated\cf0 :\cf3 YES\cf0  \cf5 completion\cf0 :\cf3 nil\cf0 ];\
+\
+\pard\tx770\pardeftab770\pardirnatural
+\cf10 //
+\f1 \'d3\'ca\'bc\'fe\'b7\'a2\'cb\'cd\'cd\'ea\'b3\'c9\'bb\'f2\'d5\'df\'ca\'a7\'b0\'dc\'b5\'f7\'d3\'c3
+\f0 \cf0 \
+- (\cf3 void\cf0 )mailComposeController:(\cf2 MFMailComposeViewController\cf0  *)controller didFinishWithResult:(\cf2 MFMailComposeResult\cf0 )result error:(\cf2 NSError\cf0  *)error\
+\{\
+    [controller \cf5 dismissViewControllerAnimated\cf0 :\cf3 YES\cf0  \cf5 completion\cf0 :\cf3 nil\cf0 ];\
+\}\
+\
+\pard\pardeftab720
+
+\f4\fs28 \cf7 \expnd0\expndtw0\kerning0
+\CocoaLigature1 UIActivityViewController 
+\f1 \expnd0\expndtw0\kerning0
+\'a3\'ac\'b3\'f6\'cf\'d6\'d3\'da
+\f4 \expnd0\expndtw0\kerning0
+ iOS 6
+\f1 \expnd0\expndtw0\kerning0
+\'a3\'ac\'d4\'da\'d3\'a6\'d3\'c3\'c0\'ef\'ce\'aa\'b7\'d6\'cf\'ed\'ba\'cd\'b2\'d9\'d7\'f7\'ca\'fd\'be\'dd\'cc\'e1\'b9\'a9\'c1\'cb\'d2\'bb\'b8\'f6\'cd\'b3\'d2\'bb\'b5\'c4\'b7\'fe\'ce\'f1\'bd\'d3\'bf\'da\'a1\'a3\
+\'c4\'ac\'c8\'cf\'c7\'e9\'bf\'f6\'cf\'c2\'a3\'ac
+\f4 \expnd0\expndtw0\kerning0
+UIActivityViewController 
+\f1 \expnd0\expndtw0\kerning0
+\'bd\'ab\'cf\'d4\'ca\'be\'cb\'f9\'d3\'d0\'bf\'c9\'d3\'c3\'d3\'da\'cb\'f9\'cc\'e1\'b9\'a9\'c4\'da\'c8\'dd\'b5\'c4\'b7\'fe\'ce\'f1\'a3\'ac\'b5\'ab\'ce\'d2\'c3\'c7\'d2\'b2\'bf\'c9\'d2\'d4\'c5\'c5\'b3\'fd\'cc\'d8\'b6\'a8\'b5\'c4
+\f4 \expnd0\expndtw0\kerning0
+ Activity 
+\f1 \expnd0\expndtw0\kerning0
+\'c0\'e0\'d0\'cd\'a1\'a3\
+\
+\
+\'c5\'d0\'b6\'cf\'ca\'da\'c8\'a8\'d7\'b4\'cc\'ac\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0\fs32 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 ALAuthorizationStatus\cf0  author = [\cf2 ALAssetsLibrary\cf0  \cf5 authorizationStatus\cf0 ];\
+    \cf3 if\cf0  (author == \cf5 ALAuthorizationStatusRestricted\cf0  || author == \cf5 ALAuthorizationStatusDenied\cf0 )\
+
+\f1 \'ca\'da\'c8\'a8\'ca\'dc\'cf\'de
+\f0   
+\f1 \'c3\'bb\'d3\'d0\'ca\'da\'c8\'a8
+\f0 \
+\
+\pard\pardeftab720
+
+\f5\fs28 \cf7 \expnd0\expndtw0\kerning0
+\CocoaLigature1 ALAssetsLibrary 
+\f6 \'ca\'b5\'c0\'fd\'ce\'aa\'ce\'d2\'c3\'c7\'cc\'e1\'b9\'a9\'c1\'cb\'bb\'f1\'c8\'a1\'cf\'e0\'b2\'e1
+\f5 (
+\f6 \'d5\'d5\'c6\'ac
+\f5 app)
+\f6 \'d6\'d0\'b5\'c4\'cd\'bc\'c6\'ac\'ba\'cd\'ca\'d3\'c6\'b5\'b5\'c4\'b9\'a6\'c4\'dc\'a1\'a3\'d4\'da
+\f5 ios8 photos framework
+\f6 \'b4\'fa\'cc\'e6\'c1\'cb
+\f5 ALAssetsLibrary
+\f6 \'a1\'a3\
+\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f1\fs32 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \'b9\'d8\'b1\'d5\'ca\'d3\'cd\'bc\'b5\'c4\'b6\'e0\'b5\'e3\'b4\'a5\'c3\'fe
+\f6\fs28 \cf7 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+
+\f0\fs32 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 [\cf3 self\cf0  \cf5 setMultipleTouchEnabled\cf0 :\cf3 NO\cf0 ];\
+\
+
+\f1 \'bd\'ab\'cd\'bc\'c6\'ac\'b1\'a3\'b4\'e6\'b5\'bd\'b1\'be\'b5\'d8
+\f0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf5 UIImageWriteToSavedPhotosAlbum\cf0 ([\cf4 ME_Global\cf0  \cf14 shareGlobal\cf0 ].\cf4 bigImage\cf0 , \cf3 self\cf0 , \cf3 @selector\cf0 (image:didFinishSavingWithError:contextInfo:), \cf3 nil\cf0 );
+\f1 \'ba\'f3\'b1\'df\'b5\'c4\'ba\'af\'ca\'fd\'ca\'c7\'b1\'a3\'b4\'e6\'d6\'ae\'ba\'f3\'b5\'f7\'d3\'c3\'b5\'c4\'b7\'bd\'b7\'a8\'a3\'ac\'ce\'de\'c2\'db\'ca\'c7\'b3\'c9\'b9\'a6\'bb\'b9\'ca\'c7\'ca\'a7\'b0\'dc
+\f0 \
+\
+\
+\
+\
+\pard\pardeftab720
+
+\f7\fs24 \cf15 \cb16 \expnd0\expndtw0\kerning0
+\CocoaLigature1 UIColor *imageColor = [UIColor \cf17 \expnd0\expndtw0\kerning0
+colorWithPatternImage\cf15 \expnd0\expndtw0\kerning0
+:image];
+\f1 \expnd0\expndtw0\kerning0
+\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1
+\f7 \expnd0\expndtw0\kerning0
+// 
+\f1 \expnd0\expndtw0\kerning0
+\'b8\'f9\'be\'dd\'cd\'bc\'c6\'ac\'c9\'fa\'b3\'c9\'d1\'d5\'c9\'ab
+\f7 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\cb16 \expnd0\expndtw0\kerning0
+5 \cf18 \expnd0\expndtw0\kerning0
+[[UIColor blackColor] \cf17 \expnd0\expndtw0\kerning0
+setStroke\cf18 \expnd0\expndtw0\kerning0
+];
+\f1 \cf15 \expnd0\expndtw0\kerning0
+\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1
+\f7 \expnd0\expndtw0\kerning0
+// 
+\f1 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'b1\'df\'bf\'f2\'d1\'d5\'c9\'ab
+\f7 \cb1 \expnd0\expndtw0\kerning0
+\
+\cb16 \expnd0\expndtw0\kerning0
+6 \cf18 \expnd0\expndtw0\kerning0
+[[UIColor blueColor] \cf17 \expnd0\expndtw0\kerning0
+setFill\cf18 \expnd0\expndtw0\kerning0
+];
+\f1 \cf15 \expnd0\expndtw0\kerning0
+\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1
+\f7 \expnd0\expndtw0\kerning0
+// 
+\f1 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'b1\'b3\'be\'b0\'cc\'ee\'b3\'e4\'c9\'ab
+\f7 \cb1 \expnd0\expndtw0\kerning0
+\
+\cb16 \expnd0\expndtw0\kerning0
+7 \cf19 \expnd0\expndtw0\kerning0
+[[UIColor greenColor] set];
+\f1 \cf15 \expnd0\expndtw0\kerning0
+\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1\'a1
+\f7 \expnd0\expndtw0\kerning0
+// 
+\f1 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'d7\'d6\'b7\'fb\'d1\'d5\'c9\'ab\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0\fs32 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\pard\pardeftab720
+
+\fs22 \cf20 \expnd0\expndtw0\kerning0
+\CocoaLigature1 - (\cf21 \expnd0\expndtw0\kerning0
+void\cf20 \expnd0\expndtw0\kerning0
+)viewDidLoad\
+\{\
+\pard\pardeftab720
+\cf22 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0[\cf21 \expnd0\expndtw0\kerning0
+super\cf22 \expnd0\expndtw0\kerning0
+\'a0viewDidLoad];\
+\pard\pardeftab720
+\cf23 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0
+\f5 \expnd0\expndtw0\kerning0
+\'a0
+\f0 \expnd0\expndtw0\kerning0
+//
+\f6 \expnd0\expndtw0\kerning0
+\'d4\'f6\'bc\'d3\'bc\'e0\'cc\'fd\'a3\'ac\'b5\'b1\'bc\'fc\'c5\'cc\'b3\'f6\'cf\'d6\'bb\'f2\'b8\'c4\'b1\'e4\'ca\'b1\'ca\'d5\'b3\'f6\'cf\'fb\'cf\'a2
+\f5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f0 \cf22 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0[[\cf24 \expnd0\expndtw0\kerning0
+NSNotificationCenter\cf22 \expnd0\expndtw0\kerning0
+\'a0defaultCenter]\'a0addObserver:\cf21 \expnd0\expndtw0\kerning0
+self\cf22 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf20 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf22 \expnd0\expndtw0\kerning0
+selector\cf20 \expnd0\expndtw0\kerning0
+:\cf21 \expnd0\expndtw0\kerning0
+@selector\cf20 \expnd0\expndtw0\kerning0
+(keyboardWillShow:)\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf22 \expnd0\expndtw0\kerning0
+name\cf20 \expnd0\expndtw0\kerning0
+:\cf24 \expnd0\expndtw0\kerning0
+UIKeyboardWillShowNotification\cf20 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf22 \expnd0\expndtw0\kerning0
+object\cf20 \expnd0\expndtw0\kerning0
+:\cf21 \expnd0\expndtw0\kerning0
+nil\cf20 \expnd0\expndtw0\kerning0
+];\
+\pard\pardeftab720
+\cf23 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0
+\f5 \expnd0\expndtw0\kerning0
+\'a0
+\f0 \expnd0\expndtw0\kerning0
+//
+\f6 \expnd0\expndtw0\kerning0
+\'d4\'f6\'bc\'d3\'bc\'e0\'cc\'fd\'a3\'ac\'b5\'b1\'bc\'fc\'cd\'cb\'b3\'f6\'ca\'b1\'ca\'d5\'b3\'f6\'cf\'fb\'cf\'a2
+\f5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f0 \cf22 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0[[\cf24 \expnd0\expndtw0\kerning0
+NSNotificationCenter\cf22 \expnd0\expndtw0\kerning0
+\'a0defaultCenter]\'a0addObserver:\cf21 \expnd0\expndtw0\kerning0
+self\cf22 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf20 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf22 \expnd0\expndtw0\kerning0
+selector\cf20 \expnd0\expndtw0\kerning0
+:\cf21 \expnd0\expndtw0\kerning0
+@selector\cf20 \expnd0\expndtw0\kerning0
+(keyboardWillHide:)\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf22 \expnd0\expndtw0\kerning0
+name\cf20 \expnd0\expndtw0\kerning0
+:\cf24 \expnd0\expndtw0\kerning0
+UIKeyboardWillHideNotification\cf20 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf22 \expnd0\expndtw0\kerning0
+object\cf20 \expnd0\expndtw0\kerning0
+:\cf21 \expnd0\expndtw0\kerning0
+nil\cf20 \expnd0\expndtw0\kerning0
+];\
+\}\
+\pard\pardeftab720
+\cf23 \expnd0\expndtw0\kerning0
+//
+\f6 \expnd0\expndtw0\kerning0
+\'b5\'b1\'bc\'fc\'c5\'cc\'b3\'f6\'cf\'d6\'bb\'f2\'b8\'c4\'b1\'e4\'ca\'b1\'b5\'f7\'d3\'c3
+\f5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f0 \cf20 \expnd0\expndtw0\kerning0
+- (\cf21 \expnd0\expndtw0\kerning0
+void\cf20 \expnd0\expndtw0\kerning0
+)keyboardWillShow:(\cf24 \expnd0\expndtw0\kerning0
+NSNotification\cf20 \expnd0\expndtw0\kerning0
+\'a0*)aNotification\
+\{\
+\pard\pardeftab720
+\cf23 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0
+\f5 \expnd0\expndtw0\kerning0
+\'a0
+\f0 \expnd0\expndtw0\kerning0
+//
+\f6 \expnd0\expndtw0\kerning0
+\'bb\'f1\'c8\'a1\'bc\'fc\'c5\'cc\'b5\'c4\'b8\'df\'b6\'c8
+\f5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f0 \cf20 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf24 \expnd0\expndtw0\kerning0
+NSDictionary\cf20 \expnd0\expndtw0\kerning0
+\'a0*userInfo = [aNotification\'a0\cf22 \expnd0\expndtw0\kerning0
+userInfo\cf20 \expnd0\expndtw0\kerning0
+];\
+\pard\pardeftab720
+\cf24 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0NSValue\'a0*aValue = [userInfo\'a0\cf22 \expnd0\expndtw0\kerning0
+objectForKey\cf24 \expnd0\expndtw0\kerning0
+:UIKeyboardFrameEndUserInfoKey];\
+\pard\pardeftab720
+\cf20 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf24 \expnd0\expndtw0\kerning0
+CGRect\cf20 \expnd0\expndtw0\kerning0
+\'a0keyboardRect = [aValue\'a0\cf22 \expnd0\expndtw0\kerning0
+CGRectValue\cf20 \expnd0\expndtw0\kerning0
+];\
+\'a0\'a0\'a0\'a0\cf21 \expnd0\expndtw0\kerning0
+int\cf20 \expnd0\expndtw0\kerning0
+\'a0height = keyboardRect.\cf24 \expnd0\expndtw0\kerning0
+size\cf20 \expnd0\expndtw0\kerning0
+.\cf24 \expnd0\expndtw0\kerning0
+height\cf20 \expnd0\expndtw0\kerning0
+;\
+\}\
+\pard\pardeftab720
+\cf23 \expnd0\expndtw0\kerning0
+//
+\f6 \expnd0\expndtw0\kerning0
+\'b5\'b1\'bc\'fc\'cd\'cb\'b3\'f6\'ca\'b1\'b5\'f7\'d3\'c3
+\f5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f0 \cf20 \expnd0\expndtw0\kerning0
+- (\cf21 \expnd0\expndtw0\kerning0
+void\cf20 \expnd0\expndtw0\kerning0
+)keyboardWillHide:(\cf24 \expnd0\expndtw0\kerning0
+NSNotification\cf20 \expnd0\expndtw0\kerning0
+\'a0*)aNotification\
+\{\}
+\fs32 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\pardeftab720
+
+\f8\fs28 \cf25 \expnd0\expndtw0\kerning0
+\CocoaLigature1 // 
+\f1 \'bc\'fc\'c5\'cc\'cd\'a8\'d6\'aa
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'bc\'fc\'c5\'cc\'b5\'c4
+\f8 frame
+\f1 \'b7\'a2\'c9\'fa\'b8\'c4\'b1\'e4\'ca\'b1\'b7\'a2\'b3\'f6\'b5\'c4\'cd\'a8\'d6\'aa\'a3\'a8\'ce\'bb\'d6\'c3\'ba\'cd\'b3\'df\'b4\'e7\'a3\'a9
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+//\'a0\'a0\'a0 UIKeyboardWillChangeFrameNotification\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+//\'a0\'a0\'a0 UIKeyboardDidChangeFrameNotification\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'bc\'fc\'c5\'cc\'cf\'d4\'ca\'be\'ca\'b1\'b7\'a2\'b3\'f6\'b5\'c4\'cd\'a8\'d6\'aa
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+//\'a0\'a0\'a0 UIKeyboardWillShowNotification\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+//\'a0\'a0\'a0 UIKeyboardDidShowNotification\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'bc\'fc\'c5\'cc\'d2\'fe\'b2\'d8\'ca\'b1\'b7\'a2\'b3\'f6\'b5\'c4\'cd\'a8\'d6\'aa
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+//\'a0\'a0\'a0 UIKeyboardWillHideNotification\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+//\'a0\'a0\'a0 UIKeyboardDidHideNotification\
+\cf7 \expnd0\expndtw0\kerning0
+- (
+\f9\b \cf26 \expnd0\expndtw0\kerning0
+void
+\f8\b0 \cf7 \expnd0\expndtw0\kerning0
+)keyboardWillChangeFrame:(NSNotification *)notification\
+\{\
+\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+/**\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+notification.userInfo = @\{\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+// 
+\f1 \expnd0\expndtw0\kerning0
+\'bc\'fc\'c5\'cc\'b5\'af\'b3\'f6
+\f8 \expnd0\expndtw0\kerning0
+\\
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'fe\'b2\'d8\'ba\'f3\'b5\'c4
+\f8 \expnd0\expndtw0\kerning0
+frame\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+UIKeyboardFrameEndUserInfoKey = NSRect: \{\{0, 352\}, \{320, 216\}\},\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+// 
+\f1 \expnd0\expndtw0\kerning0
+\'bc\'fc\'c5\'cc\'b5\'af\'b3\'f6
+\f8 \expnd0\expndtw0\kerning0
+\\
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'fe\'b2\'d8\'cb\'f9\'ba\'c4\'b7\'d1\'b5\'c4\'ca\'b1\'bc\'e4
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+UIKeyboardAnimationDurationUserInfoKey = 0.25,\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+// 
+\f1 \expnd0\expndtw0\kerning0
+\'bc\'fc\'c5\'cc\'b5\'af\'b3\'f6
+\f8 \expnd0\expndtw0\kerning0
+\\
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'fe\'b2\'d8\'b6\'af\'bb\'ad\'b5\'c4\'d6\'b4\'d0\'d0\'bd\'da\'d7\'e0\'a3\'a8\'cf\'c8\'bf\'ec\'ba\'f3\'c2\'fd\'a3\'ac\'d4\'c8\'cb\'d9\'a3\'a9
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+UIKeyboardAnimationCurveUserInfoKey = 7\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+\}\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\cf27 \expnd0\expndtw0\kerning0
+*/\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0NSDictionary *userInfo = notification.userInfo;\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'b6\'af\'bb\'ad\'b5\'c4\'b3\'d6\'d0\'f8\'ca\'b1\'bc\'e4
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0
+\f9\b \cf26 \expnd0\expndtw0\kerning0
+double
+\f8\b0 \cf7 \expnd0\expndtw0\kerning0
+ duration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'bc\'fc\'c5\'cc\'b5\'c4
+\f8 frame\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0CGRect keyboardF = [userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];\
+\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'d6\'b4\'d0\'d0\'b6\'af\'bb\'ad
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0[UIView animateWithDuration:duration animations:^\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'b9\'a4\'be\'df\'cc\'f5\'b5\'c4
+\f8 Y
+\f1 \'d6\'b5
+\f8  == 
+\f1 \'bc\'fc\'c5\'cc\'b5\'c4
+\f8 Y
+\f1 \'d6\'b5
+\f8  - 
+\f1 \'b9\'a4\'be\'df\'cc\'f5\'b5\'c4\'b8\'df\'b6\'c8
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f9\b \cf26 \expnd0\expndtw0\kerning0
+if
+\f8\b0 \cf7 \expnd0\expndtw0\kerning0
+ (keyboardF.origin.y > self.view.height) \{ \cf25 \expnd0\expndtw0\kerning0
+// 
+\f1 \'bc\'fc\'c5\'cc\'b5\'c4
+\f8 Y
+\f1 \'d6\'b5\'d2\'d1\'be\'ad\'d4\'b6\'d4\'b6\'b3\'ac\'b9\'fd\'c1\'cb\'bf\'d8\'d6\'c6\'c6\'f7
+\f8 view
+\f1 \'b5\'c4\'b8\'df\'b6\'c8
+\f8 \cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0self.toolbar.y = self.view.height - self.toolbar.height;\cf25 \expnd0\expndtw0\kerning0
+//
+\f1 \'d5\'e2\'c0\'ef\'b5\'c4
+\f8 <span style="background-color: rgb(240, 240, 240);">self.toolbar
+\f1 \'be\'cd\'ca\'c7\'ce\'d2\'b5\'c4\'ca\'e4\'c8\'eb\'bf\'f2\'a1\'a3
+\f8 </span>\cf7 \expnd0\expndtw0\kerning0
+\
+\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\} 
+\f9\b \cf26 \expnd0\expndtw0\kerning0
+else
+\f8\b0 \cf7 \expnd0\expndtw0\kerning0
+ \{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0self.toolbar.y = keyboardF.origin.y - self.toolbar.height;\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\}];\
+\}
+\f1 \expnd0\expndtw0\kerning0
+\'bd\'ab\'d7\'d3\'ca\'d3\'cd\'bc\'b7\'c5\'d6\'c3\'d4\'da\'d7\'ee\'c7\'b0\'b7\'bd
+\f8 \expnd0\expndtw0\kerning0
+\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0\fs32 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 [\cf3 self\cf0 .\cf2 view\cf0  \cf5 bringSubviewToFront\cf0 :\cf4 _controllView\cf0 ];\
+\
+\
+\
+\pard\pardeftab720
+
+\f2\fs28 \cf28 \cb9 \expnd0\expndtw0\kerning0
+\CocoaLigature1 CGRectGetMaxX 
+\f1 \'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'c0\'b4\'b7\'bd\'b1\'e3\'b5\'c4\'bb\'f1\'c8\'a1\'b5\'b1\'c7\'b0\'bf\'d8\'bc\'fe\'b5\'c4
+\f2 x
+\f1 \'d7\'f8\'b1\'ea\'d6\'b5
+\f2 +
+\f1 \'bf\'ed\'b6\'c8\'b5\'c4\'ca\'fd\'d6\'b5\'a3\'ac\'d5\'e2\'d1\'f9\'b1\'e3\'bf\'c9\'d2\'d4\'b7\'bd\'b1\'e3\'b2\'bc\'be\'d6\'a1\'a3
+\f2 \cb1 \expnd0\expndtw0\kerning0
+\
+
+\f1 \cb9 \expnd0\expndtw0\kerning0
+\'cd\'ac\'c0\'ed
+\f2 CGRectGetMaxY
+\f1 \'ca\'c7\'bb\'f1\'c8\'a1
+\f2 y
+\f1 \'d7\'f8\'b1\'ea\'d6\'b5
+\f2 +{\field{\*\fldinst{HYPERLINK "http://cpro.baidu.com/cpro/ui/uijs.php?app_id=0&c=news&cf=1001&ch=0&di=128&fv=17&is_app=0&jk=a5d96c97d7e72067&k=%BF%D8%BC%FE&k0=%BF%D8%BC%FE&kdi0=0&luki=1&n=10&p=baidu&q=smileking_cpr&rb=0&rs=1&seller_id=1&sid=6720e7d7976cd9a5&ssp2=1&stid=0&t=tpclicked3_hc&tu=u1682280&u=http%3A%2F%2Fwww%2Eth7%2Ecn%2FProgram%2FIOS%2F201411%2F312189%2Eshtml&urlid=0"}}{\fldrslt 
+\f1 \cf17 \expnd0\expndtw0\kerning0
+\'bf\'d8\'bc\'fe}}
+\f1 \'b8\'df\'b6\'c8\'b5\'c4\'d6\'b5\
+\
+\
+XML\
+\pard\pardeftab720
+
+\f4 \cf7 \cb1 \expnd0\expndtw0\kerning0
+DDXMLElement*element = [[DDXMLElement\cf22 \expnd0\expndtw0\kerning0
+alloc\cf7 \expnd0\expndtw0\kerning0
+] \cf22 \expnd0\expndtw0\kerning0
+initWithName\cf7 \expnd0\expndtw0\kerning0
+: \cf29 \expnd0\expndtw0\kerning0
+@"root"\cf7 \expnd0\expndtw0\kerning0
+];\
+DDXMLElement*element1 = [[DDXMLElement\cf22 \expnd0\expndtw0\kerning0
+alloc\cf7 \expnd0\expndtw0\kerning0
+] \cf22 \expnd0\expndtw0\kerning0
+initWithName\cf7 \expnd0\expndtw0\kerning0
+: \cf29 \expnd0\expndtw0\kerning0
+@"test"\cf7 \expnd0\expndtw0\kerning0
+];\
+[element1 addAttributeWithName: \cf29 \expnd0\expndtw0\kerning0
+@"root"\cf7 \expnd0\expndtw0\kerning0
+stringValue: \cf29 \expnd0\expndtw0\kerning0
+@"1234"\cf7 \expnd0\expndtw0\kerning0
+];\
+[element1 \cf30 \expnd0\expndtw0\kerning0
+setStringValue\cf7 \expnd0\expndtw0\kerning0
+: \cf29 \expnd0\expndtw0\kerning0
+@"12345"\cf7 \expnd0\expndtw0\kerning0
+];\
+[element \cf30 \expnd0\expndtw0\kerning0
+addChild\cf7 \expnd0\expndtw0\kerning0
+: element1];\
+\pard\pardeftab720
+
+\f1 \cf7 \expnd0\expndtw0\kerning0
+\'ca\'e4\'b3\'f6
+\f4 \expnd0\expndtw0\kerning0
+:\
+\pard\pardeftab720
+
+\b \cf7 \expnd0\expndtw0\kerning0
+\'a0<root><test root="1234">12345</test></root>\
+\
+\
+\
+\
+\
+\pard\pardeftab720
+
+\f6\b0\fs36 \cf0 \expnd0\expndtw0\kerning0
+\'d3\'d0\'b5\'c4\'ca\'b1\'ba\'f2\'d0\'e8\'d2\'aa\'c7\'e5\'c0\'ed
+\f5 WebView
+\f6 \'b5\'c4\'bb\'ba\'b4\'e6\'a3\'ac\'bf\'c9\'d2\'d4\'d3\'c3\'a3\'ba
+\f5\fs32 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs36 \cf2 \expnd0\expndtw0\kerning0
+\'a0 NSHTTPCookie\cf0 \expnd0\expndtw0\kerning0
+ *cookie;
+\fs32 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs36 \cf0 \expnd0\expndtw0\kerning0
+\'a0 \cf2 \expnd0\expndtw0\kerning0
+NSHTTPCookieStorage\cf0 \expnd0\expndtw0\kerning0
+ *storage = [\cf2 \expnd0\expndtw0\kerning0
+NSHTTPCookieStorage\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+sharedHTTPCookieStorage\cf0 \expnd0\expndtw0\kerning0
+];
+\fs32 \expnd0\expndtw0\kerning0
+\
+
+\fs36 \expnd0\expndtw0\kerning0
+\'a0 \cf31 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (cookie \cf31 \expnd0\expndtw0\kerning0
+in\cf0 \expnd0\expndtw0\kerning0
+ [storage \cf5 \expnd0\expndtw0\kerning0
+cookies\cf0 \expnd0\expndtw0\kerning0
+])
+\fs32 \expnd0\expndtw0\kerning0
+\
+
+\fs36 \expnd0\expndtw0\kerning0
+\'a0 \{
+\fs32 \expnd0\expndtw0\kerning0
+\
+
+\fs36 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 [storage \cf5 \expnd0\expndtw0\kerning0
+deleteCookie\cf0 \expnd0\expndtw0\kerning0
+:cookie];
+\fs32 \expnd0\expndtw0\kerning0
+\
+
+\fs36 \expnd0\expndtw0\kerning0
+\'a0 \}
+\f4\fs28 \cf7 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0\fs32 \cf10 \kerning1\expnd0\expndtw0 \CocoaLigature0 //NSScanner
+\f1 \'b0\'d1\'c9\'a8\'c3\'e8\'b3\'f6\'b5\'c4\'d6\'c6\'b6\'a8\'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\'d7\'aa\'bb\'bb\'b3\'c9
+\f0 Int
+\f1 \'c0\'e0\'d0\'cd
+\f0 \cf0 \
+[[\cf2 NSScanner\cf0  \cf5 scannerWithString\cf0 :rString] \cf5 scanHexInt\cf0 :&r];
+\f1 \'ca\'ae\'c1\'f9\'bd\'f8\'d6\'c6\'d7\'d6\'b7\'fb\'b4\'ae\'d7\'aa\'bb\'af\'b3\'c9\'d5\'fb\'d0\'cd\'a3\'ac\'cd\'a8\'b3\'a3\'d3\'c3\'c0\'b4\'b8\'b3\'d6\'b5\'d1\'d5\'c9\'ab\
+\
+\
+\
+\'cb\'d1\'cb\'f7prefix header\'b5\'bc\'c8\'ebpch\'b5\'c4\'c2\'b7\'be\'b6   \'b4\'b4\'bd\'a8pch\'d0\'b4\'d2\'bb\'d0\'a9\'ba\'ea\
+\
+\
+\'d6\'bb\'bb\'f1\'c8\'a1\'cf\'e0\'b2\'e1\'d6\'d0\'b5\'c4\'ca\'d3\'c6\'b5\'b6\'f8\'b2\'bb\'c4\'dc\'bb\'f1\'c8\'a1\'cd\'bc\'c6\'ac\'b5\'c4\'b7\'bd\'b7\'a8\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0 \cf3 self\cf0 .\cf4 picker\cf0 .\cf2 allowsEditing\cf0  = \cf3 YES\cf0 ;\
+    \cf3 self\cf0 .\cf4 picker\cf0 .\cf2 videoMaximumDuration\cf0  = \cf12 15.0f\cf0 ;\
+    \cf3 self\cf0 .\cf4 picker\cf0 .\cf2 sourceType\cf0  = \cf5 UIImagePickerControllerSourceTypePhotoLibrary\cf0 ;\
+    \cf3 self\cf0 .\cf4 picker\cf0 .\cf2 mediaTypes\cf0  = [[\cf2 NSArray\cf0  \cf5 alloc\cf0 ] \cf5 initWithObjects\cf0 :(\cf2 NSString\cf0  *)\cf2 kUTTypeMovie\cf0 , \cf3 nil\cf0 ];\
+    \cf3 self\cf0 .\cf4 picker\cf0 .\cf2 videoQuality\cf0  = \cf5 UIImagePickerControllerQualityTypeMedium\cf0 ;\
+    [\cf3 self\cf0  \cf5 presentViewController\cf0 :\cf3 self\cf0 .\cf4 picker\cf0  \cf5 animated\cf0 :\cf3 YES\cf0  \cf5 completion\cf0 :\cf3 nil\cf0 ];\
+\
+
+\f1 \'c8\'e7\'b9\'fb
+\f0 view
+\f1 \'b5\'c4\'d7\'d3\'ca\'d3\'cd\'bc\'b3\'ac\'b3\'f6view\'b5\'c4\'b7\'b6\'ce\'a7\'a3\'ac\'b3\'ac\'b3\'f6\'b2\'bf\'b7\'d6\'bd\'ab\'bb\'e1\'b1\'bb\'b2\'c3\'bc\'f5\'b5\'f4
+\f0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf4 View\cf0 .\cf2 clipsToBounds\cf0  = \cf3 YES\cf0 ;\
+\
+\
+\pard\pardeftab720
+
+\f10\fs28 \cf32 \cb33 \expnd0\expndtw0\kerning0
+\CocoaLigature1 ZipArchive\uc0\u26159 \u19968 \u20010 \u24320 \u28304 \u30340 zip\u24320 \u21457 \u21253 \u24037 \u20855 \u12290 \
+\uc0\u29992 \u20110 \u21019 \u24314 zip\u25110 \u32773 \u35299 \u21387 zip\
+\
+\
+\
+\uc0\u33719 \u21462 \u23548 \u33322 \u26465 \u19978 \u30340 \u35797 \u22270 \u25511 \u21046 \u22120 \
+\pard\tx770\pardeftab770\pardirnatural
+
+\f0\fs32 \cf3 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 for\cf0  (\cf2 UIViewController\cf0  *vc \cf3 in\cf0  \cf3 self\cf0 .\cf2 navigationController\cf0 .\cf2 viewControllers\cf0 ) \{\
+        \cf3 if\cf0  ([vc \cf5 isKindOfClass\cf0 :[\cf4 ShopViewController\cf0  \cf5 class\cf0 ]] && \cf3 self\cf0 .\cf4 type\cf0  == \cf14 kStickerShop\cf0 ) \{\
+            [\cf3 self\cf0 .\cf2 navigationController\cf0  \cf5 popToViewController\cf0 :vc \cf5 animated\cf0 :\cf3 YES\cf0 ];\
+            \cf3 break\cf0 ;\
+        \}\cf3 else\cf0  \cf3 if\cf0  ([vc \cf5 isKindOfClass\cf0 :[\cf4 NC_MainViewController\cf0  \cf5 class\cf0 ]] && \cf3 self\cf0 .\cf4 type\cf0  == \cf14 kBackgroundShop\cf0 ) \{\
+            [\cf3 self\cf0 .\cf2 navigationController\cf0  \cf5 popToViewController\cf0 :vc \cf5 animated\cf0 :\cf3 YES\cf0 ];\
+            \cf3 break\cf0 ;\
+        \}\
+        \cf3 if\cf0 (vc == \cf3 self\cf0 .\cf2 navigationController\cf0 .\cf2 viewControllers\cf0 .\cf2 lastObject\cf0 )\{\
+            [\cf3 self\cf0 .\cf2 navigationController\cf0  \cf5 popViewControllerAnimated\cf0 :\cf3 YES\cf0 ];\
+            \cf3 break\cf0 ;\
+        \}\
+    \}\
+\
+//
+\f1 \'bb\'f1\'c8\'a1\'cd\'bc\'c6\'ac\'d6\'d0\'c4\'b3\'d2\'bb\'d7\'f8\'b1\'ea\'b5\'c4\'d1\'d5\'c9\'ab
+\f0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf4 _color\cf0  = [\cf4 _paletteImageView\cf0 .\cf2 image\cf0  \cf14 colorAtPixel\cf0 :point];\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f1 \cf0 \'cf\'c2\'c3\'e6\'ce\'aa\'c8\'fd\'b7\'bd\'d6\'d0
+\f0 \cf13 UIImage+ColorAtPixel.h
+\f1 \'b5\'c4\'b7\'bd\'b7\'a8
+\f0 \cf0 \
+- (\cf2 UIColor\cf0  *)colorAtPixel:(\cf2 CGPoint\cf0 )point \{\
+    \cf10 // Cancel if point is outside image coordinates\cf0 \
+\pard\tx770\pardeftab770\pardirnatural
+\cf10 //    if (!CGRectContainsPoint(CGRectMake(0.0f, 0.0f, self.size.width, self.size.height), point)) \{\cf0 \
+\cf10 //        return nil;\cf0 \
+\cf10 //    \}\cf0 \
+    \
+    \cf2 NSInteger\cf0  pointX = \cf5 trunc\cf0 (point.\cf2 x\cf0 );\
+    \cf2 NSInteger\cf0  pointY = \cf5 trunc\cf0 (point.\cf2 y\cf0 );\
+    \cf2 CGImageRef\cf0  cgImage = \cf3 self\cf0 .\cf2 CGImage\cf0 ;\
+    \cf2 NSUInteger\cf0  width = \cf3 self\cf0 .\cf2 size\cf0 .\cf2 width\cf0 ;\
+    \cf2 NSUInteger\cf0  height = \cf3 self\cf0 .\cf2 size\cf0 .\cf2 height\cf0 ;\
+    \cf2 CGColorSpaceRef\cf0  colorSpace = \cf5 CGColorSpaceCreateDeviceRGB\cf0 ();\
+    \cf3 int\cf0  bytesPerPixel = \cf12 4\cf0 ;\
+    \cf3 int\cf0  bytesPerRow = bytesPerPixel * \cf12 1\cf0 ;\
+    \cf2 NSUInteger\cf0  bitsPerComponent = \cf12 8\cf0 ;\
+    \cf3 unsigned\cf0  \cf3 char\cf0  pixelData[\cf12 4\cf0 ] = \{ \cf12 0\cf0 , \cf12 0\cf0 , \cf12 0\cf0 , \cf12 0\cf0  \};\
+    \cf2 CGContextRef\cf0  context = \cf5 CGBitmapContextCreate\cf0 (pixelData,\
+                                                 \cf12 1\cf0 ,\
+                                                 \cf12 1\cf0 ,\
+                                                 bitsPerComponent,\
+                                                 bytesPerRow,\
+                                                 colorSpace,\
+                                                 \cf5 kCGImageAlphaPremultipliedLast\cf0  | \cf5 kCGBitmapByteOrder32Big\cf0 );\
+    \cf5 CGColorSpaceRelease\cf0 (colorSpace);\
+    \cf5 CGContextSetBlendMode\cf0 (context, \cf5 kCGBlendModeCopy\cf0 );\
+    \
+    \cf10 // Draw the pixel we are interested in onto the bitmap context\cf0 \
+    \cf5 CGContextTranslateCTM\cf0 (context, -pointX, pointY-(\cf2 CGFloat\cf0 )height);\
+    \cf5 CGContextDrawImage\cf0 (context, \cf5 CGRectMake\cf0 (\cf12 0.0f\cf0 , \cf12 0.0f\cf0 , (\cf2 CGFloat\cf0 )width, (\cf2 CGFloat\cf0 )height), cgImage);\
+    \cf5 CGContextRelease\cf0 (context);\
+    \
+    \cf10 // Convert color values [0..255] to floats [0.0..1.0]\cf0 \
+    \cf2 CGFloat\cf0  red   = (\cf2 CGFloat\cf0 )pixelData[\cf12 0\cf0 ] / \cf12 255.0f\cf0 ;\
+    \cf2 CGFloat\cf0  green = (\cf2 CGFloat\cf0 )pixelData[\cf12 1\cf0 ] / \cf12 255.0f\cf0 ;\
+    \cf2 CGFloat\cf0  blue  = (\cf2 CGFloat\cf0 )pixelData[\cf12 2\cf0 ] / \cf12 255.0f\cf0 ;\
+    \cf2 CGFloat\cf0  alpha = (\cf2 CGFloat\cf0 )pixelData[\cf12 3\cf0 ] / \cf12 255.0f\cf0 ;\
+    \cf3 return\cf0  [\cf2 UIColor\cf0  \cf5 colorWithRed\cf0 :red \cf5 green\cf0 :green \cf5 blue\cf0 :blue \cf5 alpha\cf0 :alpha];\
+\}\
+\
+\
+\pard\tx770\pardeftab770\pardirnatural
+
+\f1 \cf0 \'b9\'fd\'c2\'cb\'d7\'d6\'b7\'fb
+\f0 \
+\
+\pard\pardeftab720
+
+\f1\fs28 \cf34 \cb35 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \'bd\'f1\'cc\'ec\'cc\'fd\'c8\'cb\'bd\'e9\'c9\'dc\'c1\'cb\'d2\'bb\'b8\'f6\'b1\'c8\'bd\'cf\'bc\'f2\'b5\'a5\'b5\'c4\'b9\'fd\'c2\'cb\'b7\'bd\'b7\'a8
+\f3 ...
+\f1 \'b2\'bb\'b6\'e0\'cb\'b5\'c1\'cb
+\f3 ,
+\f1 \'d6\'b1\'bd\'d3\'c9\'cf\'b4\'fa\'c2\'eb
+\f3 \cf7 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\f7 \cf36 \expnd0\expndtw0\kerning0
+ 1\cf34 \expnd0\expndtw0\kerning0
+ NSString *str = \cf37 \expnd0\expndtw0\kerning0
+@"
+\f1 \'d2\'bb\'b8\'f6
+\f7  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn 
+\f1 \'ba\'ba
+\f7 0932
+\f1 \'d7\'d6
+\f7 #@!
+\f1 \'d6\'d0
+\f7 ..
+\f1 \'ce\'c4
+\f7 //>?
+\f1 \'ca\'e4
+\f7 ~~~@#$#@%#^#^%&^*&(*)
+\f1 \'c8\'eb
+\f7 "\cf34 \expnd0\expndtw0\kerning0
+;\
+\cf36 \expnd0\expndtw0\kerning0
+ 2\cf34 \expnd0\expndtw0\kerning0
+     NSMutableCharacterSet *\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ = [[NSMutableCharacterSet alloc] init];\
+\cf36 \expnd0\expndtw0\kerning0
+ 3\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet lowercaseLetterCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'d0\'a1\'d0\'b4\'d7\'d6\'c4\'b8
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 4\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"1 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+ 5\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet uppercaseLetterCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'b4\'f3\'d0\'b4\'d7\'d6\'c4\'b8
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 6\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"2 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+ 7\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet symbolCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'b7\'fb\'ba\'c5
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 8\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"3 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+ 9\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet punctuationCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'b1\'ea\'b5\'e3
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+10\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"4 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet controlCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'bf\'d8\'d6\'c6\'b7\'fb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+12\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"5 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+13\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet decimalDigitCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'d0\'a1\'ca\'fd
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+14\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"6 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+15\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet letterCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'ce\'c4\'d7\'d6
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+16\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"7 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+17\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet nonBaseCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'b7\'c7\'bb\'f9\'b4\'a1
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+18\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"8 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet alphanumericCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'d7\'d6\'c4\'b8\'ca\'fd\'d7\'d6
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+20\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"9 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+21\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet decomposableCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'bf\'c9\'b7\'d6\'bd\'e2
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+22\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"10 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+23\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet illegalCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'b7\'c7\'b7\'a8
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+24\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"11 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+25\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet capitalizedLetterCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'b4\'f3\'d0\'b4
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"12 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+27\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet newlineCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'bb\'bb\'d0\'d0\'b7\'fb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+28\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"13 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\cf36 \expnd0\expndtw0\kerning0
+29\cf34 \expnd0\expndtw0\kerning0
+     [\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+ formUnionWithCharacterSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];\cf15 \expnd0\expndtw0\kerning0
+//
+\f1 \'bf\'d5\'b8\'f1\'bb\'bb\'d0\'d0
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+30\cf34 \expnd0\expndtw0\kerning0
+     NSLog(\cf37 \expnd0\expndtw0\kerning0
+@"14 %@"\cf34 \expnd0\expndtw0\kerning0
+,[str stringByTrimmingCharactersInSet:\cf17 \expnd0\expndtw0\kerning0
+set\cf34 \expnd0\expndtw0\kerning0
+]);\
+\pard\pardeftab720
+
+\f3 \cf7 \expnd0\expndtw0\kerning0
+\
+\
+\
+\pard\pardeftab720
+
+\f7 \cf36 \expnd0\expndtw0\kerning0
+1\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.863\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+1\cf34 \expnd0\expndtw0\kerning0
+ 
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'bb\'b8\'f6
+\f7 \expnd0\expndtw0\kerning0
+ (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn 
+\f1 \expnd0\expndtw0\kerning0
+\'ba\'ba
+\f7 \expnd0\expndtw0\kerning0
+0932
+\f1 \expnd0\expndtw0\kerning0
+\'d7\'d6
+\f7 \expnd0\expndtw0\kerning0
+#@!
+\f1 \expnd0\expndtw0\kerning0
+\'d6\'d0
+\f7 \expnd0\expndtw0\kerning0
+..
+\f1 \expnd0\expndtw0\kerning0
+\'ce\'c4
+\f7 \cf15 \expnd0\expndtw0\kerning0
+//>?
+\f1 \'ca\'e4
+\f7 ~~~@#$#@%#^#^%&^*&(*)
+\f1 \'c8\'eb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 2\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.864\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+2\cf34 \expnd0\expndtw0\kerning0
+ 
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'bb\'b8\'f6
+\f7 \expnd0\expndtw0\kerning0
+ (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn 
+\f1 \expnd0\expndtw0\kerning0
+\'ba\'ba
+\f7 \expnd0\expndtw0\kerning0
+0932
+\f1 \expnd0\expndtw0\kerning0
+\'d7\'d6
+\f7 \expnd0\expndtw0\kerning0
+#@!
+\f1 \expnd0\expndtw0\kerning0
+\'d6\'d0
+\f7 \expnd0\expndtw0\kerning0
+..
+\f1 \expnd0\expndtw0\kerning0
+\'ce\'c4
+\f7 \cf15 \expnd0\expndtw0\kerning0
+//>?
+\f1 \'ca\'e4
+\f7 ~~~@#$#@%#^#^%&^*&(*)
+\f1 \'c8\'eb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 3\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.864\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+3\cf34 \expnd0\expndtw0\kerning0
+ 
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'bb\'b8\'f6
+\f7 \expnd0\expndtw0\kerning0
+ (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn 
+\f1 \expnd0\expndtw0\kerning0
+\'ba\'ba
+\f7 \expnd0\expndtw0\kerning0
+0932
+\f1 \expnd0\expndtw0\kerning0
+\'d7\'d6
+\f7 \expnd0\expndtw0\kerning0
+#@!
+\f1 \expnd0\expndtw0\kerning0
+\'d6\'d0
+\f7 \expnd0\expndtw0\kerning0
+..
+\f1 \expnd0\expndtw0\kerning0
+\'ce\'c4
+\f7 \cf15 \expnd0\expndtw0\kerning0
+//>?
+\f1 \'ca\'e4
+\f7 ~~~@#$#@%#^#^%&^*&(*)
+\f1 \'c8\'eb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 4\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.864\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+4\cf34 \expnd0\expndtw0\kerning0
+ 
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'bb\'b8\'f6
+\f7 \expnd0\expndtw0\kerning0
+ (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn 
+\f1 \expnd0\expndtw0\kerning0
+\'ba\'ba
+\f7 \expnd0\expndtw0\kerning0
+0932
+\f1 \expnd0\expndtw0\kerning0
+\'d7\'d6
+\f7 \expnd0\expndtw0\kerning0
+#@!
+\f1 \expnd0\expndtw0\kerning0
+\'d6\'d0
+\f7 \expnd0\expndtw0\kerning0
+..
+\f1 \expnd0\expndtw0\kerning0
+\'ce\'c4
+\f7 \cf15 \expnd0\expndtw0\kerning0
+//>?
+\f1 \'ca\'e4
+\f7 ~~~@#$#@%#^#^%&^*&(*)
+\f1 \'c8\'eb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 5\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.865\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+5\cf34 \expnd0\expndtw0\kerning0
+ 
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'bb\'b8\'f6
+\f7 \expnd0\expndtw0\kerning0
+ (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn 
+\f1 \expnd0\expndtw0\kerning0
+\'ba\'ba
+\f7 \expnd0\expndtw0\kerning0
+0932
+\f1 \expnd0\expndtw0\kerning0
+\'d7\'d6
+\f7 \expnd0\expndtw0\kerning0
+#@!
+\f1 \expnd0\expndtw0\kerning0
+\'d6\'d0
+\f7 \expnd0\expndtw0\kerning0
+..
+\f1 \expnd0\expndtw0\kerning0
+\'ce\'c4
+\f7 \cf15 \expnd0\expndtw0\kerning0
+//>?
+\f1 \'ca\'e4
+\f7 ~~~@#$#@%#^#^%&^*&(*)
+\f1 \'c8\'eb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 6\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.865\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+6\cf34 \expnd0\expndtw0\kerning0
+ 
+\f1 \expnd0\expndtw0\kerning0
+\'d2\'bb\'b8\'f6
+\f7 \expnd0\expndtw0\kerning0
+ (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn 
+\f1 \expnd0\expndtw0\kerning0
+\'ba\'ba
+\f7 \expnd0\expndtw0\kerning0
+0932
+\f1 \expnd0\expndtw0\kerning0
+\'d7\'d6
+\f7 \expnd0\expndtw0\kerning0
+#@!
+\f1 \expnd0\expndtw0\kerning0
+\'d6\'d0
+\f7 \expnd0\expndtw0\kerning0
+..
+\f1 \expnd0\expndtw0\kerning0
+\'ce\'c4
+\f7 \cf15 \expnd0\expndtw0\kerning0
+//>?
+\f1 \'ca\'e4
+\f7 ~~~@#$#@%#^#^%&^*&(*)
+\f1 \'c8\'eb
+\f7 \cf34 \expnd0\expndtw0\kerning0
+\
+\cf36 \expnd0\expndtw0\kerning0
+ 7\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.865\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+7\cf34 \expnd0\expndtw0\kerning0
+  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn \
+\cf36 \expnd0\expndtw0\kerning0
+ 8\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.865\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+8\cf34 \expnd0\expndtw0\kerning0
+  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn \
+\cf36 \expnd0\expndtw0\kerning0
+ 9\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.865\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+9\cf34 \expnd0\expndtw0\kerning0
+  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn \
+\cf36 \expnd0\expndtw0\kerning0
+10\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+01.866\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+10\cf34 \expnd0\expndtw0\kerning0
+  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn \
+\cf36 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+02.170\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn \
+\cf36 \expnd0\expndtw0\kerning0
+12\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+02.170\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+12\cf34 \expnd0\expndtw0\kerning0
+  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn \
+\cf36 \expnd0\expndtw0\kerning0
+13\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+02.170\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+13\cf34 \expnd0\expndtw0\kerning0
+  (ABC) #@!#^#G@#Dd21e12d!E@!212s012yhsn \
+\cf36 \expnd0\expndtw0\kerning0
+14\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+2012\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+07\cf34 \expnd0\expndtw0\kerning0
+-\cf38 \expnd0\expndtw0\kerning0
+26\cf34 \expnd0\expndtw0\kerning0
+ \cf38 \expnd0\expndtw0\kerning0
+19\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+11\cf34 \expnd0\expndtw0\kerning0
+:\cf38 \expnd0\expndtw0\kerning0
+02.170\cf34 \expnd0\expndtw0\kerning0
+ yingkong1987[\cf38 \expnd0\expndtw0\kerning0
+12876\cf34 \expnd0\expndtw0\kerning0
+:fb03] \cf38 \expnd0\expndtw0\kerning0
+14\cf34 \expnd0\expndtw0\kerning0
+ \
+\pard\pardeftab720
+
+\f3 \cf7 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f1 \cf34 \cb35 \expnd0\expndtw0\kerning0
+\'b7\'a2\'cf\'d6\'d5\'e2\'b8\'f6\'b7\'bd\'b7\'a8\'d3\'d0\'d2\'bb\'b8\'f6\'ba\'dc\'b4\'f3\'b5\'c4\'c8\'b1\'b5\'e3
+\f3 ..
+\f1 \'b1\'c8\'c8\'e7\'d2\'aa\'c8\'a5\'b5\'f4
+\f3 (ABC)
+\f1 \'b5\'c4\'d3\'a2\'ce\'c4\'b2\'bf\'b7\'d6
+\f3 ..
+\f1 \'b1\'d8\'d0\'eb\'d2\'aa\'cf\'c8\'c8\'a5\'b5\'f4\'cd\'e2\'c3\'e6\'b5\'c4\'c0\'a8\'ba\'c5
+\f3 ....
+\f1 \'b2\'bb\'c8\'bb\'ce\'de\'b7\'a8\'b9\'fd\'c2\'cb
+\f3 ...\
+
+\f1 \'bf\'d5\'b8\'f1\'d2\'e0\'ca\'c7\'c8\'e7\'b4\'cb
+\f3 \
+
+\f1 \'c8\'e7\'b9\'fb\'d3\'d0\'b8\'fc\'ba\'c3\'b5\'c4\'b9\'fd\'c2\'cb\'b7\'bd\'b7\'a8
+\f3 ,
+\f1 \'bb\'b6\'d3\'ad\'c1\'f4\'d1\'d4\'cc\'d6\'c2\'db\
+\pard\pardeftab720
+
+\f3 \cf7 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+\pard\pardeftab720
+
+\f1 \cf34 \cb35 \expnd0\expndtw0\kerning0
+/    self.navigationController.navigationBarHidden = NO;\
+    self.navigationController.navigationBar.hidden = NO;\
+//    \'d4\'da\'b5\'f7\'d3\'c3\'c1\'cbsetNavigationBarHidden:animated:\'b7\'bd\'b7\'a8\'d6\'ae\'ba\'f3\'a3\'ac\'d5\'fb\'b8\'f6navigationController\'b5\'c4frame\'a1\'a3origin\'a1\'a3y\'bb\'e1\'cf\'f2\'c9\'cf\'d2\'c6\'b6\'af44\'b8\'f6\'cf\'f1\'cb\'d8\
+//    navigationBar.hidden\'ca\'c7\'b6\'d4nabigationbar \'bd\'f8\'d0\'d0\'b2\'d9\'d7\'f7\'a3\'acnavigationBarHidden\'ca\'c7navigationController \'bd\'f8\'d0\'d0\'b2\'d9\'d7\'f7\
+\pard\pardeftab720
+
+\f3 \cf7 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+}
