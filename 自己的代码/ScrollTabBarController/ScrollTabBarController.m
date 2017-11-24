@@ -50,6 +50,7 @@ typedef enum : NSUInteger {
         self.scrollView.showsVerticalScrollIndicator = NO;
         self.scrollView.bounces = NO;
         self.scrollView.scrollEnabled = YES;
+        self.scrollView.backgroundColor = [UIColor clearColor];
         [self.view insertSubview:self.scrollView belowSubview:self.tabBar];
     }
     
@@ -153,17 +154,39 @@ typedef enum : NSUInteger {
 {
     //    [self adjustSubviewsAlphaForTitleScrollView];
     NSSet *allSet = [self visibleViewControllersForContentOffset:scrollView.contentOffset.x];
+    
+    if (allSet.count != 2) {
+        return;
+    }
+    
     [allSet enumerateObjectsUsingBlock:^(NSNumber* vcNumber, BOOL *stop) {
         UIViewController *vc = self.backingViewControllers[[vcNumber intValue]];
         if (![vc isViewLoaded])
         {
-            [[vc view] setFrame:CGRectMake([vcNumber intValue]*self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
-            [self.scrollView addSubview:vc.view];
+            if (vcNumber.intValue != 1) {
+                [[vc view] setFrame:CGRectMake([vcNumber intValue]*self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+                [self.scrollView addSubview:vc.view];
+            }
+            else {
+                [[vc view] setFrame:self.view.bounds];
+                [self.view addSubview:vc.view];
+                [self.view insertSubview:vc.view belowSubview:self.scrollView];
+            }
+        }
+        else if (vcNumber.intValue == 1 && vc.view.superview == self.scrollView) {
+            [[vc view] setFrame:self.view.bounds];
+            [self.view addSubview:vc.view];
+            [self.view insertSubview:vc.view belowSubview:self.scrollView];
         }
     }];
     
-    if (allSet.count != 2) {
-        return;
+    if (![allSet intersectsSet:[NSSet setWithObject:@1]]) {
+        UIViewController *vc = self.backingViewControllers[1];
+        if (vc.view.superview == self.scrollView) {
+            [[vc view] setFrame:self.view.bounds];
+            [self.view addSubview:vc.view];
+            [self.view insertSubview:vc.view belowSubview:self.scrollView];
+        }
     }
     
     if (clickSet) {
@@ -223,16 +246,33 @@ typedef enum : NSUInteger {
     }
     
     if (beginDecelerating && startedScroll) {
-        CGFloat mod = fmod(scrollView.contentOffset.x, CGRectGetWidth(scrollView.frame));
-        CGFloat deltaAlpha = mod * (1.0 / CGRectGetWidth(scrollView.frame));
-        if (!(deltaAlpha >= 1.0 || deltaAlpha <= 0.0)) {
-            if (self.direction == ScrollTabBarController_Left) {
+        NSInteger toIndex = [[transitioningSet anyObject] integerValue];
+        if (self.direction == ScrollTabBarController_Left) {
+            CGFloat currentContentOffset = scrollView.contentOffset.x>(CGRectGetWidth(scrollView.frame)*toIndex)?scrollView.contentOffset.x:(CGRectGetWidth(scrollView.frame)*toIndex);
+            CGFloat mod = fmod(currentContentOffset, CGRectGetWidth(scrollView.frame));
+            CGFloat deltaAlpha = mod * (1.0 / CGRectGetWidth(scrollView.frame));
+            if (!(deltaAlpha >= 1.0 || deltaAlpha <= 0.0)) {
                 [self scrollAnimationProgress:(1.0-deltaAlpha)];
             }
-            else if (self.direction == ScrollTabBarController_Right) {
+        }
+        else if (self.direction == ScrollTabBarController_Right) {
+            CGFloat currentContentOffset = scrollView.contentOffset.x<(CGRectGetWidth(scrollView.frame)*toIndex)?scrollView.contentOffset.x:(CGRectGetWidth(scrollView.frame)*toIndex);
+            CGFloat mod = fmod(currentContentOffset, CGRectGetWidth(scrollView.frame));
+            CGFloat deltaAlpha = mod * (1.0 / CGRectGetWidth(scrollView.frame));
+            if (!(deltaAlpha >= 1.0 || deltaAlpha <= 0.0)) {
                 [self scrollAnimationProgress:deltaAlpha];
             }
         }
+//        CGFloat mod = fmod(scrollView.contentOffset.x, CGRectGetWidth(scrollView.frame));
+//        CGFloat deltaAlpha = mod * (1.0 / CGRectGetWidth(scrollView.frame));
+//        if (!(deltaAlpha >= 1.0 || deltaAlpha <= 0.0)) {
+//            if (self.direction == ScrollTabBarController_Left) {
+//                [self scrollAnimationProgress:(1.0-deltaAlpha)];
+//            }
+//            else if (self.direction == ScrollTabBarController_Right) {
+//                [self scrollAnimationProgress:deltaAlpha];
+//            }
+//        }
     }
     else if (allSet && transitioningSet && startedScroll && ![allSet intersectsSet:transitioningSet]) {
         startedScroll = NO;
@@ -380,6 +420,11 @@ typedef enum : NSUInteger {
                 [self scrollAnimationCancel];
             }
         }
+        UIViewController *vc = [self viewControllerWithIndex:1];
+        if (vc) {
+            [[vc view] setFrame:CGRectMake(self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+            [self.scrollView addSubview:vc.view];
+        }
     }
 }
 
@@ -427,6 +472,11 @@ typedef enum : NSUInteger {
             [self scrollAnimationCancel];
         }
     }
+    UIViewController *vc = [self viewControllerWithIndex:1];
+    if (vc) {
+        [[vc view] setFrame:CGRectMake(self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+        [self.scrollView addSubview:vc.view];
+    }
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
@@ -467,6 +517,11 @@ typedef enum : NSUInteger {
         else {
             [self scrollAnimationCancel];
         }
+    }
+    UIViewController *vc = [self viewControllerWithIndex:1];
+    if (vc) {
+        [[vc view] setFrame:CGRectMake(self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+        [self.scrollView addSubview:vc.view];
     }
 }
 
@@ -551,7 +606,7 @@ typedef enum : NSUInteger {
 }
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex {
-    if (_backingSelectedIndex == selectedIndex) {
+    if (_backingSelectedIndex == selectedIndex || startedScroll) {
         return;
     }
     if (self.scrollView) {
@@ -566,16 +621,22 @@ typedef enum : NSUInteger {
             [self.scrollView scrollRectToVisible:rectToVisible animated:YES];
         }
         else {
+            UIViewController *vc = [_backingViewControllers objectAtIndex:selectedIndex];
+            [vc viewWillAppear:NO];
             _backingSelectedIndex = selectedIndex;
             CGRect rectToVisible = CGRectMake(CGRectGetWidth(self.scrollView.frame) * selectedIndex, 0, CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame));
             [self.scrollView scrollRectToVisible:rectToVisible animated:NO];
             visibleSet = [NSSet setWithObject:@(selectedIndex)];
+            [vc viewDidAppear:NO];
             [self scrollAnimationFinished];
         }
     }
     else {
+        UIViewController *vc = [_backingViewControllers objectAtIndex:selectedIndex];
+        [vc viewWillAppear:NO];
         _backingSelectedIndex = selectedIndex;
         visibleSet = [NSSet setWithObject:@(selectedIndex)];
+        [vc viewDidAppear:NO];
     }
 }
 
@@ -589,6 +650,30 @@ typedef enum : NSUInteger {
     }];
     
     self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.scrollView.frame) * backingViewControllers.count, CGRectGetHeight(self.scrollView.frame));
+}
+
+- (void)selectIndexNoAnimation:(NSInteger)index
+{
+    if (_backingSelectedIndex == index || _backingViewControllers.count <= index) {
+        return;
+    }
+    if (self.scrollView) {
+        UIViewController *vc = [_backingViewControllers objectAtIndex:index];
+        [vc viewWillAppear:NO];
+        _backingSelectedIndex = index;
+        CGRect rectToVisible = CGRectMake(CGRectGetWidth(self.scrollView.frame) * index, 0, CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame));
+        [self.scrollView scrollRectToVisible:rectToVisible animated:NO];
+        visibleSet = [NSSet setWithObject:@(index)];
+        [vc viewDidAppear:NO];
+        [self scrollAnimationFinished];
+    }
+    else {
+        UIViewController *vc = [_backingViewControllers objectAtIndex:index];
+        [vc viewWillAppear:NO];
+        _backingSelectedIndex = index;
+        visibleSet = [NSSet setWithObject:@(index)];
+        [vc viewDidAppear:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
